@@ -1,0 +1,257 @@
+/* станадртные ширины элементов для 12 колонок
+8,3333%
+16,6666%
+25%
+33,3333%
+41,6666%
+50%
+58,3333%
+66,6666%
+75%
+83,3333%
+91,6666%
+100%
+*/
+
+:root {
+    --black: #212121;
+    --red: #B21212;
+    --white: #FFFFFF;
+    --grey: #999999;
+    --lihgt_grey: #F5F5F5;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*! border:solid 1px red; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    /*заменяем на нужный*/
+    font-size: 1rem;
+}
+
+
+/*@font-face {
+	font-family: 'Alice';
+	src: url('../fonts/Alice-Regular.ttf') format('truetype');
+	font-weight: 400;
+	300-light,400-regular,500-medium,600-semibold,700-bold
+	font-style: normal;
+	font-display: swap;
+}*/
+
+
+/*обнуляем стили по умолчанию*/
+
+ul,
+li,
+input,
+select,
+label,
+ol,
+p,
+fieldset {
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: none;
+}
+
+a::-moz-focus-inner {
+    border: none;
+}
+
+:focus {
+    outline: none;
+}
+
+a,
+a:focus {
+    outline: none;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    transition: ease-in-out 0.3s;
+}
+
+
+/*для адаптивности изображений*/
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+
+/*Настраиваем заголовки*/
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*настройки для иконок*/
+
+
+/*универсальная обёртка с полями для всех родительских контейнеров.
+Всегда находится внутри родителя и не участвует в задании ширины.
+*/
+
+.box {
+    /*! margin:1rem; */
+    padding: 1rem;
+}
+
+
+/*универсальная обёртка с полями для ограничения ширины контента.*/
+
+.wrap {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-flow: row wrap;
+    /*! padding: 0 0rem; */
+}
+
+
+/*базовые ширины колонок*/
+
+
+/*custom*/
+
+header {
+    /*! background: #CCC; */
+}
+
+button {
+    border-radius: 6px;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.button {
+    border-radius: 6px;
+}
+
+.content main {
+    background: antiquewhite;
+    width: 100%;
+}
+
+.content {
+    background: #FCF;
+}
+
+footer {
+    background: cornflowerblue;
+}
+
+.top_black {
+    display: flex;
+    width: 100%;
+    background-color: var(--black);
+}
+
+.top_black .wrap {
+    /*! display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.top_black .wrap .box a span {
+    display: none;
+}
+
+header .top_white {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .top_white .left {
+    display: none;
+}
+
+header .top_white .right .shema {
+    display: none;
+}
+
+header .top_white .logo {
+    width: 50%;
+}
+
+header .top_white .right {}
+
+header .top_white .right .record_white {}
+
+header .top_white .right .record_red {}
+
+header .top_white .right .time_work {
+    text-align: center;
+    color: var(--red);
+    font-weight: 600;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+header .top_white .right .mail {
+    display: none;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--red);
+    font-weight: 500;
+}
+
+header .top_white .button {
+    border: 1px solid var(--red);
+}
+
+header .top_white .button button {
+    background: var(--white);
+    font-family: 'Jost', sans-serif;
+    color: var(--red);
+    font-weight: 500;
+    padding: 0.5rem;
+}
+video {
+    display: none;
+}
+#main_menu {
+    /*! background: green; */
+    background: url(../video/HS046.mp4) no-repeat center center;
+    background-size: cover;
+}

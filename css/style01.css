@@ -1,0 +1,127 @@
+@charset "utf-8";
+.wrap {
+    padding: 0 1rem;
+}
+
+.top_black .wrap .box {
+    /*! background: red */
+}
+
+.top_black .wrap #phone_icon {
+    margin-right: auto;
+    margin-left: 10%;
+}
+
+.top_black .wrap #lk_icon {
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.top_black .wrap .box a span {
+    display: none;
+}
+header .top_white {
+height: 7rem;
+}
+header .top_white .left {
+    display: flex;
+    width: 33.3333%;
+}
+
+header .top_white .left .record_red {}
+
+header .top_white .left .record_red .button {}
+
+header .top_white .left .record_red .button button {}
+
+header .top_white .left .icons {
+    display: none;
+}
+
+header .top_white .right .shema {
+    display: none;
+}
+
+header .top_white .right .time_work {
+    margin: 0;
+}
+
+header .top_white .right .record_white {
+    display: none;
+}
+
+header .top_white .logo {
+    /*! text-align: center; */
+    width: 33.33333%;
+}
+
+header .top_white .logo .box img {
+    /*! text-align: center; */
+    margin: 0 auto;
+}
+
+header .top_white .right {
+    width: 33.33333%;
+}
+
+header .top_white .right .mail {
+    display: block;
+}
+video {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 19rem;
+    object-fit: cover;
+}
+#main_menu {
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+    display: flex;
+    /*! width: 100%; */
+    /*! min-width: 100%; */
+}
+#main_menu .wrap{
+    
+    align-items: center;
+    /*! height: 15rem; */
+    width: 100%;
+}
+#main_menu .wrap .box {
+    width: 100%;
+}
+
+#main_menu .wrap .box ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main_menu .wrap .box ul li {
+    max-width: 7.5rem;
+    border: solid 1px var(--white);
+    border-radius: 6px;
+    line-height: 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+    /*! padding: 0.5rem 1rem; */
+    background: rgba(33, 33, 33, 0.9);
+    color: var(--white);
+    /*! width: 8rem; */
+    /*! height: 6rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+}
+#main_menu .wrap .box ul li:hover{
+    background: RGBa(178, 18, 18,0.9);
+}
+#main_menu .wrap .box ul li a {
+    padding: 2rem 1.5rem;
+    display: block;
+    /*! height: 4rem; */
+}
