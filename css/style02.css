@@ -1,6 +1,8 @@
 @charset "utf-8";
+
 .wrap {
     padding: 0 2rem;
+    /*! width: 100%; */
 }
 
 .top_black .wrap .box {
@@ -38,7 +40,7 @@ header .top_white {
 
 header .top_white .left {
     display: flex;
-    width: 33.3333%;
+    width: 34%;
     order: 3;
     align-items: center;
     justify-content: space-between;
@@ -49,7 +51,7 @@ header .top_white .left .icons {
 }
 
 header .top_white .right {
-    width: 33.33333%;
+    width: 34%;
     order: 1;
     display: flex;
     justify-content: space-between;
@@ -62,7 +64,7 @@ header .top_white .right .shema {
 
 header .top_white .logo {
     /*! text-align: center; */
-    width: 33.33333%;
+    width: 32%;
     order: 2;
 }
 
@@ -77,6 +79,10 @@ header .top_white .right .record_white {
 
 header .top_white .right .mail {
     display: block;
+}
+
+header .top_white .button button {
+    padding: 0.5rem 1rem 0.5rem 0;
 }
 
 video {
@@ -102,11 +108,21 @@ video {
     align-items: center;
     /*! height: 15rem; */
     width: 100%;
+    background: none;
 }
 
 #main_menu .wrap .box {
     width: 100%;
     /*! height: 16rem; */
+    display: block;
+}
+
+#main_menu .wrap .box .burger {
+    display: none;
+}
+
+#main_menu .wrap .box .to_down {
+    display: none;
 }
 
 #main_menu .wrap .box ul {
@@ -114,6 +130,10 @@ video {
     justify-content: space-around;
     align-items: center;
     /*! height: 10rem; */
+    position: static;
+    background: none;
+    padding: 0;
+    box-shadow: none;
 }
 
 #main_menu .wrap .box ul li {
@@ -123,7 +143,7 @@ video {
     line-height: 1.5rem;
     font-size: 1rem;
     text-align: center;
-    /*! padding: 0.5rem 1rem; */
+    padding: 0;
     background: rgba(33, 33, 33, 0.9);
     color: var(--white);
     /*! width: 8rem; */
@@ -132,9 +152,16 @@ video {
     justify-content: center;
     align-items: center;
     transition: ease-in-out 0.3s;
+    margin: 0;
 }
-#main_menu .wrap .box ul li:hover{
-    background: RGBa(178, 18, 18,0.9);
+
+#main_menu .wrap .box ul .active {
+    background: RGBa(178, 18, 18, 0.9);
+    color: var(--white);
+}
+
+#main_menu .wrap .box ul li:hover {
+    background: RGBa(178, 18, 18, 0.9);
 }
 
 #main_menu .wrap .box ul li a {
@@ -142,4 +169,200 @@ video {
     display: block;
     /*! height: 2rem; */
     /*! padding: 1rem 0; */
+}
+
+main .red_select_to {
+    display: flex;
+}
+
+main .select_car .title {
+    color: var(--red);
+    background: none;
+}
+
+main .select_car .cars .item .list_service {
+    transition: linear 0.3s;
+    /*! display: block; */
+    /*! opacity: 1; */
+    transform: scaleY(0);
+    top: -2rem;
+    position: absolute;
+}
+
+main .select_car .cars .item .list_service ul {
+    background: var(--white);
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 0 0 6px 6px;
+    font-size: 0.875rem;
+}
+
+main .select_car .cars .item .list_service ul li {
+    margin-bottom: 1rem;
+}
+
+main .select_car .cars .item .pic a {
+    cursor: none;
+}
+
+main .select_car .cars .item .list_service ul li a:hover {
+    color: var(--red);
+}
+
+main .select_car .cars .item:hover .list_service {
+    display: block;
+    /*! background: var(--lihgt_grey); */
+    position: absolute;
+    z-index: 100;
+    /*! padding: 1rem; */
+    top: 0;
+    padding-top: 13rem;
+    border: solid 1px var(--lihgt_grey);
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+    /*! transition: ease-in-out 0.3s; */
+    /*! opacity: 0.5; */
+    transform: scaleY(1);
+    left: 0;
+    /*! filter: hue-rotate(270deg); */
+    /*! filter: invert(4%); */
+}
+
+main .select_car .cars .item:hover .model {
+    color: var(--red);
+    font-weight: 500;
+}
+
+main .select_car .box {
+    background: none;
+}
+
+main .red_select_parts .select_s {
+    display: block;
+    /*! justify-content: center; */
+}
+
+main .red_select_parts .title {
+    display: block;
+}
+
+main .red_select_parts .select_s form {
+    display: flex;
+    /*! justify-content: space-between; */
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+main .red_select_parts .select_s form select_custom {}
+
+main .red_select_parts .button {
+    /*! display: none; */
+    width: 10rem;
+    /*! justify-content: center; */
+    margin-top: 2rem;
+}
+
+footer .wrap {
+    padding: 2rem;
+}
+
+footer .item {
+    width: 25%;
+    min-width: auto;
+}
+
+.select_custom {
+    /*! min-width: 18rem; */
+    margin: 2.5rem 1rem 1rem 1rem;
+}
+
+.open {
+    display: none;
+}
+
+main .red_select_parts .search {
+    /*! width: 6rem; */
+    /*! padding: 10rem; */
+    /*! margin: 0 auto; */
+    width: 100%;
+}
+
+.slider {
+    background:blue;
+    /*! width: 100%; */
+    /*! height: 15rem; */
+}
+
+.slide .title {
+    /*! perspective: 1000; */
+    margin-bottom: 1rem;
+}
+
+.slide .pic {/*! height: 6rem; *//*! width: 14rem; *//*! object-fit: cover; */}
+
+.slide .pic img {object-fit: cover;width: 100%;height: 10rem;}
+
+.slide:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.slide .intro_text {font-size: 0.875rem;}
+
+.slide .intro_text p {margin-bottom: 0.5rem;}
+
+.slide .button {
+    text-align: center;
+    border: solid 1px var(--grey);
+    border-radius: 4px;
+    /*! max-width: 7rem; */
+    margin: 0 auto;
+    /*! padding: 0.5rem 2rem; */
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: var(--white);
+}
+.slide .button:hover{
+    color: var(--red);
+    border: solid 1px;
+}
+.slide .button a{
+    display: inline-block;
+    /*! background: aqua; */
+    padding: 0.5rem 2rem;
+}
+.slide,
+.front_side,
+.back_side {
+    width: 32rem;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.slide .front_side,
+.slide .back_side {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide .front_side {
+    /*! z-index:100; */
+    /*! display: none; */
+}
+
+.slide .back_side {
+    transform: rotateY(180deg);
+    background: var(--lihgt_grey);
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.slide .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
 }

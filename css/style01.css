@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 .wrap {
     padding: 0 1rem;
 }
@@ -20,9 +21,11 @@
 .top_black .wrap .box a span {
     display: none;
 }
+
 header .top_white {
-height: 7rem;
+    height: 7rem;
 }
+
 header .top_white .left {
     display: flex;
     width: 33.3333%;
@@ -67,6 +70,11 @@ header .top_white .right {
 header .top_white .right .mail {
     display: block;
 }
+
+header .top_white .button button {
+    padding: 0.5rem 1rem 0.5rem 0;
+}
+
 video {
     display: block;
     position: absolute;
@@ -76,6 +84,7 @@ video {
     height: 19rem;
     object-fit: cover;
 }
+
 #main_menu {
     position: relative;
     overflow: hidden;
@@ -84,20 +93,36 @@ video {
     /*! width: 100%; */
     /*! min-width: 100%; */
 }
-#main_menu .wrap{
-    
+
+#main_menu .wrap {
     align-items: center;
     /*! height: 15rem; */
     width: 100%;
+    background: none;
 }
+
 #main_menu .wrap .box {
     width: 100%;
+    display: block;
+}
+
+#main_menu .wrap .box .burger {
+    display: none;
+}
+
+#main_menu .wrap .box .to_down {
+    display: none;
 }
 
 #main_menu .wrap .box ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: static;
+    background: none;
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
 }
 
 #main_menu .wrap .box ul li {
@@ -107,7 +132,7 @@ video {
     line-height: 1rem;
     font-size: 0.875rem;
     text-align: center;
-    /*! padding: 0.5rem 1rem; */
+    padding: 0;
     background: rgba(33, 33, 33, 0.9);
     color: var(--white);
     /*! width: 8rem; */
@@ -116,12 +141,119 @@ video {
     justify-content: center;
     align-items: center;
     transition: ease-in-out 0.3s;
+    margin: 0;
 }
-#main_menu .wrap .box ul li:hover{
-    background: RGBa(178, 18, 18,0.9);
+
+#main_menu .wrap .box ul .active {
+    background: RGBa(178, 18, 18, 0.9);
+    color: var(--white);
 }
+
+#main_menu .wrap .box ul li:hover {
+    background: RGBa(178, 18, 18, 0.9);
+}
+
 #main_menu .wrap .box ul li a {
     padding: 2rem 1.5rem;
     display: block;
     /*! height: 4rem; */
+}
+
+main .red_select_to {
+    display: flex;
+}
+
+main .select_car .title {
+    color: var(--red);
+    background: none;
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+
+main .select_car .cars .item .list_service {
+    transition: linear 0.3s;
+    /*! display: block; */
+    /*! opacity: 1; */
+    transform: scaleY(0);
+    top: -2rem;
+    position: absolute;
+}
+
+main .select_car .cars .item .list_service ul {
+    background: var(--white);
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 0 0 6px 6px;
+    font-size: 0.875rem;
+}
+
+main .select_car .cars .item .list_service ul li {
+    margin-bottom: 1rem;
+}
+
+main .select_car .cars .item .pic a {
+    cursor: none;
+}
+
+main .select_car .cars .item .list_service ul li a:hover {
+    color: var(--red);
+}
+
+main .select_car .cars .item:hover .list_service {
+    display: block;
+    /*! background: var(--lihgt_grey); */
+    position: absolute;
+    z-index: 100;
+    /*! padding: 1rem; */
+    top: 0;
+    padding-top: 13rem;
+    border: solid 1px var(--lihgt_grey);
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+    /*! transition: ease-in-out 0.3s; */
+    /*! opacity: 0.5; */
+    transform: scaleY(1);
+    left: 0;
+    /*! filter: hue-rotate(270deg); */
+    /*! filter: invert(4%); */
+}
+
+main .select_car .cars .item:hover .model {
+    color: var(--red);
+    font-weight: 500;
+}
+
+main .select_car .box {
+    /*! background: none; */
+}
+
+main .red_select_parts .select_s form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+main .red_select_parts .title {
+    /*! display: block; */
+}
+
+main .red_select_parts button {
+    /*! display: none; */
+    width: 10rem;
+}
+
+footer .wrap {
+    padding: 2rem 1rem;
+}
+
+.select_custom {
+    width: calc(50% - 2rem);
+    margin: 2.5rem 1rem 2rem 1rem;
+    justify-content: center;
+}
+
+main .red_select_parts .search {
+    /*! width: 6rem; */
+    /*! padding: 10rem; */
+    /*! margin: 0 auto; */
+    width: 100%;
 }

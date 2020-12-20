@@ -7,13 +7,13 @@
     <title>ММС-Плюс | Автосервис Mitsubishi</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- подключаем стили -->
     <link href="css/style00.css" rel="stylesheet">
-    <link href="css/style01.css" rel="stylesheet" type="text/css" media="only screen and (min-width:630px) and (max-width:1024px)">
-    <link href="css/style02.css" rel="stylesheet" type="text/css" media="only screen and (min-width:1024px)">
+    <link href="css/style01.css" rel="stylesheet" media="only screen and (min-width:660px) and (max-width:1023px)">
+    <link href="css/style02.css" rel="stylesheet" media="only screen and (min-width:1024px)">
     <!-- подключаем jquery -->
     <script src="js/jquery-3.4.1.min.js"></script>
-</head>
+    <script src="js/swiper.min.js"></script>
+    <link href="css/swiper.css" rel="stylesheet" /> </head>
 
 <body>
     <!-- header -->
@@ -39,16 +39,20 @@
                 <div class="left">
                     <div class="icons">
                         <div class="box">
-                            <div class="account"><a href="#" title="Личный кабинет"><img src="images/icon-account-red.svg" alt="Личный кабинет"/></a></div>
+                            <div class="account">
+                                <a href="#" title="Личный кабинет"><img src="images/icon-account-red.svg" alt="Личный кабинет" /></a>
+                            </div>
                         </div>
                         <div class="box">
-                            <div class="bracket"><a href="#" title="Корзина"><img src="images/icon-barcket-red.svg" alt="Корзина"/></a></div>
+                            <div class="bracket">
+                                <a href="#" title="Корзина"><img src="images/icon-barcket-red.svg" alt="Корзина" /></a>
+                            </div>
                         </div>
                     </div>
                     <div class="box">
                         <div class="record_red">
                             <div class="button">
-                                <button title="Записаться на ТО">Записаться на ТО</button>
+                                <button title="Записаться на ТО"><img src="images/icon-record-white.svg" alt="Схема проезда" />Записаться на ТО</button>
                             </div>
                         </div>
                     </div>
@@ -60,14 +64,14 @@
                     <div class="shema">
                         <div class="box">
                             <div class="button">
-                                <button title="Схема проезда">Схема проезда</button>
+                                <button title="Схема проезда"><img src="images/icon-map-white.svg" alt="Схема проезда" />Схема проезда</button>
                             </div>
                         </div>
                     </div>
                     <div class="box">
                         <div class="record_white">
                             <div class="button">
-                                <button title="Записаться на ТО">Записаться на ТО</button>
+                                <button title="Записаться на ТО"><img src="images/icon-map-white.svg" alt="Записаться на ТО" /> Записаться на ТО</button>
                             </div>
                         </div>
                         <div class="time_work">с 9-00 до 21-00</div>
@@ -82,51 +86,494 @@
     <nav id="main_menu">
         <div class="wrap">
             <div class="box">
+                <div class="burger"><img src="images/icon-burger-white.svg" alt="Меню" /></div>
                 <ul>
                     <li><a href="#">Сервис и ремонт</a></li>
                     <li><a href="#">Подбор запчастей</a></li>
                     <li><a href="#">Кузовной ремонт</a></li>
-                    <li><a href="#">Дополнительное оборудование</a></li>
+                    <li class="active"><a href="#">Дополнительное оборудование</a></li>
                     <li><a href="#">Услуги шиномонтажа</a></li>
                 </ul>
+                <div class="to_down">
+                    <div class="button">
+                        <button>Сколько стоит плановое ТО?</button>
+                    </div>
+                </div>
             </div>
         </div>
-		<video loop autoplay muted>
-							<source src="video/orbita.mp4" type="video/mp4">
-							
-						</video>
+        <video loop autoplay muted>
+            <source src="video/demo-01.mp4" type="video/mp4"> </video>
     </nav>
-	
-<!-- оснвоное поле -->
+    <!-- оснвоное поле -->
     <div class="content">
-        <div class="wrap">
-            <main>
+        <main>
+            <!-- -->
+            <div class="wrap">
                 <div class="box">
-                    <h1>Заголовок h1</h1>
-                    <section>
-                        <p>Основной контент сайта</p>
-                    </section>
+                    <div class="swiper-container">
+                        
+                        
+                        <div class="swiper-wrapper">
+                            <div class="swiper-button-prev"></div>
+                            <!-- -->
+                            <div class="swiper-slide">
+                                <div class="slide">1<img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" />
+                                    <!--<div class="flipper">
+                                            <div class="front_side">
+                                                <div class="title">
+                                                    <h3>Заголовок первой новости повествующий о всяком разном</h3></div>
+                                                <div class="pic"><img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
+                                            </div>
+                                            <div class="back_side">
+                                                <div class="intro_text">
+                                                    <p>Do qui ad qui ut nulla. Aliqua commodo aliqua eiusmod enim adipisicing id duis nulla aliquip dolor consectetur amet nulla quis. Sit anim ut amet sit dolor enim ea voluptate tempor voluptate et adipisicing.</p>
+                                                    <p>Eu qui et consectetur dolor. Exercitation sint culpa deserunt est eiusmod qui aliquip velit velit consequat ipsum veniam voluptate. Adipisicing ut ut proident proident Lorem fugiat consectetur eiusmod officia occaecat cupidatat qui. Dolore do sunt do labore Lorem irure. Laboris irure id enim irure sit culpa consectetur in in.</p>
+                                                </div>
+                                                <div class="button"><a href="#">Перейти</a></div>
+                                            </div>
+                                        </div>--></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">2<img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" /> </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">3<img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" /> </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">4<img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" /> </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">5<img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" /> </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">6<img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" /> </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">7<img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" /> </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
                 </div>
-            </main>
-        </div>
+            </div>
+            <!-- -->
+            <div class="red_select_to">
+                <div class="wrap">
+                    <div class="box"> Сколько стоит ТО</div>
+                </div>
+            </div>
+            <!-- -->
+            <div class="select_car">
+                <div class="wrap">
+                    <div class="box">
+                        <div class="title">
+                            <h1>Сервис и ремонт автомобилей Mitsubishi</h1> </div>
+                        <div class="cars">
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/Colt-04-12.jpg" alt="Mitsubishi Colt" /></a>
+                                </div>
+                                <div class="model">Colt-04-12</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/Lancer-IX-00-10.jpg" alt="Lancer-IX-00-10" /></a>
+                                </div>
+                                <div class="model">Lancer-IX-00-10</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/Lancer-X-2007-.jpg" alt="Lancer-X-2007-" /></a>
+                                </div>
+                                <div class="model">Lancer-X-2007-</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/ASX-2010-.jpg" alt="ASX-2010-" /></a>
+                                </div>
+                                <div class="model">ASX-2010-</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/Grandis-03-11.jpg" alt="Grandis-03-11" /></a>
+                                </div>
+                                <div class="model">Grandis-03-11</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/Eclipse-Cross-2018-.jpg" alt="Eclipse-Cross-2018-" /></a>
+                                </div>
+                                <div class="model">Eclipse-Cross-2018-</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/Outlander-XL-07-12.jpg" alt="Outlander-XL-07-12" /></a>
+                                </div>
+                                <div class="model">Outlander-XL-07-12</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/Outlander-12-17.jpg" alt="Outlander-12-17" /></a>
+                                </div>
+                                <div class="model">Outlander-12-17</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/Pajero-Sport-2008-.jpg" alt="Pajero-Sport-2008-" /></a>
+                                </div>
+                                <div class="model">Pajero-Sport-2008-</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/Pajero-Sport-2015-.jpg" alt="Pajero-Sport-2015-" /></a>
+                                </div>
+                                <div class="model">Pajero-Sport-2015-</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/L200-2005-.jpg" alt="L200-2005-" /></a>
+                                </div>
+                                <div class="model">L200-2005-</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/L200-2015-.jpg" alt="L200-2015-" /></a>
+                                </div>
+                                <div class="model">L200-2015-</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pic">
+                                    <a href="#"><img src="images/Pajero4_Montero4-2006-.jpg" alt="Pajero4_Montero4-2006-" /></a>
+                                </div>
+                                <div class="model">Pajero4_Montero4-2006-</div>
+                                <div class="list_service">
+                                    <ul>
+                                        <li><a href="#">Плановое техобслуживание</a></li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Ходовая часть</a></li>
+                                        <li><a href="#">Шиномонтаж</a></li>
+                                        <li><a href="#">Трансмиссия и сцепление</a></li>
+                                        <li><a href="#">Рулевое управление</a></li>
+                                        <li><a href="#">Система кондиционирования</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Электроборудование и освещение</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <div class="red_select_parts">
+                <div class="wrap">
+                    <div class="box">
+                        <div class="title">Подбор запчастей</div>
+                        <button class="button open">Подбор запчастей</button>
+                        <!-- группа с формой -->
+                        <div class="select_s">
+                            <form>
+                                <div class="select_custom">
+                                    <div class="label">Марка</div>
+                                    <input type="text" placeholder="Выберите" onclick="" disabled> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
+                                    <div class="list_select">
+                                        <ul>
+                                            <li>Mitsubishi</li>
+                                            <li>Mazda</li>
+                                            <li>Honda</li>
+                                            <li>Hyundai</li>
+                                            <li>Land Rover</li>
+                                            <li>Ford</li>
+                                            <li>Kia</li>
+                                            <li>Peugeot</li>
+                                            <li>Nissan</li>
+                                            <li>Subaru</li>
+                                            <li>Toyota</li>
+                                            <li>Citroen</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- -->
+                                <div class="select_custom">
+                                    <div class="label">Модель</div>
+                                    <input type="text" placeholder="Выберите" onclick="" disabled> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
+                                    <div class="list_select">
+                                        <ul>
+                                            <li>01</li>
+                                            <li>02</li>
+                                            <li>03</li>
+                                            <li>04</li>
+                                            <li>05</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- -->
+                                <div class="select_custom">
+                                    <div class="label">Запчасть</div>
+                                    <input type="text" placeholder="Выберите" onclick="" disabled> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
+                                    <div class="list_select">
+                                        <ul>
+                                            <li>01</li>
+                                            <li>02</li>
+                                            <li>03</li>
+                                            <li>04</li>
+                                            <li>05</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="select_custom">
+                                    <div class="label">Двигатель</div>
+                                    <input type="text" placeholder="Выберите" onclick="" disabled> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
+                                    <div class="list_select">
+                                        <ul>
+                                            <li>01</li>
+                                            <li>02</li>
+                                            <li>03</li>
+                                            <li>04</li>
+                                            <li>05</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="select_custom">
+                                    <div class="label">Кузов</div>
+                                    <input type="text" placeholder="Выберите" onclick="" disabled> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
+                                    <div class="list_select">
+                                        <ul>
+                                            <li>01</li>
+                                            <li>02</li>
+                                            <li>03</li>
+                                            <li>04</li>
+                                            <li>05</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="search">
+                                    <button class="button" type="submit">Найти</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- группа с формой конец -->
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <div class="wrap">
+                <section class="about">
+                    <div class="box">
+                        <div class="title">
+                            <h2>Техцентр Mitsubishi - мы выполняем ремонт Митсубиси качественно и в кратчайшие сроки.</h2> </div>
+                        <div class="text">
+                            <p>Nulla ut in quis nulla excepteur eiusmod elit ad cillum amet exercitation. Esse non est amet ut aliqua dolore adipisicing Lorem culpa quis ut Lorem reprehenderit. Do qui ad qui ut nulla. Aliqua commodo aliqua eiusmod enim adipisicing id duis nulla aliquip dolor consectetur amet nulla quis. Sit anim ut amet sit dolor enim ea voluptate tempor voluptate et adipisicing.</p>
+                            <p>Consequat ea sit ad veniam aliqua dolor duis officia voluptate. Fugiat pariatur magna consequat nostrud incididunt adipisicing qui esse.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
     </div>
     <footer>
         <div class="wrap">
-            <div class="box">
-                <h4>инфо 1</h4> </div>
-            <div class="box">
-                <h4>Заголовок h4</h4>
-                <div class="item">
-                    <h4>Item №1</h4> </div>
-                <div class="item">
-                    <h4>Item №2</h4> </div>
-                <div class="item">
-                    <h4>Item №3</h4> </div>
+            <div class="item">
+                <div class="box">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li> <a href="#">Сервис и ремонт</a> </li>
+                        <li> <a href="#">Подбор запчастей</a> </li>
+                        <li> <a href="#">Кузовной ремонт</a> </li>
+                        <li> <a href="#">Дополнительное оборудование</a> </li>
+                        <li> <a href="#">Шиномонтаж</a> </li>
+                    </ul>
+                </div>
             </div>
-            <div class="box">
-                <h4>инфо 3</h4></div>
+            <div class="item">
+                <div class="box">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li> <a href="#">Схема проезда</a> </li>
+                        <li> <a href="#">Банковские реквизиты</a> </li>
+                        <li> <a href="#">Обратная связь</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li> <a href="#">Личный кабинет</a> </li>
+                        <li> <a href="#">Карта сайта</a> </li>
+                        <li> <a href="#">Политика конфиденциальности</a> </li>
+                        <li> <a href="#">Пользовательское соглашение</a> </li>
+                        <li> <a href="#">Политика использования Cookies</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="logo"><img src="images/logo-white.svg" alt="ММС-Плюс" /></div> <span>ООО «ММС-Плюс» © 2020</span> </div>
+            </div>
         </div>
     </footer>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            
+        , })
+    </script>
 </body>
 
 </html>
