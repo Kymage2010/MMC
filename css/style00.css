@@ -115,6 +115,8 @@ h2 {
 h3 {
     margin: 0;
     padding: 0;
+    font-weight: 500;
+    line-height: 1.2rem;
 }
 
 h4 {
@@ -396,12 +398,15 @@ main .red_select_parts {
     background: var(--red);
     color: var(--white);
 }
-main .red_select_parts .box{
+
+main .red_select_parts .box {
     width: 100%;
 }
-main .red_select_parts .select_s{
+
+main .red_select_parts .select_s {
     display: none;
 }
+
 main .red_select_parts .select_s.box {
     width: 100%
 }
@@ -485,7 +490,12 @@ main .red_select_parts .button {
     margin-bottom: 1rem;
     transition: ease-in-out 0.3s;
 }
-.select_custom .list_select ul li:hover{color: var(--red);cursor: pointer;}
+
+.select_custom .list_select ul li:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+
 
 /* select end*/
 
@@ -540,4 +550,115 @@ footer .item span {
     margin-top: 1rem;
     display: block;
     font-weight: 300;
+}
+
+.slide .title {
+    /*! perspective: 1000; */
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    /*! font-weight: 400; */
+    /*! padding: 1rem 1rem 0 1rem; */
+}
+
+.slide .pic {
+    /*! height: 100%; */
+    /*! width: 100%; */
+    /*! object-fit: cover; */
+}
+
+.slide .pic img {
+    /*! object-fit: cover; */
+    /*! width: 100%; */
+    /*! height: auto; */
+}
+
+.slide:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.slide .intro_text {
+    font-size: 0.875rem;
+}
+
+.slide .intro_text p {
+    margin-bottom: 0.5rem;
+}
+
+.slide .button {
+    text-align: center;
+    border: solid 1px var(--grey);
+    border-radius: 4px;
+    /*! max-width: 7rem; */
+    margin: 0 auto;
+    /*! padding: 0.5rem 2rem; */
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: var(--white);
+    /*! position: absolute; */
+    /*! bottom: 1rem; */
+    /*! left: auto; */
+    /*! right: auto; */
+    /*! width: 8rem; */
+}
+
+.slide .button:hover {
+    color: var(--red);
+    border: solid 1px;
+}
+
+.slide .button a {
+    display: inline-block;
+    /*! background: aqua; */
+    padding: 0.5rem 2rem;
+}
+
+.slide {
+    height: 14rem;
+    /*! position: static; */
+    /*! width: 100%; */
+}
+
+.box_slide {
+    margin: 1rem;
+}
+
+.front_side,
+.back_side {
+    /*! width: 28rem; */
+    height: 14rem;
+    overflow: hidden;
+}
+
+.slide .front_side,
+.slide .back_side {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.slide .front_side {
+    /*! z-index:100; */
+    /*! display: none; */
+}
+
+.slide .back_side {
+    transform: rotateY(180deg);
+    background: var(--lihgt_grey);
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.slide .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    /*! background: #839b4f; */
+    height: 100%;
 }
