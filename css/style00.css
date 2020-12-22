@@ -464,7 +464,7 @@ main .red_select_parts .button {
 }
 
 .select_custom .list_select {
-    display: none;
+    /*! display: none; */
     position: absolute;
     background: var(--white);
     color: var(--black);
@@ -472,6 +472,7 @@ main .red_select_parts .button {
     box-shadow: var(--shadow);
     width: 100%;
     border-radius: 6px;
+    z-index: 1;
 }
 
 .select_custom .label {
@@ -483,17 +484,19 @@ main .red_select_parts .button {
 }
 
 .select_custom .list_select ul {
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .select_custom .list_select ul li {
-    margin-bottom: 1rem;
+    /*! margin-bottom: 1rem; */
     transition: ease-in-out 0.3s;
+    padding: 0.5rem 1rem;
 }
 
 .select_custom .list_select ul li:hover {
     color: var(--red);
     cursor: pointer;
+    background: var(--lihgt_grey);
 }
 
 
