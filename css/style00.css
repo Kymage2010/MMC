@@ -306,7 +306,9 @@ video {
     width: 100%;
     position: relative;
 }
-
+#main_menu .wrap .box .burger{
+	cursor: pointer;
+}
 #main_menu .wrap .box ul {
     display: none;
     position: absolute;
@@ -314,10 +316,12 @@ video {
     background: var(--lihgt_grey);
     padding: 2rem 1rem 1rem 1rem;
     /*! width: 100%; */
-    /*! margin-right: 1rem; */
+    margin: 0 1rem;
     right: 0;
     left: 0;
     box-shadow: var(--shadow);
+    z-index: 40;
+    border-radius: 0 0 6px 6px;
 }
 
 #main_menu .wrap .box ul li {
@@ -399,19 +403,25 @@ main .red_select_parts {
     color: var(--white);
 }
 
-main .red_select_parts .box {
+main .red_select_parts .box,
+main .red_select_to .box {
     width: 100%;
 }
 
 main .red_select_parts .select_s {
-    display: none;
+    /*! display: none; */
 }
-
-main .red_select_parts .select_s.box {
+main .red_select_parts .select_s form,
+main .red_select_to .select_s form{
+	width: 100%;
+}
+main .red_select_parts .select_s .box,
+main .red_select_to .select_s .box{
     width: 100%
 }
 
-main .red_select_parts .title {
+main .red_select_parts .title,
+main .red_select_to .title{
     display: none;
     text-align: center;
     font-size: 1.5rem;
@@ -419,7 +429,8 @@ main .red_select_parts .title {
     /*! padding-bottom: 1rem; */
 }
 
-main .red_select_parts .button {
+main .red_select_parts .button
+{
     margin: 1rem auto 1rem auto;
     background: var(--red);
     color: var(--white);
@@ -429,7 +440,17 @@ main .red_select_parts .button {
     /*! height: 2.5rem; */
     padding: 1rem;
 }
-
+main .red_select_to .button{
+    margin: 1rem auto 1rem auto;
+    background: var(--red);
+    color: var(--white);
+    border: solid 1px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    /*! height: 2.5rem; */
+    padding: 1rem;
+	display: none
+}
 
 /* select*/
 
@@ -457,14 +478,14 @@ main .red_select_parts .button {
 .select_custom span {
     background: var(--white);
     border-radius: 0 6px 6px 0;
-    padding: 0.25rem;
+    /*! padding: 0.25rem; */
     height: 3rem;
     cursor: pointer;
     /*! transform: rotate; */
 }
 
 .select_custom .list_select {
-    /*! display: none; */
+    display: none;
     position: absolute;
     background: var(--white);
     color: var(--black);

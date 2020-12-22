@@ -104,6 +104,7 @@ video {
 #main_menu .wrap .box {
     width: 100%;
     display: block;
+    /*! margin: 0; */
 }
 
 #main_menu .wrap .box .burger {
@@ -123,6 +124,7 @@ video {
     width: 100%;
     padding: 0;
     box-shadow: none;
+    margin: 0;
 }
 
 #main_menu .wrap .box ul li {
@@ -232,7 +234,8 @@ main .select_car .box {
     /*! background: none; */
 }
 
-main .red_select_parts .select_s form {
+main .red_select_parts .select_s,
+main .red_select_to .select_s{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -241,10 +244,12 @@ main .red_select_parts .select_s form {
 main .red_select_parts .title {
     /*! display: block; */
 }
-
-main .red_select_parts button {
+main .red_select_to .title {
+    /*! display: block; */
+}
+main .red_select_parts button,main .red_select_to button {
     /*! display: none; */
-    width: 10rem;
+    width: 14rem;
 }
 
 footer .wrap {
@@ -253,15 +258,17 @@ footer .wrap {
 
 .select_custom {
     width: calc(50% - 2rem);
-    margin: 2.5rem 1rem 2rem 1rem;
+    margin: 2.5rem 1rem 0 1rem;
     justify-content: center;
 }
 
-main .red_select_parts .search {
+main .red_select_parts .search,
+main .red_select_to .search{
     /*! width: 6rem; */
     /*! padding: 10rem; */
     /*! margin: 0 auto; */
     width: 100%;
+    margin-top: 2rem;
 }
 .box_slide {
     /*! margin: 1rem; */
