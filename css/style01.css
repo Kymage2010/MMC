@@ -236,7 +236,7 @@ main .select_car .box {
 
 main .red_select_parts .select_s,
 main .red_select_to .select_s{
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     justify-content: center;
 }
