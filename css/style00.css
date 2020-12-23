@@ -394,7 +394,7 @@ main .select_car .cars .item .list_service {
 main .red_select_to {
     background: var(--red);
     color: var(--white);
-    display: none;
+    /*! display: none; */
     position: absolute;
     z-index: 100;
     width: 100%;
@@ -702,6 +702,114 @@ footer .item span {
     height: 100%;
 }
 #show_to, #show_parts{
-	display: none;
+	/*! display: none; */
 	flex-flow: column wrap;
 }
+.popup_wrap {
+	display: flex;
+	position: absolute;
+	top: 0;
+	/*! height: 100vh; */
+	left: 0;
+	right: 0;
+	/*! bottom: 0; */
+	/*! background: rgba(255, 255, 255,0.5); */
+	z-index: 100;
+	justify-content: center;
+	/*! align-items: center; */
+	/*! display: none; */
+	/*! /*! height: 260%; */ /*! *\/ */
+	min-height: 100%;
+	/*! width: 100%; */
+}
+.popup_wrap .popup {
+	background: var(--white);
+	padding: 1rem;
+	box-shadow: var(--shadow);
+	border: solid 1px var(--lihgt_grey);
+	border-radius: 6px;
+	margin: 1rem;
+	height: 100%;
+	/*! position: absolute; */
+}
+.popup_wrap .popup .title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.popup_wrap .popup .title h3 {
+}
+.popup_wrap .popup .title .close {
+}
+.popup_wrap .popup .title .close img {
+}
+.popup_wrap .popup .pop_table {
+}
+
+
+
+.popup_wrap .popup .pop_text {
+}
+.popup_wrap .popup .pop_button {
+}
+.resp-tab {
+    border-radius: 5px;
+    /*! font-weight: normal; */
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+.resp-tab th, .resp-tab td {
+    /*! padding: 10px 20px; */
+    font-size: 0.75rem;
+    border: none;
+    /*! font-family: Verdana, sans-serif; */    
+    border: 1px solid var(--grey);
+    /*! vertical-align: top; */
+    padding: 0.5rem;
+}
+.resp-tab th {
+    color: #FFF;
+    background: #337AB7;
+    font-weight: bold;
+    border: 1px solid #1a4a73;    
+    text-transform: uppercase;    
+    text-align: center;    
+}
+.resp-tab tr:nth-child(even) {
+    /*! background: #edf7ff; */
+}
+.resp-tab td span {
+    /*! background: var(--lihgt_grey); */
+    /*! color: #FFF; */
+    font-size: 0.75rem;
+    font-weight: 500;
+    /*! font-family: Verdana, sans-serif; */    
+    /*! text-transform: uppercase; */        
+    /*! padding: 5px 10px; */
+    /*! position: unset; */
+    /*! top: 0; */
+    /*! left: 0; */    
+    width: 5rem;
+    display: inline-block;
+    margin-right: 2rem;
+}
+.resp-tab td {
+        width: 100%;
+	/*! position: relative; */
+        margin: 0 -1px -1px 0;
+        display: flex;
+        align-items: center;
+        /*! justify-content: space-between; */
+        /*! text-align: end; */
+    }
+.resp-tab thead {
+        display: none;
+    }
+.resp-tab tr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
