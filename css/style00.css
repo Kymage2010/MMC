@@ -194,13 +194,6 @@ button {
     /*! background: #FCF; */
 }
 
-footer {
-    background: var(--red);
-    color: var(--white);
-    /*! font-size: 0.875rem; */
-    /*! font-weight: 500; */
-}
-
 .top_black {
     display: flex;
     width: 100%;
@@ -309,6 +302,9 @@ video {
 #main_menu .wrap .box .burger{
 	cursor: pointer;
 }
+#main_menu .wrap .box .to_down{
+	position: relative;
+}
 #main_menu .wrap .box ul {
     display: none;
     position: absolute;
@@ -337,11 +333,8 @@ video {
     border: solid 1px var(--white);
     color: var(--white);
 }
-
-main .red_select_to {
-    background: var(--red);
-    color: var(--white);
-    /*! display: none; */
+main .red_select_to .wrap .box .button.open_to{
+	display: none;
 }
 
 main .select_car .box {
@@ -398,6 +391,16 @@ main .select_car .cars .item .list_service {
     transform: scaleX(0);
 }
 
+main .red_select_to {
+    background: var(--red);
+    color: var(--white);
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top: 15rem;
+}
+
 main .red_select_parts {
     background: var(--red);
     color: var(--white);
@@ -406,6 +409,15 @@ main .red_select_parts {
 main .red_select_parts .box,
 main .red_select_to .box {
     width: 100%;
+}
+
+main .red_select_parts .title,
+main .red_select_to .title{
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    /*! padding-bottom: 1rem; */
 }
 
 main .red_select_parts .select_s {
@@ -418,15 +430,6 @@ main .red_select_to .select_s form{
 main .red_select_parts .select_s .box,
 main .red_select_to .select_s .box{
     width: 100%
-}
-
-main .red_select_parts .title,
-main .red_select_to .title{
-    display: none;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-    /*! padding-bottom: 1rem; */
 }
 
 main .red_select_parts .button
@@ -456,15 +459,36 @@ main .red_select_to .button{
     box-shadow: var(--shadow);
 }
 
+
+/* select end*/
+
+main .about {
+    margin: 2rem 0 1rem 0;
+}
+
+main .about .title {
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main .about .text {}
+
+main .about .text p {
+    margin-bottom: 1rem;
+}
+
+main .about .text p a {}
+
 /* select*/
 
 .select_custom {
     position: relative;
     /*! height: 3rem; */
     /*! border-radius: 6px; */
-    margin: 2.5rem 0 2rem 0;
+    margin: 2.5rem 0 1rem 0;
     display: flex;
     /*! align-items: center; */
+    width: 100%;
 }
 
 .select_custom input {
@@ -524,25 +548,12 @@ main .red_select_to .button{
     background: var(--lihgt_grey);
 }
 
-
-/* select end*/
-
-main .about {
-    margin: 2rem 0 1rem 0;
+footer {
+    background: var(--red);
+    color: var(--white);
+    /*! font-size: 0.875rem; */
+    /*! font-weight: 500; */
 }
-
-main .about .title {
-    line-height: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-main .about .text {}
-
-main .about .text p {
-    margin-bottom: 1rem;
-}
-
-main .about .text p a {}
 
 footer .wrap {
     padding: 2rem 0;
@@ -578,6 +589,17 @@ footer .item span {
     margin-top: 1rem;
     display: block;
     font-weight: 300;
+}
+
+.box_slide {
+    margin: 1rem;
+}
+
+.front_side,
+.back_side {
+    /*! width: 28rem; */
+    height: 14rem;
+    overflow: hidden;
 }
 
 .slide .title {
@@ -646,17 +668,6 @@ footer .item span {
     /*! width: 100%; */
 }
 
-.box_slide {
-    margin: 1rem;
-}
-
-.front_side,
-.back_side {
-    /*! width: 28rem; */
-    height: 14rem;
-    overflow: hidden;
-}
-
 .slide .front_side,
 .slide .back_side {
     backface-visibility: hidden;
@@ -689,4 +700,8 @@ footer .item span {
     position: relative;
     /*! background: #839b4f; */
     height: 100%;
+}
+#show_to, #show_parts{
+	display: none;
+	flex-flow: column wrap;
 }

@@ -172,10 +172,6 @@ video {
 	/*! padding: 1rem 0; */
 }
 
-main .red_select_to {
-	display: flex;
-}
-
 main .select_car .title {
 	color: var(--red);
 	background: none;
@@ -243,6 +239,11 @@ main .select_car .box {
 	background: none;
 }
 
+main .red_select_to {
+	display: flex;
+	position: static;
+}
+
 main .red_select_parts .select_s,
 main .red_select_to .select_s{
 	display: block;
@@ -260,6 +261,14 @@ main .red_select_to .select_s{
 	/*! justify-content: space-between; */
 	justify-content: center;
 	flex-flow: row wrap;
+}
+
+main .red_select_parts .search,
+main .red_select_to .search{
+	/*! width: 6rem; */
+	/*! padding: 10rem; */
+	/*! margin: 0 auto; */
+	width: 100%;
 }
 
 main .red_select_parts .select_s select_custom{}
@@ -289,20 +298,17 @@ footer .item {
 .select_custom {
 	/*! min-width: 18rem; */
 	margin: 2.5rem 1rem 1rem 1rem;
+	width: auto;
 }
 
 .open {
 	display: none;
 }
 
-main .red_select_parts .search,
-main .red_select_to .search{
-	/*! width: 6rem; */
-	/*! padding: 10rem; */
-	/*! margin: 0 auto; */
-	width: 100%;
-}
-
 .box_slide {
 	margin: 2rem 1rem;
+}
+#show_to, #show_parts{
+	display: flex;
+	flex-flow: row wrap;
 }

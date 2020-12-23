@@ -21,10 +21,10 @@
     <div class="top_black">
         <div class="wrap">
             <div class="box" id="location_icon">
-                <a href="#" title="Контакты"><img src="images/icon-location-white.svg" alt="Контакты" /><span>г. Москва, Шоссейная ул. д.90 стр.5</span></a>
+                <a href="yandexnavi://build_route_on_map?lat_to=55.39&lon_to=37.42" title="Поехали"><img src="images/icon-location-white.svg" alt="Контакты" /><span>г. Москва, Шоссейная ул. д.90 стр.5</span></a>
             </div>
             <div class="box" id="phone_icon">
-                <a href="#" title="Телефон"><img src="images/icon-phone-white.svg" alt="Телефон" /><span>495 500-70-32</span></a>
+                <a href="tel:+74955007032" title="Позвонить"><img src="images/icon-phone-white.svg" alt="Телефон" /><span>495 500-70-32</span></a>
             </div>
             <div class="box" id="lk_icon">
                 <a href="#" title="Личный кабинет"><img src="images/icon-account-white.svg" alt="Личный кабинет" /></a>
@@ -97,7 +97,7 @@
                 </ul>
                 <div class="to_down">
                     <div class="button">
-                        <button>Сколько стоит плановое ТО?</button>
+                        <button >Сколько стоит плановое ТО?</button>
                     </div>
                 </div>
             </div>
@@ -193,8 +193,8 @@
 					<div class="title">
                             <h1>Сколько стоит плановое ТО?</h1>
                         </div>
-						<button class="button open_to">Сколько стоит плановое ТО?</button>
-						<div class="select_s">
+						<button class="button open_to" onclick="(document.getElementById('show_to').style.display='flex')">Сколько стоит плановое ТО?</button>
+						<div class="select_s" id="show_to">
                             <!-- -->
                                 <div class="select_custom">
 									
@@ -541,9 +541,9 @@
                 <div class="wrap">
                     <div class="box">
                         <div class="title">Подбор запчастей</div>
-                        <button class="button open">Подбор запчастей</button>
+                        <button class="button open" onclick="(document.getElementById('show_parts').style.display='flex')">Подбор запчастей</button>
                         <!-- группа с формой -->
-                        <div class="select_s">
+                        <div class="select_s" id="show_parts">
                             
                                 <div class="select_custom">
 									
