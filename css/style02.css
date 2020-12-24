@@ -296,7 +296,7 @@ footer .item {
 }
 
 .select_custom {
-	/*! min-width: 18rem; */
+	min-width: 22rem;
 	margin: 2.5rem 1rem 1rem 1rem;
 	width: auto;
 }
@@ -311,4 +311,83 @@ footer .item {
 #show_to, #show_parts{
 	display: flex;
 	flex-flow: row wrap;
+}
+.resp-tab {
+    /*! max-width: 60rem; */
+}
+.resp-tab .count {
+    display: table-cell;
+    /*! align-items: center; */
+    width: 8rem;
+    text-align: center;
+}
+.resp-tab .count .minus {
+    float: left;
+}
+
+.resp-tab .count .plus {
+  float: right;
+}
+.resp-tab thead {
+    display: table-header-group;
+}
+.resp-tab tr {
+    display: table-row;
+    /*! flex-direction: row; */
+    /*! flex-wrap: wrap; */
+    
+    max-width: 20rem;
+}
+.resp-tab th, .resp-tab td {
+    /*! padding: 10px 20px; */
+    /*! font-size: 13px; */
+    /*! border: none; */
+    /*! font-family: Verdana, sans-serif; */    
+    /*! border: 1px solid var(--grey); */
+    /*! vertical-align: top; */
+    display: table-cell;
+    width: auto;
+}
+.resp-tab th {
+    /*! color: #FFF; */
+    /*! background: #337AB7; */
+    /*! font-weight: bold; */
+    /*! border: 1px solid #1a4a73; */    
+    /*! text-transform: uppercase; */    
+    /*! text-align: center; */    
+}
+.resp-tab tr:nth-child(even) {
+   background: var(--lihgt_grey);
+}
+.resp-tab td span {
+    background: #337AB7;
+    color: #FFF;
+    display: none;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;    
+    text-transform: uppercase;        
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;    
+}
+.input_custom {min-width: calc(50% - 1rem);margin: 1rem 0;}
+.confirm form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.checkbox{
+    
+	width: 100%;
+	justify-content: flex-start;
+	margin: 1rem 0;
+}
+.checkbox span{min-width: 25%;/*! justify-content: right; */}
+.popup_wrap .popup .select_custom {
+    /*! border: 1px solid var(--grey); */
+    /*! border-radius: 6px; */
+    margin: 1rem 0;
+    width: calc(50% - 1rem);
 }

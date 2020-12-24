@@ -284,3 +284,21 @@ footer .wrap {
 	display: none;
 	flex-flow: row wrap;
 }
+.resp-tab thead {
+        display: none;
+    }
+    .resp-tab tr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .resp-tab td {
+        margin: 0 -1px -1px 0;
+        
+        
+        width: 50%;
+    }
+    .resp-tab td span {
+        display: block;
+    }
