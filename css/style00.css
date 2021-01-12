@@ -183,6 +183,12 @@ button {
     /*! min-width: 6rem; */
     /*! text-align: center; */
     justify-content: center;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover,
+.button:hover {
+    filter: saturate(1.1);
 }
 
 .content main {
@@ -1373,9 +1379,11 @@ main .page_service .info_table table td {
     font-weight: 600;
     /*! font-size: 1.1rem; */
 }
-.select_parts{
+
+.select_parts {
     margin: 2rem 0;
 }
+
 .select_parts .select_s {
     display: flex;
     justify-content: center;
@@ -1416,6 +1424,9 @@ main .page_service .info_table table td {
     margin-bottom: 2rem;
     max-width: calc(50% - 1rem);
     min-width: 17rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .select_parts .list_parts .item:hover {
@@ -1557,7 +1568,12 @@ main .page_service .info_table table td {
     margin: 2rem 0;
 }
 
-.search_advanced .search_input {/*! display: none; */width: 100%;/*! background: blue; */max-width: 37rem;}
+.search_advanced .search_input {
+    /*! display: none; */
+    width: 100%;
+    /*! background: blue; */
+    max-width: 37rem;
+}
 
 .search_advanced .search_input #search_number {
     display: flex;
@@ -1584,5 +1600,20 @@ main .page_service .info_table table td {
     border-radius: 0 5px 5px 0;
 }
 
-.search_advanced .search_vin {/*! background: blueviolet; */margin-top: 2rem;border-radius: 6px;}
-.search_advanced .search_vin .button{margin: 0;background: var(--lihgt_grey);border: solid 1px var(--red);color: var(--red);}
+.search_advanced .search_vin {
+    /*! background: blueviolet; */
+    margin-top: 2rem;
+    border-radius: 6px;
+}
+
+.search_advanced .search_vin .button {
+    margin: 0;
+    background: var(--lihgt_grey);
+    border: solid 1px var(--red);
+    color: var(--red);
+}
+
+.single {
+    width: 100%;
+    padding: 1rem;
+}
