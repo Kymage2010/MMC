@@ -13,7 +13,8 @@
     <!-- подключаем jquery -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <link href="css/swiper.css" rel="stylesheet" /> </head>
+    <link href="css/swiper.css" rel="stylesheet" />
+</head>
 
 <body>
     <!-- header -->
@@ -111,7 +112,8 @@
             <div class="page_title">
                 <div class="wrap">
                     <div class="box">
-                        <h1>Сервис и ремонт автомобилей Mitsubishi</h1> </div>
+                        <h1>Сервис и ремонт автомобилей Mitsubishi</h1>
+                    </div>
                 </div>
             </div>
             <!-- тело раздела -->
@@ -120,6 +122,9 @@
                     <div class="dynamic">
                         <div class="box pic"> <img src="images/L200-2015-.jpg" alt="model" /> </div>
                         <div class="box">
+                            
+                            
+                            <!-- old
                             <div class="select_custom">
                                 <div class="label">Раздел</div> <span class="icon"><img src="images/01-car-repair.svg" alt="Select" /></span>
                                 <input type="text" onclick="(document.getElementById('list_service').style.display='block')" value="Плановое техобслуживание" name="service_type" readonly> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
@@ -128,7 +133,7 @@
                                         <li><span class="icon"><img src="images/01-car-repair.svg" alt="Плановое техобслуживание" /></span>Плановое техобслуживание</li>
                                         <li><span class="icon"><img src="images/02-break.svg" alt="Тормозная система" /></span>Тормозная система</li>
                                         <li><span class="icon"><img src="images/03-suspension.svg" alt="Ходовая часть" /></span>Ходовая часть</li>
-                                        <!-- <li><span class="icon"><img src="images/04-tire.svg" alt="Шиномонтаж" /></span>Шиномонтаж</li> -->
+                                       
                                         <li><span class="icon"><img src="images/05-gearshift.svg" alt="Трансмиссия и сцепление" /></span>Трансмиссия и сцепление</li>
                                         <li><span class="icon"><img src="images/06-steering-wheel.svg" alt="Рулевое управление" /></span>Рулевое управление</li>
                                         <li><span class="icon"><img src="images/07-snowflake.svg" alt="Система кондиционирования" /></span>Система кондиционирования</li>
@@ -137,49 +142,59 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="select_custom">
-                                <div class="label">Модель</div>
-                                <input type="text" placeholder="Выберите" onclick="" readonly> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select" id="list_model">
-                                    <ul>
-                                        <li>01</li>
-                                        <li>02</li>
-                                        <li>03</li>
-                                        <li>04</li>
-                                    </ul>
+                           old -->
+                            
+                            <!-- -->
+                                <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Раздел</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">Плановое техобслуживание</option>
+                                        <option value="02">Тормозная система</option>
+                                        <option value="03">Ходовая часть</option>
+                                        <option value="03">Трансмиссия и сцепление</option>
+                                        <option value="03">Рулевое управлени</option>
+                                        <option value="03">Система кондиционирования</option>
+                                        <option value="03">Диагностика</option>
+                                        <option value="03">Электроборудование и освещение</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="select_custom">
-                                <div class="label">Модификация</div>
-                                <input type="text" placeholder="Выберите" onclick="" readonly> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select" id="list_specific">
-                                    <ul>
-                                        <li>Т01</li>
-                                        <li>02</li>
-                                        <li>Т03</li>
-                                    </ul>
+                                <!-- -->
+                            
+                            
+                            <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Модель</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">05</option>
+                                        <option value="02">06а</option>
+                                        <option value="03">07</option>
+                                        <option value="03">08</option>
+                                        
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="select_custom">
-                                <div class="label">Пробег</div>
-                                <input type="text" placeholder="Выберите" onclick="(document.getElementById('list_odometr').style.display='block')" readonly> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select" id="list_odometr">
-                                    <ul>
-                                        <li>15 000 км. - ТО-1</li>
-                                        <li>30 000 км. - ТО-2</li>
-                                        <li>45 000 км. - ТО-3</li>
-                                        <li>60 000 км. - ТО-4</li>
-                                        <li>ТО-5 (75 000 км)</li>
-                                        <li>ТО-6 (90 000 км)</li>
-                                        <li>ТО-7 (105 000 км)</li>
-                                        <li>ТО-8 (120 000 км)</li>
-                                        <li>ТО-9 (135 000 км)</li>
-                                        <li>ТО-10 (150 000 км)</li>
-                                        <li>ТО-11 (165 000 км)</li>
-                                        <li>ТО-12 (180 000 км)</li>
-                                    </ul>
+                            <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Модификация</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">05</option>
+                                        <option value="02">06а</option>
+                                        <option value="03">07</option>
+                                        <option value="03">08</option>
+                                        
+                                    </select>
                                 </div>
-                            </div>
+                            <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Пробег</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">05</option>
+                                        <option value="02">06а</option>
+                                        <option value="03">07</option>
+                                        <option value="03">08</option>
+                                        
+                                    </select>
+                                </div>
                         </div>
                         <div class="box">
                             <div class="table_calculate">
@@ -214,7 +229,7 @@
                             </div>
                         </div>
                         <div class="box">
-                        <div class="table_calculate">
+                            <div class="table_calculate">
                                 <table>
                                     <tbody>
                                         <tr>
@@ -253,159 +268,159 @@
                                 </table>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="resume">
                         <div class="box">
-                        <div class="total_record">
-							<div class="money">Итого: 927 940 ₽</div>
-							<button class="button" type="submit">Записаться на ТО</button>
-							</div>
-                        
+                            <div class="total_record">
+                                <div class="money">Итого: 927 940 ₽</div>
+                                <button class="button" type="submit">Записаться на ТО</button>
+                            </div>
+
                         </div>
                     </div>
                     <div class="info_table">
                         <div class="box">
-						
-						<table>
-  <tbody>
-    <tr>
-      <th>ПРОБЕГ (тыс.км.)</th>
-      <th>15</th>
-      <th>30</th>
-      <th>45</th>
-      <th>60</th>
-      <th>75</th>
-      <th>90</th>
-      <th>105</th>
-      <th>120</th>
-    </tr>
-    <tr>
-      <th scope="row">Моторное масло</th>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-    </tr>
-    <tr>
-      <th scope="row">Масляный фильтр</th>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-    </tr>
-    <tr>
-      <th scope="row">Воздушный фильтр</th>
-      <td>&nbsp;</td>
-      <td>x</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-    </tr>
-    <tr>
-      <th scope="row">Салонный фильтр</th>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-      <td>x</td>
-    </tr>
-    <tr>
-      <th scope="row">Свечи зажигания</th>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-     <td>x</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-    </tr>
-    <tr>
-      <th scope="row">Антифриз</th>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-    </tr>
-    <tr>
-      <th scope="row">Тормозная жидкость</th>
-      <td>&nbsp;</td>
-      <td>x</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-    </tr>
-    <tr>
-      <th scope="row">Ремень ГРМ</th>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <th scope="row">Топливный фильтр</th>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-    </tr>
-    <tr>
-      <th scope="row">Масло АКП</th>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <th scope="row">Масло МКПП</th>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>x</td>
-      <td>&nbsp;</td>
-    </tr>
-  </tbody>
-</table>
 
-						
-						</div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>ПРОБЕГ (тыс.км.)</th>
+                                        <th>15</th>
+                                        <th>30</th>
+                                        <th>45</th>
+                                        <th>60</th>
+                                        <th>75</th>
+                                        <th>90</th>
+                                        <th>105</th>
+                                        <th>120</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Моторное масло</th>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Масляный фильтр</th>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Воздушный фильтр</th>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Салонный фильтр</th>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Свечи зажигания</th>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Антифриз</th>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Тормозная жидкость</th>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Ремень ГРМ</th>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Топливный фильтр</th>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Масло АКП</th>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Масло МКПП</th>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>x</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -418,85 +433,69 @@
                         <button class="button open" onclick="(document.getElementById('show_parts').style.display='flex')">Подбор запчастей</button>
                         <!-- группа с формой -->
                         <div class="select_s" id="show_parts">
-                            <div class="select_custom">
-                                <div class="label">Марка</div>
-                                <form>
-                                    <input type="text" placeholder="Выберите" onclick="" disabled> </form> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select">
-                                    <ul>
-                                        <li>Mitsubishi</li>
-                                        <li>Mazda</li>
-                                        <li>Honda</li>
-                                        <li>Hyundai</li>
-                                        <li>Land Rover</li>
-                                        <li>Ford</li>
-                                        <li>Kia</li>
-                                        <li>Peugeot</li>
-                                        <li>Nissan</li>
-                                        <li>Subaru</li>
-                                        <li>Toyota</li>
-                                        <li>Citroen</li>
-                                    </ul>
-                                </div>
+                            <div class="custom_select">
+                                <label for="marka">Марка</label>
+                                <select id="marka" name="marka">
+                                    <option value="empty">&nbsp;</option>
+                                    <option value="Mitsubishi">Mitsubishi</option>
+                                    <option value="Mazda">Mazda</option>
+                                    <option value="Honda">Honda</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="Land Rover">Land Rover</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Kia">Kia</option>
+                                    <option value="Peugeot">Peugeot</option>
+                                    <option value="Nissan">Nissan</option>
+                                    <option value="Subaru">Subaru</option>
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Citroen">Citroen</option>
+                                </select>
                             </div>
                             <!-- -->
-                            <div class="select_custom">
-                                <div class="label">Модель</div>
-                                <form>
-                                    <input type="text" placeholder="Выберите" onclick="" disabled> </form> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select">
-                                    <ul>
-                                        <li>01</li>
-                                        <li>02</li>
-                                        <li>03</li>
-                                        <li>04</li>
-                                        <li>05</li>
-                                    </ul>
-                                </div>
+                            <!-- -->
+                            <div class="custom_select">
+                                <label for="model">Модель</label>
+                                <select id="model" name="model">
+                                    <option value="empty">&nbsp;</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                </select>
                             </div>
                             <!-- -->
-                            <div class="select_custom">
-                                <div class="label">Запчасть</div>
-                                <form>
-                                    <input type="text" placeholder="Выберите" onclick="" disabled> </form> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select">
-                                    <ul>
-                                        <li>01</li>
-                                        <li>02</li>
-                                        <li>03</li>
-                                        <li>04</li>
-                                        <li>05</li>
-                                    </ul>
-                                </div>
+                            <!-- -->
+                            <div class="custom_select">
+                                <label for="zapch">Запчасть</label>
+                                <select id="zapch" name="zapch">
+                                    <option value="empty">&nbsp;</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                </select>
                             </div>
-                            <div class="select_custom">
-                                <div class="label">Двигатель</div>
-                                <form>
-                                    <input type="text" placeholder="Выберите" onclick="" disabled> </form> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select">
-                                    <ul>
-                                        <li>01</li>
-                                        <li>02</li>
-                                        <li>03</li>
-                                        <li>04</li>
-                                        <li>05</li>
-                                    </ul>
-                                </div>
+                            <!-- -->
+                            <!-- -->
+                            <div class="custom_select">
+                                <label for="engine">Двигатель</label>
+                                <select id="engine" name="engine">
+                                    <option value="empty">&nbsp;</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                </select>
                             </div>
-                            <div class="select_custom">
-                                <div class="label">Кузов</div>
-                                <form>
-                                    <input type="text" placeholder="Выберите" onclick="" disabled> </form> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select">
-                                    <ul>
-                                        <li>01</li>
-                                        <li>02</li>
-                                        <li>03</li>
-                                        <li>04</li>
-                                        <li>05</li>
-                                    </ul>
-                                </div>
+                            <!-- -->
+                            <!-- -->
+                            <div class="custom_select">
+                                <label for="body">Кузов</label>
+                                <select id="body" name="body">
+                                    <option value="empty">&nbsp;</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                </select>
                             </div>
+                            <!-- -->
                             <div class="search">
                                 <button class="button" type="submit">Найти</button>
                             </div>
@@ -505,6 +504,7 @@
                     </div>
                 </div>
             </div>
+            <!-- -->
             <!-- -->
             <!-- слайдер начало -->
             <div class="wrap">
@@ -519,7 +519,8 @@
                                     <div class="flipper">
                                         <div class="front_side">
                                             <div class="title">
-                                                <h3>Заголовок первой новости повествующий о всяком разном</h3> </div>
+                                                <h3>Заголовок первой новости повествующий о всяком разном</h3>
+                                            </div>
                                             <div class="pic"><img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
                                         </div>
                                         <div class="back_side">
@@ -538,7 +539,8 @@
                                     <div class="flipper">
                                         <div class="front_side">
                                             <div class="title">
-                                                <h3>Заголовок второй новости о всяком</h3> </div>
+                                                <h3>Заголовок второй новости о всяком</h3>
+                                            </div>
                                             <div class="pic"><img src="images/demo-02.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
                                         </div>
                                         <div class="back_side">
@@ -557,7 +559,8 @@
                                     <div class="flipper">
                                         <div class="front_side">
                                             <div class="title">
-                                                <h3>Заголовок третьей новости</h3> </div>
+                                                <h3>Заголовок третьей новости</h3>
+                                            </div>
                                             <div class="pic"><img src="images/demo-03.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
                                         </div>
                                         <div class="back_side">
@@ -581,7 +584,8 @@
                 <section class="about">
                     <div class="box">
                         <div class="title">
-                            <h2>Техцентр Mitsubishi - мы выполняем ремонт Митсубиси качественно и в кратчайшие сроки.</h2> </div>
+                            <h2>Техцентр Mitsubishi - мы выполняем ремонт Митсубиси качественно и в кратчайшие сроки.</h2>
+                        </div>
                         <div class="text">
                             <p>Nulla ut in quis nulla excepteur eiusmod elit ad cillum amet exercitation. Esse non est amet ut aliqua dolore adipisicing Lorem culpa quis ut Lorem reprehenderit. Do qui ad qui ut nulla. Aliqua commodo aliqua eiusmod enim adipisicing id duis nulla aliquip dolor consectetur amet nulla quis. Sit anim ut amet sit dolor enim ea voluptate tempor voluptate et adipisicing.</p>
                             <p>Consequat ea sit ad veniam aliqua dolor duis officia voluptate. Fugiat pariatur magna consequat nostrud incididunt adipisicing qui esse.</p>
@@ -629,11 +633,12 @@
             </div>
             <div class="item">
                 <div class="box">
-                    <div class="logo"><img src="images/logo-white.svg" alt="ММС-Плюс" /></div> <span>ООО «ММС-Плюс» © 2020</span> </div>
+                    <div class="logo"><img src="images/logo-white.svg" alt="ММС-Плюс" /></div> <span>ООО «ММС-Плюс» © 2020</span>
+                </div>
             </div>
         </div>
     </footer>
-    <!-- popup -->
+     <!-- popup -->
     <div class="popup_wrap" id="popup_shop">
         <div class="popup">
             <!-- Заказ -->
@@ -709,18 +714,18 @@
                         <input type="password" id="pass"> </div>
                     <div class="checkbox">
                         <div class="title">Оформление</div> <span>
-                            <input type="radio" id="fl" name="user_type" value="Физическое лицо" checked="">
-                            <label for="fl">Физическое лицо</label></span> <span>
-                            <input type="radio" id="yl" name="user_type" value="Юридическое лицо"><label for="fl">Юридическое лицо</label></span> </div>
+                        <input type="radio" id="fl" name="user_type" value="Физическое лицо" checked="">
+                        <label for="fl">Физическое лицо</label></span> <span>
+                        <input type="radio" id="yl" name="user_type" value="Юридическое лицо"><label for="fl">Юридическое лицо</label></span> </div>
                     <div class="checkbox">
                         <div class="title">Доставка</div> <span>
-                            <input type="radio" id="self" name="delivery_method" value="Самовывоз" checked=""><label for="self">Самовывоз</label></span> <span>
-                            <input type="radio" id="home" name="delivery_method" value="Внутри МКАД (350р.)"><label for="home">Внутри МКАД (350р.)</label></span> </div>
+                        <input type="radio" id="self" name="delivery_method" value="Самовывоз" checked=""><label for="self">Самовывоз</label></span> <span>
+                        <input type="radio" id="home" name="delivery_method" value="Внутри МКАД (350р.)"><label for="home">Внутри МКАД (350р.)</label></span> </div>
                     <div class="checkbox">
                         <div class="title">Оплата</div> <span>
-                            <input type="radio" id="cash" name="payment_method" value="Наличными" checked=""><label for="cash">Наличными</label></span> <span>
-                            <input type="radio" id="Card" name="payment_method" value="Картой"><label for="Card">Картой</label></span> <span>
-                            <input type="radio" id="bank" name="payment_method" value="Банковский перевод"><label for="bank">Банковский перевод</label></span> </div>
+                        <input type="radio" id="cash" name="payment_method" value="Наличными" checked=""><label for="cash">Наличными</label></span> <span>
+                        <input type="radio" id="Card" name="payment_method" value="Картой"><label for="Card">Картой</label></span> <span>
+                        <input type="radio" id="bank" name="payment_method" value="Банковский перевод"><label for="bank">Банковский перевод</label></span> </div>
                     <div class="input_custom textarea">
                         <label for="pass">Комментарий/Пожелания</label>
                         <textarea></textarea>
@@ -739,7 +744,7 @@
             <!-- Запись на ТО -->
             <div class="title">
                 <h3>Записаться на ТО</h3>
-                <div class="close"><img src="images/icon-close-white.svg" alt="Закрыть" title="Закрыть" /></div>
+                <div class="close"><img src="images/icon-close-red.svg" alt="Закрыть" title="Закрыть" /></div>
             </div>
             <div class="confirm">
                 <form>
@@ -755,51 +760,55 @@
                     <div class="input_custom">
                         <label for="mail">Почта</label>
                         <input type="email" id="mail"> </div>
-                    <div class="select_custom">
-                        <div class="label">Марка</div>
-                        <input type="text" placeholder="Выберите" onclick="" disabled> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                        <div class="list_select">
-                            <ul>
-                                <li>Mitsubishi</li>
-                                <li>Mazda</li>
-                                <li>Honda</li>
-                                <li>Hyundai</li>
-                                <li>Land Rover</li>
-                                <li>Ford</li>
-                                <li>Kia</li>
-                                <li>Peugeot</li>
-                                <li>Nissan</li>
-                                <li>Subaru</li>
-                                <li>Toyota</li>
-                                <li>Citroen</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="select_custom">
-                        <div class="label">Модификация</div>
-                        <input type="text" placeholder="Выберите" onclick="" disabled> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                        <div class="list_select">
-                            <ul>
-                                <li>01</li>
-                                <li>02</li>
-                                <li>03</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Марка</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">05</option>
+                                        <option value="02">06а</option>
+                                        <option value="03">07</option>
+                                        <option value="03">08</option>
+                                        
+                                    </select>
+                                </div>
+                    <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Модификация</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">05</option>
+                                        <option value="02">06а</option>
+                                        <option value="03">07</option>
+                                        <option value="03">08</option>
+                                        
+                                    </select>
+                                </div>
                     <!-- -->
                     <!-- -->
-                    <div class="select_custom">
-                        <div class="label">Пробег</div>
-                        <input type="text" placeholder="Выберите" onclick="" disabled> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                        <div class="list_select">
-                            <ul>
-                                <li>01</li>
-                                <li>02</li>
-                                <li>03</li>
-                                <li>04</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Пробег</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">05</option>
+                                        <option value="02">06а</option>
+                                        <option value="03">07</option>
+                                        <option value="03">08</option>
+                                        
+                                    </select>
+                                </div>
+                    <!-- -->
+                    <!-- -->
+                   <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Работы</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">05</option>
+                                        <option value="02">06а</option>
+                                        <option value="03">07</option>
+                                        <option value="03">08</option>
+                                        
+                                    </select>
+                                </div>
+                    <!-- -->
                     <div class="input_custom textarea">
                         <label for="pass">Комментарий/Пожелания</label>
                         <textarea></textarea>
@@ -814,6 +823,7 @@
     </div>
     <!-- end popup wrap-->
     <script src="js/swiper_init.js"></script>
+    <script src="js/custom_select.js"></script>
 </body>
 
 </html>

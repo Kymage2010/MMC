@@ -414,6 +414,7 @@ main .red_select_to {
     z-index: 100;
     width: 100%;
     top: 15rem;
+    /*! box-shadow: var(--shadow); */
 }
 
 main .red_select_parts {
@@ -428,7 +429,7 @@ main .red_select_to .box {
 
 main .red_select_parts .title,
 main .red_select_to .title {
-    display: none;
+    /*! display: none; */
     text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
@@ -459,7 +460,7 @@ main .red_select_parts .button {
     /*! height: 2.5rem; */
     padding: 1rem;
     width: 14rem;
-    box-shadow: var(--shadow);
+    /*! box-shadow: var(--shadow); */
 }
 
 main .red_select_to .button {
@@ -473,7 +474,7 @@ main .red_select_to .button {
     padding: 1rem;
     /*! display: none; */
     width: 14rem;
-    box-shadow: var(--shadow);
+    /*! box-shadow: var(--shadow); */
 }
 
 
@@ -499,13 +500,14 @@ main .about .text p a {}
 
 /* select*/
 
+
+/*
 .select_custom {
     position: relative;
-    /*! height: 3rem; */
-    /*! border-radius: 6px; */
+    
     margin: 2.5rem 0 1rem 0;
     display: flex;
-    /*! align-items: center; */
+    
     width: 100%;
 }
 
@@ -517,17 +519,17 @@ main .about .text p a {}
     font-size: 1rem;
     padding-left: 1rem;
     cursor: pointer;
-    /*! filter: none; */
+    
     background: var(--white);
 }
 
 .select_custom span {
     background: var(--white);
     border-radius: 0 6px 6px 0;
-    /*! padding: 0.25rem; */
+    
     height: 3rem;
     cursor: pointer;
-    /*! transform: rotate; */
+    
     padding-top: 0.15rem;
 }
 
@@ -556,12 +558,159 @@ main .about .text p a {}
 }
 
 .select_custom .list_select ul li {
-    /*! margin-bottom: 1rem; */
+    
     transition: ease-in-out 0.3s;
     padding: 0.5rem 1rem;
-    /*! margin-bottom: 1rem; */
-    /*! background: antiquewhite; */
+
 }
+*/
+
+
+/* ------------- */
+
+
+/*custom select input*/
+
+.custom_select,
+.custom_input {
+    position: relative;
+    /*! font-family: Arial; */
+    margin: 1.5rem 0;
+    width: auto;
+    min-width: 15rem;
+    color: var(--black);
+    font-size: 0.875rem;
+}
+
+.custom_select label,
+.custom_input label {
+    font-size: 0.75rem;
+    /*! opacity: 0.75; */
+    position: absolute;
+    top: -1.25rem;
+    /*! background: white; */
+    left: 0.5rem;
+    padding: 0 0.25rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.custom_select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.custom_select select .default_select {
+    color: red;
+}
+
+.select_selected {
+    background-color: white;
+}
+
+
+/*style the arrow inside the select element:*/
+
+.select_selected:after {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0;
+    /*! width: 0; */
+    /*! height: 0; */
+    /*! border: 6px solid transparent; */
+    /*! border-color: #fff transparent transparent transparent; */
+    background: url(../images/icon_arrow_black_down.svg);
+    width: 48px;
+    height: 48px;
+    /*! font-family: "Material Icons"; */
+    /*! font-size: 1.5rem; */
+    transition: ease-in-out 0.3s;
+    /*! background: aquamarine; */
+}
+
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select_selected.select_arrow_active:after {
+    /*! border-color: transparent transparent #fff transparent; */
+    transform: rotate(180deg);
+    transform-origin: center;
+}
+
+
+/*style the items (options), including the selected item:*/
+
+.select_selected,
+.custom_input input {
+    /*! color: #ffffff; */
+    /*! padding: 8px 16px; */
+    border: 1px solid transparent;
+    /*! border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+    cursor: pointer;
+    user-select: none;
+    /*! line-height: 2rem; */
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    /*! border: solid 1px var(--grey); */
+    width: 100%;
+    font-size: 0.875rem;
+    transition: ease-in-out 0.3s;
+}
+
+
+/*style items (options):*/
+
+.select_items {
+    position: absolute;
+    background-color: white;
+    top: 2.75rem;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    overflow: auto;
+    max-height: 12rem;
+}
+
+.select_items div {
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    /*! font-size: 0.875rem; */
+}
+
+
+/*hide the items when the select box is closed:*/
+
+.select_hide {
+    display: none;
+}
+
+.select_items div:hover,
+.same_as_selected {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.custom_input input:focus {
+    border: solid 1px black;
+}
+
+.custom_select.on_white,
+.custom_input.on_white {
+    margin: 0;
+    border: solid 1px var(--red);
+    border-radius: 5px;
+    margin: 2.5rem 0;
+}
+
+.custom_select label.on_white,
+.custom_input label.on_white {
+    color: var(--red);
+}
+
+
+/* end custom forms*/
 
 main .page_service .dynamic .select_custom .list_select ul li .icon {
     height: 1.5rem;
@@ -839,8 +988,8 @@ footer .item span {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white);
-    background: var(--black);
+    color: var(--red);
+    /*! background: var(--black); */
     /*! margin-bottom: 0.5rem; */
     border-radius: 5px 5px 0 0;
 }
@@ -999,7 +1148,7 @@ footer .item span {
     font-family: 'Jost', sans-serif;
     /*! min-width: 50%; */
     font-size: 0.875rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
     width: 100%;
 }
 
@@ -1082,7 +1231,7 @@ footer .item span {
     content: "*";
     color: var(--red);
     position: absolute;
-    top: 0.65rem;
+    top: 0.5rem;
     /*! height: 3rem; */
     /*! background: antiquewhite; */
     /*! line-height: 4rem; */
@@ -1091,14 +1240,14 @@ footer .item span {
     font-size: 1.5rem;
 }
 
-.popup_wrap .popup .select_custom {
+.popup_wrap .popup .custom_select {
     border: 1px solid var(--grey);
     border-radius: 6px;
-    margin: 2.5rem 0;
+    margin: 1.5rem 0;
     width: 100%;
 }
 
-.popup_wrap .popup .select_custom input {
+.popup_wrap .popup .custom_select input {
     background: var(--lihgt_grey);
 }
 
@@ -1140,9 +1289,11 @@ footer .item span {
 .table_calculate table td a {
     text-decoration: underline dotted;
 }
-.table_calculate table td a:hover{
+
+.table_calculate table td a:hover {
     color: var(--red);
 }
+
 .table_calculate table tr:nth-child(2n) {
     background: var(--lihgt_grey);
 }
@@ -1175,7 +1326,7 @@ main .page_service .resume .total_record .button {
     background: var(--red);
     color: var(--white);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     /*! line-height: 3rem; */
     height: 4rem;
 }
@@ -1222,3 +1373,216 @@ main .page_service .info_table table td {
     font-weight: 600;
     /*! font-size: 1.1rem; */
 }
+.select_parts{
+    margin: 2rem 0;
+}
+.select_parts .select_s {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.select_parts .select_s .custom_select {
+    width: auto;
+    /*! min-width: 18rem; */
+    margin: 1.5rem 0.5rem;
+}
+
+.select_parts .search {
+    width: 100%;
+}
+
+.select_parts .button {
+    margin: 1rem auto 1.5rem auto;
+    min-width: 10rem;
+    background: var(--red);
+    color: var(--white);
+}
+
+.select_parts .list_parts {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.select_parts .list_parts .item {
+    /*! width: 100%; */
+    padding: 1rem;
+    transition: ease-in-out 0.3s;
+    /*! height: 100%; */
+    /*! min-height: 100%; */
+    margin-bottom: 2rem;
+    max-width: calc(50% - 1rem);
+    min-width: 17rem;
+}
+
+.select_parts .list_parts .item:hover {
+    background: var(--lihgt_grey);
+    border-radius: 6px;
+}
+
+.select_parts .list_parts .item .pic {
+    position: relative;
+}
+
+.select_parts .list_parts .item .pic img {
+    max-height: 12rem;
+    object-fit: cover;
+    width: 100%;
+    /*! height: 10rem; */
+}
+
+.select_parts .list_parts .item .pic .p_number {
+    position: absolute;
+    right: 0;
+    /*! z-index: 20; */
+    background: var(--lihgt_grey);
+    /*! width: 20rem; */
+    bottom: 0;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    opacity: 0.9;
+}
+
+.select_parts .list_parts .item .named {
+    margin: 1rem 0;
+    font-size: 0.875rem;
+}
+
+.select_parts .list_parts .item .named a {
+    color: var(--red);
+}
+
+.select_parts .list_parts .item .desc {
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.select_parts .list_parts .item .desc span {
+    font-weight: 300;
+    margin-right: 0.5rem;
+}
+
+.select_parts .list_parts .item .buy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.select_parts .list_parts .item .buy .price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.select_parts .list_parts .item .buy .button {
+    cursor: pointer;
+    margin: 0;
+    border-radius: 4px;
+    display: flex;
+    min-width: 8rem;
+}
+
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    margin: 0.75rem auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+}
+
+.pagination .arrow {
+    height: 2rem;
+    width: 2rem;
+}
+
+.pagination .page {
+    width: 2rem;
+    height: 2rem;
+    /*! border: solid 1px blue; */
+    line-height: 2rem;
+    text-align: center;
+    font-size: 0.75rem;
+    /*! font-weight: 300; */
+    /*! background: white; */
+    margin-left: 0.375rem;
+    margin-right: 0.375rem;
+    margin-bottom: 0.75rem;
+    transition: ease-in-out 0.3s;
+}
+
+.pagination .page:hover {
+    background: var(--lihgt_grey);
+}
+
+.pagination .page.current {
+    border: solid 1px var(--red);
+    color: var(--orange);
+}
+
+.pagination .paginate {
+    height: 2rem;
+    margin-left: 0.375rem;
+    margin-right: 0.375rem;
+}
+
+.pagination .paginate .icon.prev {
+    background: url(../images/icon_page_left.svg) var(--icon) no-repeat center center;
+    display: block;
+    background-size: 1.5rem;
+}
+
+.pagination .paginate .icon.next {
+    background: url(../images/icon_page_right.svg) var(--icon) no-repeat center center;
+    display: block;
+    background-size: 1.5rem;
+}
+
+
+/* pagination end */
+
+.search_advanced {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.search_advanced .search_input {/*! display: none; */width: 100%;/*! background: blue; */max-width: 37rem;}
+
+.search_advanced .search_input #search_number {
+    display: flex;
+    /*! width: 100%; */
+    /*! background: bisque; */
+}
+
+.search_advanced .search_input #search_number input {
+    border-radius: 5px 0 0 5px;
+    /*! min-width: 11rem; */
+    padding: 0.5rem;
+    /*! height: 2.5rem; */
+    border-bottom: solid 1px var(--black);
+    border-top: solid 1px var(--black);
+    border-left: solid 1px var(--black);
+    font-family: inherit;
+    overflow: hidden;
+    width: 100%;
+    /*! max-width: 30rem; */
+}
+
+.search_advanced .search_input #search_number .button {
+    margin: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.search_advanced .search_vin {/*! background: blueviolet; */margin-top: 2rem;border-radius: 6px;}
+.search_advanced .search_vin .button{margin: 0;background: var(--lihgt_grey);border: solid 1px var(--red);color: var(--red);}

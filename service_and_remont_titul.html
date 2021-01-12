@@ -378,85 +378,69 @@
                         <button class="button open" onclick="(document.getElementById('show_parts').style.display='flex')">Подбор запчастей</button>
                         <!-- группа с формой -->
                         <div class="select_s" id="show_parts">
-                            <div class="select_custom">
-                                <div class="label">Марка</div>
-                                <form>
-                                    <input type="text" placeholder="Выберите" onclick="" disabled> </form> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select">
-                                    <ul>
-                                        <li>Mitsubishi</li>
-                                        <li>Mazda</li>
-                                        <li>Honda</li>
-                                        <li>Hyundai</li>
-                                        <li>Land Rover</li>
-                                        <li>Ford</li>
-                                        <li>Kia</li>
-                                        <li>Peugeot</li>
-                                        <li>Nissan</li>
-                                        <li>Subaru</li>
-                                        <li>Toyota</li>
-                                        <li>Citroen</li>
-                                    </ul>
+                            <div class="custom_select">
+                                    <label for="marka">Марка</label>
+                                    <select id="marka" name="marka">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="Mitsubishi">Mitsubishi</option>
+                                        <option value="Mazda">Mazda</option>
+                                        <option value="Honda">Honda</option>
+                                        <option value="Hyundai">Hyundai</option>
+                                        <option value="Land Rover">Land Rover</option>
+                                        <option value="Ford">Ford</option>
+                                        <option value="Kia">Kia</option>
+                                        <option value="Peugeot">Peugeot</option>
+                                        <option value="Nissan">Nissan</option>
+                                        <option value="Subaru">Subaru</option>
+                                        <option value="Toyota">Toyota</option>
+                                        <option value="Citroen">Citroen</option>
+                                    </select>
                                 </div>
-                            </div>
+                                <!-- -->
                             <!-- -->
-                            <div class="select_custom">
-                                <div class="label">Модель</div>
-                                <form>
-                                    <input type="text" placeholder="Выберите" onclick="" disabled> </form> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select">
-                                    <ul>
-                                        <li>01</li>
-                                        <li>02</li>
-                                        <li>03</li>
-                                        <li>04</li>
-                                        <li>05</li>
-                                    </ul>
+                                <div class="custom_select">
+                                    <label for="model">Модель</label>
+                                    <select id="model" name="model">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                    </select>
                                 </div>
-                            </div>
+                                <!-- -->
                             <!-- -->
-                            <div class="select_custom">
-                                <div class="label">Запчасть</div>
-                                <form>
-                                    <input type="text" placeholder="Выберите" onclick="" disabled> </form> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select">
-                                    <ul>
-                                        <li>01</li>
-                                        <li>02</li>
-                                        <li>03</li>
-                                        <li>04</li>
-                                        <li>05</li>
-                                    </ul>
+                                <div class="custom_select">
+                                    <label for="zapch">Запчасть</label>
+                                    <select id="zapch" name="zapch">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="select_custom">
-                                <div class="label">Двигатель</div>
-                                <form>
-                                    <input type="text" placeholder="Выберите" onclick="" disabled> </form> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select">
-                                    <ul>
-                                        <li>01</li>
-                                        <li>02</li>
-                                        <li>03</li>
-                                        <li>04</li>
-                                        <li>05</li>
-                                    </ul>
+                                <!-- -->
+                            <!-- -->
+                                <div class="custom_select">
+                                    <label for="engine">Двигатель</label>
+                                    <select id="engine" name="engine">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="select_custom">
-                                <div class="label">Кузов</div>
-                                <form>
-                                    <input type="text" placeholder="Выберите" onclick="" disabled> </form> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select">
-                                    <ul>
-                                        <li>01</li>
-                                        <li>02</li>
-                                        <li>03</li>
-                                        <li>04</li>
-                                        <li>05</li>
-                                    </ul>
+                                <!-- -->
+                            <!-- -->
+                                <div class="custom_select">
+                                    <label for="body">Кузов</label>
+                                    <select id="body" name="body">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                    </select>
                                 </div>
-                            </div>
+                                <!-- -->
                             <div class="search">
                                 <button class="button" type="submit">Найти</button>
                             </div>
@@ -465,6 +449,7 @@
                     </div>
                 </div>
             </div>
+            <!-- -->
             <!-- -->
             <!-- слайдер начало -->
             <div class="wrap">
@@ -593,7 +578,7 @@
             </div>
         </div>
     </footer>
-    <!-- popup -->
+     <!-- popup -->
     <div class="popup_wrap" id="popup_shop">
         <div class="popup">
             <!-- Заказ -->
@@ -699,10 +684,9 @@
             <!-- Запись на ТО -->
             <div class="title">
                 <h3>Записаться на ТО</h3>
-                <div class="close"><img src="images/icon-close-white.svg" alt="Закрыть" title="Закрыть" /></div>
+                <div class="close"><img src="images/icon-close-red.svg" alt="Закрыть" title="Закрыть" /></div>
             </div>
             <div class="confirm">
-                
                 <form>
                     <div class="input_custom required">
                         <label for="name">Имя</label>
@@ -716,51 +700,55 @@
                     <div class="input_custom">
                         <label for="mail">Почта</label>
                         <input type="email" id="mail"> </div>
-                    <div class="select_custom">
-                        <div class="label">Марка</div>
-                        <input type="text" placeholder="Выберите" onclick="" disabled> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                        <div class="list_select">
-                            <ul>
-                                <li>Mitsubishi</li>
-                                <li>Mazda</li>
-                                <li>Honda</li>
-                                <li>Hyundai</li>
-                                <li>Land Rover</li>
-                                <li>Ford</li>
-                                <li>Kia</li>
-                                <li>Peugeot</li>
-                                <li>Nissan</li>
-                                <li>Subaru</li>
-                                <li>Toyota</li>
-                                <li>Citroen</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="select_custom">
-                        <div class="label">Модификация</div>
-                        <input type="text" placeholder="Выберите" onclick="" disabled> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                        <div class="list_select">
-                            <ul>
-                                <li>01</li>
-                                <li>02</li>
-                                <li>03</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Марка</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">05</option>
+                                        <option value="02">06а</option>
+                                        <option value="03">07</option>
+                                        <option value="03">08</option>
+                                        
+                                    </select>
+                                </div>
+                    <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Модификация</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">05</option>
+                                        <option value="02">06а</option>
+                                        <option value="03">07</option>
+                                        <option value="03">08</option>
+                                        
+                                    </select>
+                                </div>
                     <!-- -->
                     <!-- -->
-                    <div class="select_custom">
-                        <div class="label">Пробег</div>
-                        <input type="text" placeholder="Выберите" onclick="" disabled> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                        <div class="list_select">
-                            <ul>
-                                <li>01</li>
-                                <li>02</li>
-                                <li>03</li>
-                                <li>04</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Пробег</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">05</option>
+                                        <option value="02">06а</option>
+                                        <option value="03">07</option>
+                                        <option value="03">08</option>
+                                        
+                                    </select>
+                                </div>
+                    <!-- -->
+                    <!-- -->
+                   <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Работы</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">05</option>
+                                        <option value="02">06а</option>
+                                        <option value="03">07</option>
+                                        <option value="03">08</option>
+                                        
+                                    </select>
+                                </div>
+                    <!-- -->
                     <div class="input_custom textarea">
                         <label for="pass">Комментарий/Пожелания</label>
                         <textarea></textarea>
@@ -775,6 +763,7 @@
     </div>
     <!-- end popup wrap-->
     <script src="js/swiper_init.js"></script>
+    <script src="js/custom_select.js"></script>
 </body>
 
 </html>

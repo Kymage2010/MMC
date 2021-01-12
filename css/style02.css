@@ -126,7 +126,7 @@ video {
 
 #main_menu .wrap .box ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /*! height: 10rem; */
     position: static;
@@ -264,6 +264,7 @@ main .red_select_to .select_s {
 main .red_select_parts .title,
 main .red_select_to .title {
     display: block;
+    margin-bottom: 1rem;
 }
 
 main .red_select_parts .select_s,
@@ -309,10 +310,10 @@ footer .item {
     min-width: auto;
 }
 
-.select_custom {
-    min-width: 22rem;
-    margin: 2.5rem 1rem 1rem 1rem;
-    width: auto;
+.custom_select, .custom_input {
+
+    margin: 1.5rem 0.5rem;
+    
 }
 
 .open {
@@ -325,8 +326,9 @@ footer .item {
 
 #show_to,
 #show_parts {
-    display: flex;
+    /*! display: flex; */
     flex-flow: row wrap;
+    /*! justify-content: space-between; */
 }
 
 .resp-tab {
@@ -420,7 +422,7 @@ footer .item {
     /*! justify-content: right; */
 }
 
-.popup_wrap .popup .select_custom {
+.popup_wrap .popup .custom_select {
     /*! border: 1px solid var(--grey); */
     /*! border-radius: 6px; */
     margin: 1rem 0;
@@ -429,4 +431,32 @@ footer .item {
 
 main .page_service .info_table {
     display: block;
+}
+.select_parts .select_s .custom_select {
+    width: auto;
+    margin: 1.5rem 0.5rem;
+    max-width: 18rem;
+}
+.select_parts .list_parts{
+    width: 100%;
+    justify-content: space-between;
+}
+.select_parts .list_parts .item{
+    max-width: calc(25% - 1rem);
+    /*! margin: 2rem; */
+    padding: 2rem;
+    min-width: 14rem;
+}
+.search_advanced {
+
+    flex-wrap: nowrap;
+
+    margin: 1rem 0;
+}
+.search_advanced .search_vin{
+    margin: 0;
+    /*! border-radius: 6px; */
+}
+.search_advanced .search_input #search_number .button{
+    margin-right: 2rem;
 }

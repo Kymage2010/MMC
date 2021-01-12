@@ -263,7 +263,7 @@ main .red_select_parts .title {
 }
 
 main .red_select_to .title {
-    /*! display: block; */
+    display: none;
 }
 
 main .red_select_parts button,
@@ -282,10 +282,10 @@ footer .wrap {
     padding: 2rem 1rem;
 }
 
-.select_custom {
-    width: calc(50% - 2rem);
-    margin: 2.5rem 1rem 0 1rem;
-    justify-content: center;
+.custom_select, .custom_input {
+
+    margin: 1.5rem 0.5rem;
+    
 }
 
 .box_slide {
@@ -296,6 +296,7 @@ footer .wrap {
 #show_parts {
     display: none;
     flex-flow: row wrap;
+    margin-top: 2rem;
 }
 
 .resp-tab thead {
@@ -318,4 +319,33 @@ footer .wrap {
 }
 main .page_service .info_table{
     display: block;
+}
+.select_parts .select_s .custom_select {
+    
+    /*! min-width: 50%; */
+    margin: 1.5rem 0.5rem;
+    width: auto;
+    max-width: calc(50% - 0.5rem);
+}
+.select_parts .list_parts .item{
+    /*! width: 50%; */
+    padding: 1rem;
+    max-width: calc(33.3333% - 1rem);
+    min-width: 12rem;
+}
+.select_parts .list_parts {
+
+    justify-content: space-between;
+}
+
+.search_advanced {
+
+    flex-wrap: nowrap;
+
+}
+.search_advanced .search_vin{
+    margin: 0;
+}
+.search_advanced .search_input #search_number .button{
+    margin-right: 2rem;
 }
