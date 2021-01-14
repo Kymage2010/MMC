@@ -1223,7 +1223,7 @@ footer .item span {
     background: var(--lihgt_grey);
     color: var(--grey);
     font-size: 0.75rem;
-    top: -1.5rem;
+    top: -0.5rem;
     /*! left: 0.5rem; */
     padding: 0.25rem 0.5rem;
     /*! justify-content: space-between; */
