@@ -349,3 +349,6 @@ main .page_service .info_table{
 .search_advanced .search_input #search_number .button{
     margin-right: 2rem;
 }
+.card .box{
+    width: 50%;
+}

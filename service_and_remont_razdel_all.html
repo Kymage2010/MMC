@@ -30,7 +30,7 @@
                 <a href="#" title="Личный кабинет"><img src="images/icon-account-white.svg" alt="Личный кабинет" /></a>
             </div>
             <div class="box" id="bracket_icon">
-                <a href="#" title="Корзина"><img src="images/icon-barcket-white.svg" alt="Корзина" /></a>
+                <a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-white.svg" alt="Корзина" /></a>
             </div>
         </div>
     </div>
@@ -46,14 +46,14 @@
                         </div>
                         <div class="box">
                             <div class="bracket">
-                                <a href="#" title="Корзина"><img src="images/icon-barcket-red.svg" alt="Корзина" /></a>
+                                <a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-red.svg" alt="Корзина" /></a>
                             </div>
                         </div>
                     </div>
                     <div class="box">
                         <div class="record_red">
                             <div class="button">
-                                <button title="Записаться на ТО"><img src="images/icon-record-white.svg" alt="Схема проезда" />Записаться на ТО</button>
+                                <button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-record-white.svg" alt="Схема проезда" />Записаться на ТО</button>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                     <div class="box">
                         <div class="record_white">
                             <div class="button">
-                                <button title="Записаться на ТО"><img src="images/icon-map-white.svg" alt="Записаться на ТО" /> Записаться на ТО</button>
+                                <button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-map-white.svg" alt="Записаться на ТО" /> Записаться на ТО</button>
                             </div>
                         </div>
                         <div class="time_work">с 9-00 до 21-00</div>
@@ -467,13 +467,13 @@
             </div>
         </div>
     </footer>
-     <!-- popup -->
+    <!-- popup -->
     <div class="popup_wrap" id="popup_shop">
         <div class="popup">
             <!-- Заказ -->
             <div class="title">
                 <h3>Ваш заказ</h3>
-                <div class="close"><img src="images/icon-close-white.svg" alt="Закрыть" title="Закрыть" /></div>
+                <div class="close"><img onclick="close_popup(); return false" src="images/icon-close-red.svg" alt="Закрыть" title="Закрыть" /></div>
             </div>
             <div class="pop_table">
                 <table class="resp-tab">
@@ -573,7 +573,7 @@
             <!-- Запись на ТО -->
             <div class="title">
                 <h3>Записаться на ТО</h3>
-                <div class="close"><img src="images/icon-close-red.svg" alt="Закрыть" title="Закрыть" /></div>
+                <div class="close"><img onclick="close_popup(); return false" src="images/icon-close-red.svg" alt="Закрыть" title="Закрыть" /></div>
             </div>
             <div class="confirm">
                 <form>
@@ -602,7 +602,7 @@
                                 </div>
                     <div class="custom_select on_white">
                                     <label for="razdel" class="on_white">Модификация</label>
-                                    <select id="razdel2" name="razdel">
+                                    <select id="razdel" name="razdel">
                                         <option value="empty">&nbsp;</option>
                                         <option value="01">05</option>
                                         <option value="02">06а</option>
@@ -615,7 +615,7 @@
                     <!-- -->
                     <div class="custom_select on_white">
                                     <label for="razdel" class="on_white">Пробег</label>
-                                    <select id="razdel3" name="razdel">
+                                    <select id="razdel" name="razdel">
                                         <option value="empty">&nbsp;</option>
                                         <option value="01">05</option>
                                         <option value="02">06а</option>
@@ -650,9 +650,70 @@
             <!-- Запись на ТО конец-->
         </div>
     </div>
+    <!-- vin -->
+        <div class="popup_wrap" id="popup_vin">
+        <div class="popup">
+            <!-- Запись на ТО -->
+            <div class="title">
+                <h3>Запрос по VIN</h3>
+                <div class="close"><img onclick="close_popup(); return false" src="images/icon-close-red.svg" alt="Закрыть" title="Закрыть" /></div>
+            </div>
+            <div class="confirm">
+                <form>
+                    <div class="input_custom required">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name"> </div>
+                    <div class="input_custom required">
+                        <label for="surname">Фамилия</label>
+                        <input type="text" id="surname"> </div>
+                    <div class="input_custom required">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone"> </div>
+                    <div class="input_custom">
+                        <label for="mail">Почта</label>
+                        <input type="email" id="mail"> </div>
+                    <div class="custom_select on_white">
+                                    <label for="razdel" class="on_white">Марка</label>
+                                    <select id="razdel" name="razdel">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">Toyota</option>
+                                        <option value="02">Ford</option>
+                                        <option value="03">Mitsubishi</option>
+                                        <option value="03">Citroen</option>
+                                        
+                                    </select>
+                                </div>
+                    <div class="input_custom">
+                        <label for="mail">VIN</label>
+                        <input type="text" id="vin"> </div>
+                     <div class="checkbox">
+                        <div class="title">Обслуживались ли Вы у нас ранее?</div> <span>
+                        <input type="radio" id="yes" name="payment_method" value="Наличными" checked=""><label for="yes">Да</label></span> <span>
+                        <input type="radio" id="no" name="payment_method" value="Картой"><label for="no">Нет</label></span>  </div>
+                   
+                    <!-- -->
+                    <!-- -->
+                    
+                    <!-- -->
+                    <!-- -->
+                   
+                    <!-- -->
+                    <div class="input_custom textarea">
+                        <label for="pass">Запчасть</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="pop_button">
+                        <button class="button" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Запись на ТО конец-->
+        </div>
+    </div>
     <!-- end popup wrap-->
     <script src="js/swiper_init.js"></script>
     <script src="js/custom_select.js"></script>
+    <script src="js/pop-up.js"></script>
 </body>
 
 </html>

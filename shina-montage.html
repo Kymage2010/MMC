@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>ММС-Плюс | Сервис и ремонт Mitsubishi - Шиномонтаж</title>
+    <title>ММС-Плюс | Сервис и ремонт Mitsubishi - Допобрудование</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="css/style00.css" rel="stylesheet">
@@ -16,7 +16,7 @@
     <link href="css/swiper.css" rel="stylesheet" /> </head>
 
 <body>
-    <!-- header -->
+       <!-- header -->
     <div class="top_black">
         <div class="wrap">
             <div class="box" id="location_icon">
@@ -29,7 +29,7 @@
                 <a href="#" title="Личный кабинет"><img src="images/icon-account-white.svg" alt="Личный кабинет" /></a>
             </div>
             <div class="box" id="bracket_icon">
-                <a href="#" title="Корзина"><img src="images/icon-barcket-white.svg" alt="Корзина" /></a>
+                <a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-white.svg" alt="Корзина" /></a>
             </div>
         </div>
     </div>
@@ -45,14 +45,14 @@
                         </div>
                         <div class="box">
                             <div class="bracket">
-                                <a href="#" title="Корзина"><img src="images/icon-barcket-red.svg" alt="Корзина" /></a>
+                                <a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-red.svg" alt="Корзина" /></a>
                             </div>
                         </div>
                     </div>
                     <div class="box">
                         <div class="record_red">
                             <div class="button">
-                                <button title="Записаться на ТО"><img src="images/icon-record-white.svg" alt="Схема проезда" />Записаться на ТО</button>
+                                <button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-record-white.svg" alt="Схема проезда" />Записаться на ТО</button>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                     <div class="box">
                         <div class="record_white">
                             <div class="button">
-                                <button title="Записаться на ТО"><img src="images/icon-map-white.svg" alt="Записаться на ТО" /> Записаться на ТО</button>
+                                <button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-map-white.svg" alt="Записаться на ТО" /> Записаться на ТО</button>
                             </div>
                         </div>
                         <div class="time_work">с 9-00 до 21-00</div>
@@ -111,7 +111,7 @@
             <div class="page_title">
                 <div class="wrap">
                     <div class="box">
-                        <h1>Шиномонтаж автомобилей Mitsubishi</h1> </div>
+                        <h1>Дополнительное обрудование автомобилей Mitsubishi</h1> </div>
                 </div>
             </div>
             <!-- тело раздела -->
@@ -133,7 +133,7 @@
                                 </div>
                             
                             <div class="custom_select on_white">
-                                    <label for="radius" class="on_white">Радиус</label>
+                                    <label for="radius" class="on_white">Обрудование</label>
                                     <select id="radius" name="radius">
                                         <option value="empty">&nbsp;</option>
                                         <option value="01">01</option>
@@ -167,10 +167,7 @@
                                             <td>Фильтр топливный (дизель) замена</td>
                                             <td class="price">50</td>
                                         </tr>
-                                        <tr class="amount">
-                                            <td>Всего работ:</td>
-                                            <td class="price">369 784</td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -181,7 +178,7 @@
                         <div class="box">
                             <div class="total_record">
                                 
-                                <button class="button" type="submit">Записаться на шиномонтаж</button>
+                                <button class="button" type="submit">Заказать услугу</button>
                             </div>
                         </div>
                     </div>
@@ -583,6 +580,7 @@
     <!-- end popup wrap-->
     <script src="js/swiper_init.js"></script>
     <script src="js/custom_select.js"></script>
+    <script src="js/pop-up.js"></script>
 </body>
 
 </html>

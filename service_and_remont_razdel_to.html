@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!-- header -->
+       <!-- header -->
     <div class="top_black">
         <div class="wrap">
             <div class="box" id="location_icon">
@@ -30,7 +30,7 @@
                 <a href="#" title="Личный кабинет"><img src="images/icon-account-white.svg" alt="Личный кабинет" /></a>
             </div>
             <div class="box" id="bracket_icon">
-                <a href="#" title="Корзина"><img src="images/icon-barcket-white.svg" alt="Корзина" /></a>
+                <a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-white.svg" alt="Корзина" /></a>
             </div>
         </div>
     </div>
@@ -46,14 +46,14 @@
                         </div>
                         <div class="box">
                             <div class="bracket">
-                                <a href="#" title="Корзина"><img src="images/icon-barcket-red.svg" alt="Корзина" /></a>
+                                <a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-red.svg" alt="Корзина" /></a>
                             </div>
                         </div>
                     </div>
                     <div class="box">
                         <div class="record_red">
                             <div class="button">
-                                <button title="Записаться на ТО"><img src="images/icon-record-white.svg" alt="Схема проезда" />Записаться на ТО</button>
+                                <button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-record-white.svg" alt="Схема проезда" />Записаться на ТО</button>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                     <div class="box">
                         <div class="record_white">
                             <div class="button">
-                                <button title="Записаться на ТО"><img src="images/icon-map-white.svg" alt="Записаться на ТО" /> Записаться на ТО</button>
+                                <button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-map-white.svg" alt="Записаться на ТО" /> Записаться на ТО</button>
                             </div>
                         </div>
                         <div class="time_work">с 9-00 до 21-00</div>
@@ -124,25 +124,7 @@
                         <div class="box">
                             
                             
-                            <!-- old
-                            <div class="select_custom">
-                                <div class="label">Раздел</div> <span class="icon"><img src="images/01-car-repair.svg" alt="Select" /></span>
-                                <input type="text" onclick="(document.getElementById('list_service').style.display='block')" value="Плановое техобслуживание" name="service_type" readonly> <span><img src="images/icon_arrow_black_down.svg" alt="Select" /></span>
-                                <div class="list_select" id="list_service">
-                                    <ul>
-                                        <li><span class="icon"><img src="images/01-car-repair.svg" alt="Плановое техобслуживание" /></span>Плановое техобслуживание</li>
-                                        <li><span class="icon"><img src="images/02-break.svg" alt="Тормозная система" /></span>Тормозная система</li>
-                                        <li><span class="icon"><img src="images/03-suspension.svg" alt="Ходовая часть" /></span>Ходовая часть</li>
-                                       
-                                        <li><span class="icon"><img src="images/05-gearshift.svg" alt="Трансмиссия и сцепление" /></span>Трансмиссия и сцепление</li>
-                                        <li><span class="icon"><img src="images/06-steering-wheel.svg" alt="Рулевое управление" /></span>Рулевое управление</li>
-                                        <li><span class="icon"><img src="images/07-snowflake.svg" alt="Система кондиционирования" /></span>Система кондиционирования</li>
-                                        <li><span class="icon"><img src="images/08-engine.svg" alt="Диагностика" /></span>Диагностика</li>
-                                        <li><span class="icon"><img src="images/09-accumulator.svg" alt="Электроборудование и освещение" /></span>Электроборудование и освещение</li>
-                                    </ul>
-                                </div>
-                            </div>
-                           old -->
+                      
                             
                             <!-- -->
                                 <div class="custom_select on_white">
@@ -824,6 +806,7 @@
     <!-- end popup wrap-->
     <script src="js/swiper_init.js"></script>
     <script src="js/custom_select.js"></script>
+    <script src="js/pop-up.js"></script>
 </body>
 
 </html>
