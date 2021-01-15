@@ -463,3 +463,37 @@ main .page_service .info_table {
 .card .box{
     width: 50%;
 }
+.news_list {
+margin-top: 2rem;
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 2rem;
+}
+
+.news_list .item {width: 50%;}
+
+.news_list .item .title {
+	
+}
+
+.news_list .item .title h3 {
+	
+}
+
+.news_list .item .title span {
+	
+}
+
+.news_list .item .anons {
+	
+}
+
+.news_list .item .anons .pic {
+	width: 33.3333%;
+}
+
+.news_list .item .anons .intro {
+	width: 66.6666%;
+	padding-left: 2rem;
+	padding-right: 1rem;
+}
