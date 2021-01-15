@@ -327,7 +327,7 @@ video {
 }
 
 #main_menu .wrap .box ul {
-    display: none;
+    /*! display: none; */
     position: absolute;
     top: 4.5rem;
     background: var(--white);
@@ -349,10 +349,10 @@ video {
     padding: 0.5rem 0;
 }
 #main_menu .wrap .box ul .active a {
-    color: var(--red);
-    padding: 0.5rem 1rem;
-    background: var(--lihgt_grey);
-    margin: 0 -1rem;
+    /*! color: var(--red); */
+    /*! padding: 0.5rem 1rem; */
+    /*! background: var(--lihgt_grey); */
+    /*! margin: 0 -1rem; */
 }
 
 #main_menu .wrap .box .to_down .button button {
