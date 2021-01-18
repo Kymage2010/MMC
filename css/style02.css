@@ -497,3 +497,23 @@ margin-bottom: 2rem;
 	padding-left: 2rem;
 	padding-right: 1rem;
 }
+.news_single{
+    margin-top: 1rem;
+}
+.news_single .pic{
+    
+    width: 50%;
+    float: left;
+    margin: 0 2rem 1rem 0;
+    /*! display: none; */
+}
+.news_single .text {
+    margin-bottom: 0.5rem;
+    /*! columns: 2 auto; */
+    /*! column-gap: 2rem; */
+    /*! hyphens: auto; */
+    margin: 0;
+}
+.info{
+    margin: 3rem 0;
+}
