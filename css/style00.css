@@ -1,4 +1,4 @@
-/* станадртные ширины элементов для 12 колонок
+/* СЃС‚Р°РЅР°РґСЂС‚РЅС‹Рµ С€РёСЂРёРЅС‹ СЌР»РµРјРµРЅС‚РѕРІ РґР»СЏ 12 РєРѕР»РѕРЅРѕРє
 8,3333%
 16,6666%
 25%
@@ -33,7 +33,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Jost', sans-serif;
-    /*заменяем на нужный*/
+    /*Р·Р°РјРµРЅСЏРµРј РЅР° РЅСѓР¶РЅС‹Р№*/
     font-size: 1rem;
 }
 
@@ -48,7 +48,7 @@ body {
 }*/
 
 
-/*обнуляем стили по умолчанию*/
+/*РѕР±РЅСѓР»СЏРµРј СЃС‚РёР»Рё РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ*/
 
 ul,
 li,
@@ -92,7 +92,8 @@ a:focus {
 }
 
 
-/*для адаптивности изображений*/
+
+/*РґР»СЏ Р°РґР°РїС‚РёРІРЅРѕСЃС‚Рё РёР·РѕР±СЂР°Р¶РµРЅРёР№*/
 
 img {
     max-width: 100%;
@@ -108,7 +109,7 @@ img {
 }
 
 
-/*Настраиваем заголовки*/
+/*РќР°СЃС‚СЂР°РёРІР°РµРј Р·Р°РіРѕР»РѕРІРєРё*/
 
 h1 {
     margin: 0;
@@ -137,11 +138,11 @@ h4 {
 }
 
 
-/*настройки для иконок*/
+/*РЅР°СЃС‚СЂРѕР№РєРё РґР»СЏ РёРєРѕРЅРѕРє*/
 
 
-/*универсальная обёртка с полями для всех родительских контейнеров.
-Всегда находится внутри родителя и не участвует в задании ширины.
+/*СѓРЅРёРІРµСЂСЃР°Р»СЊРЅР°СЏ РѕР±С‘СЂС‚РєР° СЃ РїРѕР»СЏРјРё РґР»СЏ РІСЃРµС… СЂРѕРґРёС‚РµР»СЊСЃРєРёС… РєРѕРЅС‚РµР№РЅРµСЂРѕРІ.
+Р’СЃРµРіРґР° РЅР°С…РѕРґРёС‚СЃСЏ РІРЅСѓС‚СЂРё СЂРѕРґРёС‚РµР»СЏ Рё РЅРµ СѓС‡Р°СЃС‚РІСѓРµС‚ РІ Р·Р°РґР°РЅРёРё С€РёСЂРёРЅС‹.
 */
 
 .box {
@@ -154,7 +155,7 @@ h4 {
 }
 
 
-/*универсальная обёртка с полями для ограничения ширины контента.*/
+/*СѓРЅРёРІРµСЂСЃР°Р»СЊРЅР°СЏ РѕР±С‘СЂС‚РєР° СЃ РїРѕР»СЏРјРё РґР»СЏ РѕРіСЂР°РЅРёС‡РµРЅРёСЏ С€РёСЂРёРЅС‹ РєРѕРЅС‚РµРЅС‚Р°.*/
 
 .wrap {
     max-width: 1440px;
@@ -166,7 +167,7 @@ h4 {
 }
 
 
-/*базовые ширины колонок*/
+/*Р±Р°Р·РѕРІС‹Рµ С€РёСЂРёРЅС‹ РєРѕР»РѕРЅРѕРє*/
 
 
 /*custom select*/
@@ -479,6 +480,9 @@ main .red_select_parts .select_s {
 main .red_select_parts .select_s form,
 main .red_select_to .select_s form {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 main .red_select_parts .select_s .box,
@@ -540,10 +544,10 @@ main .about .text p a {}
 /*
 .select_custom {
     position: relative;
-    
+
     margin: 2.5rem 0 1rem 0;
     display: flex;
-    
+
     width: 100%;
 }
 
@@ -555,17 +559,17 @@ main .about .text p a {}
     font-size: 1rem;
     padding-left: 1rem;
     cursor: pointer;
-    
+
     background: var(--white);
 }
 
 .select_custom span {
     background: var(--white);
     border-radius: 0 6px 6px 0;
-    
+
     height: 3rem;
     cursor: pointer;
-    
+
     padding-top: 0.15rem;
 }
 
@@ -594,7 +598,7 @@ main .about .text p a {}
 }
 
 .select_custom .list_select ul li {
-    
+
     transition: ease-in-out 0.3s;
     padding: 0.5rem 1rem;
 
@@ -1319,7 +1323,7 @@ footer .item span {
 }
 
 .table_calculate table .price:after {
-    content: "₽";
+    content: "в‚Ѕ";
     margin-left: 0.25rem;
 }
 
@@ -1791,6 +1795,9 @@ main .page_service .info_table table td {
     text-decoration: underline 1px;
     display: inline;
     color: var(--red);
+}
+.text p a:hover{
+    text-decoration: none;
 }
 
 .news_single .prev_next {
