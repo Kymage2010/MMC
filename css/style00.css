@@ -1787,7 +1787,7 @@ main .page_service .info_table table td {
     margin-bottom: 1rem;
 }
 
-.news_single .text p a {
+.text p a {
     text-decoration: underline 1px;
     display: inline;
     color: var(--red);
