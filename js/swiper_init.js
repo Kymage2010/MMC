@@ -28,11 +28,11 @@ var swiper = new Swiper('.swiper-container-promo', {
             slidesPerView: 1
         },
         660: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 16
         },
         1024: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween: 16
         }
     },
