@@ -1877,7 +1877,7 @@ main .page_service .info_table table td {
     font-size: 0.875rem;
     position: relative;
     border: 1px solid var(--red);
-    z-index: 3;
+    /*! z-index: 3; */
     /*! cursor: pointer; */
     user-select: none;
 
@@ -1901,7 +1901,7 @@ main .page_service .info_table table td {
     font-weight: 400;
 }
 .parts_custom.active{
-	z-index:5;
+	z-index:11;
 }
 .parts_custom .parts_input {
     padding: 0.5rem 0.75rem;
@@ -1917,12 +1917,22 @@ main .page_service .info_table table td {
     position: absolute;
     background: green;
     top: 2.5rem;
-    z-index: 3;
+    /*! z-index: 12; */
     left: -32rem;
     display: none;
     cursor: inherit;
+    /*! flex-wrap: wrap; */
+    /*! align-items: flex-start; */
+    /*! justify-content: flex-start; */
+    /*! flex-direction: column; */
+    column-count: 3;
 }
-
+.parts_custom .parts_group .item{padding: 1rem;/*! width: 33.3333%; */background: antiquewhite;}
+.parts_custom .parts_group .item .title{}
+.parts_custom .parts_group .item ul{}
+.parts_custom .parts_group .item li{padding: 0.5rem 0;}
+.parts_custom .parts_group .item li a{}
+.parts_custom .parts_group .item li input{}
 #popup_wrap {
     position: fixed;
     left: 0;
