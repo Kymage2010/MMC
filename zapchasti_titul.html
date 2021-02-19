@@ -124,26 +124,11 @@
                     <div class="box">
                         <!-- группа с формой -->
                         <div class="select_s">
-                            <form>
-                                <div class="custom_select on_white">
-                                    <label for="marka" class="on_white">Марка</label>
-                                    <select id="marka" name="marka">
-                                        <option value="empty">&nbsp;</option>
-                                        <option value="Mitsubishi">Mitsubishi</option>
-                                        <option value="Mazda">Mazda</option>
-                                        <option value="Honda">Honda</option>
-                                        <option value="Hyundai">Hyundai</option>
-                                        <option value="Land Rover">Land Rover</option>
-                                        <option value="Ford">Ford</option>
-                                        <option value="Kia">Kia</option>
-                                        <option value="Peugeot">Peugeot</option>
-                                        <option value="Nissan">Nissan</option>
-                                        <option value="Subaru">Subaru</option>
-                                        <option value="Toyota">Toyota</option>
-                                        <option value="Citroen">Citroen</option>
-                                    </select>
-                                </div>
-                            </form>
+                            <div class="parts_custom">
+                                <label class="on_white">Марка</label>
+                                <div class="parts_input">сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим</div>
+                                <div class="parts_group">Mitsubishi</div>
+                            </div>
                             <!-- -->
                             <!-- -->
                             <div class="custom_select on_white">
@@ -158,9 +143,9 @@
                             <!-- -->
                             <!-- -->
                             <div class="parts_custom">
-                                <label for="zapch" class="on_white">Запчасть</label>
+                                <label class="on_white">Запчасть</label>
                                 <div class="parts_input">сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим</div>
-								<div class="parts_group">Список Список Список Список Список Список Список Список Список Список Список Список</div>
+								<div class="parts_group">Кардан</div>
                             </div>
                             <!-- -->
                             <!-- -->
@@ -175,14 +160,10 @@
                             </div>
                             <!-- -->
                             <!-- -->
-                            <div class="custom_select on_white">
-                                <label for="body" class="on_white">Кузов</label>
-                                <select id="body" name="body">
-                                    <option value="empty">&nbsp;</option>
-                                    <option value="01">01</option>
-                                    <option value="02">02</option>
-                                    <option value="03">03</option>
-                                </select>
+                            <div class="parts_custom">
+                                <label class="on_white">Кузов</label>
+                                <div class="parts_input">сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим сюда вводим</div>
+                                <div class="parts_group">Кабиролет</div>
                             </div>
                             <!-- -->
                             <div class="search">
@@ -655,6 +636,35 @@
     <script src="js/swiper_init.js"></script>
  <script src="js/custom_select.js"></script>
     <script src="js/pop-up.js"></script>
+<script>
+    $(".parts_input").on("click", function(){
+        let $parts_custom = $(this).parents(".parts_custom");
+        let parentOffset = $parts_custom.offset().left;
+        let $wrap = $(".select_s");
+        let wrapOffset = $wrap.offset().left;
+        let left = wrapOffset - parentOffset,
+            width = $wrap.width();
+        $(".parts_group").hide();
+        $parts_custom.find(".parts_group").show()
+        .css({"left": left, "width": width});
+        $("#popup_wrap").remove();
+        $("<div id='popup_wrap'></div>").appendTo("body");
+        $("#popup_wrap").on("click", function(){
+            $(".parts_group").hide();
+            $("#popup_wrap").remove();
+        })
+    });
+    $(window).on("resize", function(){
+        $(".parts_group").hide(); 
+        /*let $parts_custom = $(".parts_custom");
+        let parentOffset = $parts_custom.offset().left;
+        let $wrap = $(".select_s");
+        let wrapOffset = $wrap.offset().left;
+        let left = wrapOffset - parentOffset,
+            width = $wrap.width();
+        $parts_custom.find(".parts_group").css({"left": left, "width": width});*/
+    });
+</script>
 </body>
 
 </html>
