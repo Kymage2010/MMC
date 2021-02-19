@@ -39,12 +39,12 @@ body {
 
 
 /*@font-face {
-	font-family: 'Alice';
-	src: url('../fonts/Alice-Regular.ttf') format('truetype');
-	font-weight: 400;
-	300-light,400-regular,500-medium,600-semibold,700-bold
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Alice';
+    src: url('../fonts/Alice-Regular.ttf') format('truetype');
+    font-weight: 400;
+    300-light,400-regular,500-medium,600-semibold,700-bold
+    font-style: normal;
+    font-display: swap;
 }*/
 
 
@@ -90,7 +90,6 @@ a:focus {
     color: inherit;
     transition: ease-in-out 0.3s;
 }
-
 
 
 /*РґР»СЏ Р°РґР°РїС‚РёРІРЅРѕСЃС‚Рё РёР·РѕР±СЂР°Р¶РµРЅРёР№*/
@@ -1457,6 +1456,7 @@ main .page_service .info_table table td {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    align-items: start;
 }
 
 .select_parts .select_s .custom_select {
@@ -1796,7 +1796,8 @@ main .page_service .info_table table td {
     display: inline;
     color: var(--red);
 }
-.text p a:hover{
+
+.text p a:hover {
     text-decoration: none;
 }
 
@@ -1847,4 +1848,56 @@ main .page_service .info_table table td {
 .info .text p span {
     font-weight: 500;
     margin-right: 0.5rem;
+}
+
+
+/* -----------------  */
+
+.custom_parts {
+    min-width: 15rem;
+    color: var(--black);
+    font-size: 0.875rem;
+    border: solid 1px var(--red);
+    border-radius: 5px;
+    position: relative;
+    margin: 1.5rem 0.5rem;
+    width: auto;
+    /*! table-layout: fixed; */
+    /*! max-width: 15rem; */
+    height: 2.5rem;
+    /*! overflow: hidden; */
+    /*! float: left; */
+}
+
+.custom_parts label {
+    font-weight: 400;
+    left: 0.5rem;
+    padding: 0 0.25rem;
+    position: absolute;
+    top: -1.25rem;
+    font-size: 0.75rem;
+    color: var(--red);
+}
+
+.custom_parts .c_p_input {
+    padding: 0.5rem 0.75rem;
+    height: 2.5rem;
+    /*! background: aqua; */
+    overflow: hidden;
+    line-height: 1.5rem;
+    text-overflow: ellipsis;
+    width: 15rem;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.custom_parts .c_p_option {
+    background: green;
+    position: absolute;
+    /*! top: 3.5rem; */
+    /*! width: 100vw; */
+    /*! left: 0; */
+    /*! right: 0; */
+    z-index: 2;
+    /*! float: left; */
 }
