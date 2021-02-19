@@ -1878,7 +1878,7 @@ main .page_service .info_table table td {
     position: relative;
     border: 1px solid var(--red);
     z-index: 3;
-    cursor: pointer;
+    /*! cursor: pointer; */
     user-select: none;
 
     /*! padding: 0.5rem 0.75rem; */
@@ -1900,7 +1900,9 @@ main .page_service .info_table table td {
     color: var(--red);
     font-weight: 400;
 }
-
+.parts_custom.active{
+	z-index:5;
+}
 .parts_custom .parts_input {
     padding: 0.5rem 0.75rem;
     width: 15rem;
@@ -1908,6 +1910,7 @@ main .page_service .info_table table td {
     overflow: hidden;
     display: inline-block; /*! max-width: 15rem; */
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .parts_custom .parts_group {
@@ -1917,6 +1920,7 @@ main .page_service .info_table table td {
     z-index: 3;
     left: -32rem;
     display: none;
+    cursor: inherit;
 }
 
 #popup_wrap {
