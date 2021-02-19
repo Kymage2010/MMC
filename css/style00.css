@@ -1848,3 +1848,36 @@ main .page_service .info_table table td {
     font-weight: 500;
     margin-right: 0.5rem;
 }
+/* ---  experiments ---  */
+.parts_custom {
+	margin: 1.5rem 0;
+    width: auto;
+    min-width: 15rem;
+    color: var(--black);
+    font-size: 0.875rem;
+	position: relative;
+	border: 1px solid var(--red);
+   
+    cursor: pointer;
+    user-select: none;
+    
+    /*! padding: 0.5rem 0.75rem; */
+    border-radius: 5px;
+      
+margin: 1.5rem 0.5rem;
+max-width: 18rem;
+	height: 2.5rem;
+}
+.parts_custom label{
+	font-size: 0.75rem;
+   
+    position: absolute;
+    top: -1.25rem;
+    
+    left: 0.5rem;
+    padding: 0 0.25rem;
+    color: var(--red);
+    font-weight: 400;
+}
+.parts_custom .parts_input{padding: 0.5rem 0.75rem;width: 15rem;text-overflow: ellipsis;overflow: hidden;display: inline-block;/*! max-width: 15rem; */white-space: nowrap;}
+.parts_custom .parts_group{position: absolute;background: green;width: 609px;top: 2.5rem;/*! display: flex; *//*! margin-left: 0; *//*! width: 69vw; */left: -300px;/*! right: -100%; */}
