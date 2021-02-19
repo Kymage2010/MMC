@@ -1851,8 +1851,8 @@ main .page_service .info_table table td {
 /* ---  experiments ---  */
 .parts_custom {
 	margin: 1.5rem 0;
-    width: auto;
-    min-width: 15rem;
+    width: 15rem;
+    /*! min-width: 15rem; */
     color: var(--black);
     font-size: 0.875rem;
 	position: relative;
@@ -1865,7 +1865,7 @@ main .page_service .info_table table td {
     border-radius: 5px;
       
 margin: 1.5rem 0.5rem;
-max-width: 18rem;
+/*! max-width: 15rem; */
 	height: 2.5rem;
 }
 .parts_custom label{
@@ -1880,4 +1880,4 @@ max-width: 18rem;
     font-weight: 400;
 }
 .parts_custom .parts_input{padding: 0.5rem 0.75rem;width: 15rem;text-overflow: ellipsis;overflow: hidden;display: inline-block;/*! max-width: 15rem; */white-space: nowrap;}
-.parts_custom .parts_group{position: absolute;background: green;width: 609px;top: 2.5rem;/*! display: flex; *//*! margin-left: 0; *//*! width: 69vw; */left: -300px;/*! right: -100%; */}
+.parts_custom .parts_group{position: static;background: green;width: 100%;top: 2.5rem;/*! display: flex; *//*! margin-left: 0; *//*! width: 69vw; */left: 0;right: 0;}
