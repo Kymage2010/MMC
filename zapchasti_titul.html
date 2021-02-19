@@ -135,7 +135,6 @@
 								<li><a href="#">товар 4</a></li>
 								<li><a href="#">товар 5</a></li>
 								</ul>
-								
 								</div>
                             </div>
                             <!-- -->
@@ -657,14 +656,18 @@
         $parts_custom.find(".parts_group").show()
         .css({"left": left, "width": width});
         $("#popup_wrap").remove();
+		$(".parts_custom").removeClass("active");
+		$parts_custom.addClass("active");
         $("<div id='popup_wrap'></div>").appendTo("body");
         $("#popup_wrap").on("click", function(){
             $(".parts_group").hide();
+			$(".parts_custom").removeClass("active");
             $("#popup_wrap").remove();
         })
     });
     $(window).on("resize", function(){
-        $(".parts_group").hide(); 
+        $(".parts_group").hide();
+		$(".parts_custom").removeClass("active");
         /*let $parts_custom = $(".parts_custom");
         let parentOffset = $parts_custom.offset().left;
         let $wrap = $(".select_s");

@@ -316,7 +316,7 @@ video {
 
 #main_menu {
     /*! background: green; */
-    background: url(../video/HS046.mp4) no-repeat center center;
+    /* background: url(../video/HS046.mp4) no-repeat center center;*/
     background-size: cover;
 }
 
