@@ -1943,12 +1943,13 @@ main .page_service .info_table table td {
 
 .parts_custom .parts_group .item li {
     padding: 0.5rem 0;
-    display: flex;
+    /*! display: flex; */
+    display: block;
 }
 
 .parts_custom .parts_group .item li a {
     /*! background: aquamarine; */
-    display: grid;
+    /*! display: grid; */
     width: 100%;
     padding: 0.5rem;
 }
