@@ -313,7 +313,7 @@ footer .item {
 .custom_select, .custom_input {
 
     margin: 1.5rem 0.5rem;
-    
+
 }
 
 .open {
@@ -473,35 +473,35 @@ margin-bottom: 2rem;
 .news_list .item {width: 50%;}
 
 .news_list .item .title {
-	
+
 }
 
 .news_list .item .title h3 {
-	
+
 }
 
 .news_list .item .title span {
-	
+
 }
 
 .news_list .item .anons {
-	
+
 }
 
 .news_list .item .anons .pic {
-	width: 33.3333%;
+    width: 33.3333%;
 }
 
 .news_list .item .anons .intro {
-	width: 66.6666%;
-	padding-left: 2rem;
-	padding-right: 1rem;
+    width: 66.6666%;
+    padding-left: 2rem;
+    padding-right: 1rem;
 }
 .news_single{
     margin-top: 1rem;
 }
 .news_single .pic{
-    
+
     width: 50%;
     float: left;
     margin: 0 2rem 1rem 0;
@@ -516,4 +516,7 @@ margin-bottom: 2rem;
 }
 .info{
     margin: 3rem 0;
+}
+.parts_custom .parts_group{
+    columns: auto 6;
 }

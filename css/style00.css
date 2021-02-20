@@ -39,12 +39,12 @@ body {
 
 
 /*@font-face {
-	font-family: 'Alice';
-	src: url('../fonts/Alice-Regular.ttf') format('truetype');
-	font-weight: 400;
-	300-light,400-regular,500-medium,600-semibold,700-bold
-	font-style: normal;
-	font-display: swap;
+    font-family: 'Alice';
+    src: url('../fonts/Alice-Regular.ttf') format('truetype');
+    font-weight: 400;
+    300-light,400-regular,500-medium,600-semibold,700-bold
+    font-style: normal;
+    font-display: swap;
 }*/
 
 
@@ -251,11 +251,9 @@ header .top_white .logo {
     width: 50%;
 }
 
-header .top_white .right {
-}
+header .top_white .right {}
 
-header .top_white .right .record_white .button {
-}
+header .top_white .right .record_white .button {}
 
 header .top_white .right .record_white .button button {
     color: var(--red);
@@ -268,8 +266,7 @@ header .top_white .right .record_white img {
     display: none;
 }
 
-header .top_white .right .record_red {
-}
+header .top_white .right .record_red {}
 
 header .top_white .right .time_work {
     text-align: center;
@@ -376,8 +373,7 @@ video {
     color: var(--white);
 }
 
-main .page_title .wrap {
-}
+main .page_title .wrap {}
 
 main .page_title .wrap .box {
     width: 100%;
@@ -423,8 +419,7 @@ main .select_car .cars .item {
     /*! transition: ease-in-out 0.3s; */
 }
 
-main .select_car .cars .item .pic img {
-}
+main .select_car .cars .item .pic img {}
 
 main .select_car .cars .item .model {
     text-align: center;
@@ -432,17 +427,13 @@ main .select_car .cars .item .model {
     margin-top: 0.5rem;
 }
 
-main .select_car .cars .item .list {
-}
+main .select_car .cars .item .list {}
 
-main .select_car .cars .item .list ul {
-}
+main .select_car .cars .item .list ul {}
 
-main .select_car .cars .item .list ul li {
-}
+main .select_car .cars .item .list ul li {}
 
-main .select_car .cars .item .list ul li a {
-}
+main .select_car .cars .item .list ul li a {}
 
 main .select_car .cars .item .list_service {
     /*! display: none; */
@@ -537,15 +528,13 @@ main .about .title {
     margin-bottom: 1.5rem;
 }
 
-main .about .text {
-}
+main .about .text {}
 
 main .about .text p {
     margin-bottom: 1rem;
 }
 
-main .about .text p a {
-}
+main .about .text p a {}
 
 
 /* select*/
@@ -778,8 +767,7 @@ main .page_service .dynamic .select_custom .list_select ul li .icon {
     background: var(--lihgt_grey);
 }
 
-main .page_service {
-}
+main .page_service {}
 
 main .page_service .dynamic {
     display: flex;
@@ -839,8 +827,7 @@ main .page_service .info_table {
     display: none;
 }
 
-main .page_service .info_table .box {
-}
+main .page_service .info_table .box {}
 
 footer {
     background: var(--red);
@@ -876,8 +863,7 @@ footer .item ul li a {
     display: inline;
 }
 
-footer .item .logo {
-}
+footer .item .logo {}
 
 footer .item span {
     font-size: 0.75rem;
@@ -1051,8 +1037,7 @@ footer .item span {
     cursor: pointer;
 }
 
-.popup_wrap .popup .title .close img {
-}
+.popup_wrap .popup .title .close img {}
 
 .popup_wrap .popup .pop_table {
     margin-top: 1rem;
@@ -1075,8 +1060,7 @@ footer .item span {
     margin: 1rem 0;
 }
 
-.popup_wrap .popup .pop_text p {
-}
+.popup_wrap .popup .pop_text p {}
 
 .popup_wrap .popup .pop_text p a {
     display: inline;
@@ -1745,11 +1729,9 @@ main .page_service .info_table table td {
     cursor: pointer;
 }
 
-.news_list {
-}
+.news_list {}
 
-.news_list .item {
-}
+.news_list .item {}
 
 .news_list .item .title,
 .news_single .title {
@@ -1782,8 +1764,7 @@ main .page_service .info_table table td {
     margin: 0 0 1rem 0;
 }
 
-.news_list .item .anons .intro {
-}
+.news_list .item .anons .intro {}
 
 .news_list .item .anons .intro .button a {
     border: solid 1px var(--grey);
@@ -1900,23 +1881,26 @@ main .page_service .info_table table td {
     color: var(--red);
     font-weight: 400;
 }
-.parts_custom.active{
-	z-index:11;
+
+.parts_custom.active {
+    z-index: 11;
 }
+
 .parts_custom .parts_input {
     padding: 0.5rem 0.75rem;
     width: 15rem;
     text-overflow: ellipsis;
     overflow: hidden;
-    display: inline-block; /*! max-width: 15rem; */
+    display: inline-block;
+    /*! max-width: 15rem; */
     white-space: nowrap;
     cursor: pointer;
 }
 
 .parts_custom .parts_group {
     position: absolute;
-    background: green;
-    top: 2.5rem;
+    background: white;
+    top: 3rem;
     /*! z-index: 12; */
     left: -32rem;
     display: none;
@@ -1925,14 +1909,61 @@ main .page_service .info_table table td {
     /*! align-items: flex-start; */
     /*! justify-content: flex-start; */
     /*! flex-direction: column; */
-    column-count: 3;
+    column-count: 2;
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    border: solid 1px var(--lihgt_grey);
+    padding: 1.5rem;
+    /*! height: 32rem; */
+    /*! overflow-y: auto; */
+    /*! column-fill: inherit; */
 }
-.parts_custom .parts_group .item{padding: 1rem;/*! width: 33.3333%; */background: antiquewhite;}
-.parts_custom .parts_group .item .title{}
-.parts_custom .parts_group .item ul{}
-.parts_custom .parts_group .item li{padding: 0.5rem 0;}
-.parts_custom .parts_group .item li a{}
-.parts_custom .parts_group .item li input{}
+
+.parts_custom .parts_group .item {
+    /*! padding: 1rem; */
+    /*! width: 33.3333%; */
+    /*! background: antiquewhite; */
+}
+
+.parts_custom .parts_group .item .title {
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: solid 1px var(--grey);
+    padding-bottom: 0.5rem;
+    column-span: all;
+    display: flex;
+    align-items: center;
+    color: var(--red);
+}
+
+.parts_custom .parts_group .item ul {
+    margin-bottom: 1rem;
+    /*! background: antiquewhite; */
+}
+
+.parts_custom .parts_group .item li {
+    padding: 0.5rem 0;
+    display: flex;
+}
+
+.parts_custom .parts_group .item li a {
+    /*! background: aquamarine; */
+    display: grid;
+    width: 100%;
+    padding: 0.5rem;
+}
+.parts_custom .parts_group .item li a:hover{
+background: var(--lihgt_grey);
+color: var(--red);
+}
+.parts_custom .parts_group .item input {
+    margin-right: 0.5rem;
+}
+
+.parts_custom .parts_input:after {}
+
+.parts_custom .parts_input:before {}
+
 #popup_wrap {
     position: fixed;
     left: 0;
@@ -1940,4 +1971,76 @@ main .page_service .info_table table td {
     top: 0;
     bottom: 0;
     z-index: 2;
+}
+.parts_custom .parts_group label{position: relative;top: auto;left: auto;padding: 0 0 0 2.5rem;/*! display: flex; *//*! align-items: center; */color: var(--black);font-size: 0.85rem;line-height: 1.5rem;}
+/* chekbox */
+ /* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  /*! background-color: #eee; */
+  border: solid 1px var(--grey);
+  border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: var(--lihgt_grey);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: var(--red);
+  border: solid 1px var(--red);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
