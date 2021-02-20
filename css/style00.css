@@ -1849,7 +1849,9 @@ main .page_service .info_table table td {
     margin-right: 0.5rem;
 }
 
+
 /* ---  experiments ---  */
+
 .parts_custom {
     margin: 1.5rem 0;
     width: 15rem;
@@ -1861,10 +1863,8 @@ main .page_service .info_table table td {
     /*! z-index: 3; */
     /*! cursor: pointer; */
     user-select: none;
-
     /*! padding: 0.5rem 0.75rem; */
     border-radius: 5px;
-
     margin: 1.5rem 0.5rem;
     /*! max-width: 15rem; */
     height: 2.5rem;
@@ -1872,10 +1872,8 @@ main .page_service .info_table table td {
 
 .parts_custom label {
     font-size: 0.75rem;
-
     position: absolute;
     top: -1.25rem;
-
     left: 0.5rem;
     padding: 0 0.25rem;
     color: var(--red);
@@ -1909,7 +1907,7 @@ main .page_service .info_table table td {
     /*! align-items: flex-start; */
     /*! justify-content: flex-start; */
     /*! flex-direction: column; */
-    column-count: 2;
+
     border-radius: 6px;
     box-shadow: var(--shadow);
     border: solid 1px var(--lihgt_grey);
@@ -1939,12 +1937,14 @@ main .page_service .info_table table td {
 .parts_custom .parts_group .item ul {
     margin-bottom: 1rem;
     /*! background: antiquewhite; */
+    columns: auto 2;
 }
 
 .parts_custom .parts_group .item li {
     padding: 0.5rem 0;
     /*! display: flex; */
-    display: block;
+    display: inline-block;
+    width: 100%;
 }
 
 .parts_custom .parts_group .item li a {
@@ -1953,10 +1953,12 @@ main .page_service .info_table table td {
     width: 100%;
     padding: 0.5rem;
 }
-.parts_custom .parts_group .item li a:hover{
-background: var(--lihgt_grey);
-color: var(--red);
+
+.parts_custom .parts_group .item li a:hover {
+    background: var(--lihgt_grey);
+    color: var(--red);
 }
+
 .parts_custom .parts_group .item input {
     margin-right: 0.5rem;
 }
@@ -1973,75 +1975,105 @@ color: var(--red);
     bottom: 0;
     z-index: 2;
 }
-.parts_custom .parts_group label{position: relative;top: auto;left: auto;padding: 0 0 0 2.5rem;/*! display: flex; *//*! align-items: center; */color: var(--black);font-size: 0.85rem;line-height: 1.5rem;}
-/* chekbox */
- /* Customize the label (the container) */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+
+.parts_custom .parts_group label {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 0 0 0 2.5rem;
+    /*! display: flex; */
+    /*! align-items: center; */
+    color: var(--black);
+    font-size: 0.85rem;
+    line-height: 1.5rem;
 }
+
+
+/* chekbox */
+
+
+/* Customize the label (the container) */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 
 /* Hide the browser's default checkbox */
+
 .container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
+
 
 /* Create a custom checkbox */
+
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 1.5rem;
-  width: 1.5rem;
-  /*! background-color: #eee; */
-  border: solid 1px var(--grey);
-  border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    /*! background-color: #eee; */
+    border: solid 1px var(--grey);
+    border-radius: 4px;
 }
+
 
 /* On mouse-over, add a grey background color */
+
 .container:hover input ~ .checkmark {
-  background-color: var(--lihgt_grey);
+    background-color: var(--lihgt_grey);
 }
+
 
 /* When the checkbox is checked, add a blue background */
+
 .container input:checked ~ .checkmark {
-  background-color: var(--red);
-  border: solid 1px var(--red);
+    background-color: var(--red);
+    border: solid 1px var(--red);
 }
+
 
 /* Create the checkmark/indicator (hidden when not checked) */
+
 .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+    content: "";
+    position: absolute;
+    display: none;
 }
+
 
 /* Show the checkmark when checked */
+
 .container input:checked ~ .checkmark:after {
-  display: block;
+    display: block;
 }
 
+
 /* Style the checkmark/indicator */
+
 .container .checkmark:after {
-  left: 7px;
-  top: 2px;
-  width: 6px;
-  height: 11px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+    left: 7px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }

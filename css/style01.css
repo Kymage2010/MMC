@@ -393,6 +393,6 @@ main .page_service .info_table {
 .info{
     margin: 2rem 0;
 }
-.parts_custom .parts_group{
+.parts_custom .parts_group .item ul{
     columns: auto 4;
 }
