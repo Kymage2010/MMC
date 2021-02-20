@@ -39,12 +39,12 @@ body {
 
 
 /*@font-face {
-    font-family: 'Alice';
-    src: url('../fonts/Alice-Regular.ttf') format('truetype');
-    font-weight: 400;
-    300-light,400-regular,500-medium,600-semibold,700-bold
-    font-style: normal;
-    font-display: swap;
+	font-family: 'Alice';
+	src: url('../fonts/Alice-Regular.ttf') format('truetype');
+	font-weight: 400;
+	300-light,400-regular,500-medium,600-semibold,700-bold
+	font-style: normal;
+	font-display: swap;
 }*/
 
 
@@ -251,9 +251,11 @@ header .top_white .logo {
     width: 50%;
 }
 
-header .top_white .right {}
+header .top_white .right {
+}
 
-header .top_white .right .record_white .button {}
+header .top_white .right .record_white .button {
+}
 
 header .top_white .right .record_white .button button {
     color: var(--red);
@@ -266,7 +268,8 @@ header .top_white .right .record_white img {
     display: none;
 }
 
-header .top_white .right .record_red {}
+header .top_white .right .record_red {
+}
 
 header .top_white .right .time_work {
     text-align: center;
@@ -313,7 +316,7 @@ video {
 
 #main_menu {
     /*! background: green; */
-    background: url(../video/HS046.mp4) no-repeat center center;
+    /* background: url(../video/HS046.mp4) no-repeat center center;*/
     background-size: cover;
 }
 
@@ -373,7 +376,8 @@ video {
     color: var(--white);
 }
 
-main .page_title .wrap {}
+main .page_title .wrap {
+}
 
 main .page_title .wrap .box {
     width: 100%;
@@ -419,7 +423,8 @@ main .select_car .cars .item {
     /*! transition: ease-in-out 0.3s; */
 }
 
-main .select_car .cars .item .pic img {}
+main .select_car .cars .item .pic img {
+}
 
 main .select_car .cars .item .model {
     text-align: center;
@@ -427,13 +432,17 @@ main .select_car .cars .item .model {
     margin-top: 0.5rem;
 }
 
-main .select_car .cars .item .list {}
+main .select_car .cars .item .list {
+}
 
-main .select_car .cars .item .list ul {}
+main .select_car .cars .item .list ul {
+}
 
-main .select_car .cars .item .list ul li {}
+main .select_car .cars .item .list ul li {
+}
 
-main .select_car .cars .item .list ul li a {}
+main .select_car .cars .item .list ul li a {
+}
 
 main .select_car .cars .item .list_service {
     /*! display: none; */
@@ -528,13 +537,15 @@ main .about .title {
     margin-bottom: 1.5rem;
 }
 
-main .about .text {}
+main .about .text {
+}
 
 main .about .text p {
     margin-bottom: 1rem;
 }
 
-main .about .text p a {}
+main .about .text p a {
+}
 
 
 /* select*/
@@ -767,7 +778,8 @@ main .page_service .dynamic .select_custom .list_select ul li .icon {
     background: var(--lihgt_grey);
 }
 
-main .page_service {}
+main .page_service {
+}
 
 main .page_service .dynamic {
     display: flex;
@@ -827,7 +839,8 @@ main .page_service .info_table {
     display: none;
 }
 
-main .page_service .info_table .box {}
+main .page_service .info_table .box {
+}
 
 footer {
     background: var(--red);
@@ -863,7 +876,8 @@ footer .item ul li a {
     display: inline;
 }
 
-footer .item .logo {}
+footer .item .logo {
+}
 
 footer .item span {
     font-size: 0.75rem;
@@ -1037,7 +1051,8 @@ footer .item span {
     cursor: pointer;
 }
 
-.popup_wrap .popup .title .close img {}
+.popup_wrap .popup .title .close img {
+}
 
 .popup_wrap .popup .pop_table {
     margin-top: 1rem;
@@ -1060,7 +1075,8 @@ footer .item span {
     margin: 1rem 0;
 }
 
-.popup_wrap .popup .pop_text p {}
+.popup_wrap .popup .pop_text p {
+}
 
 .popup_wrap .popup .pop_text p a {
     display: inline;
@@ -1456,7 +1472,6 @@ main .page_service .info_table table td {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    align-items: start;
 }
 
 .select_parts .select_s .custom_select {
@@ -1730,9 +1745,11 @@ main .page_service .info_table table td {
     cursor: pointer;
 }
 
-.news_list {}
+.news_list {
+}
 
-.news_list .item {}
+.news_list .item {
+}
 
 .news_list .item .title,
 .news_single .title {
@@ -1765,7 +1782,8 @@ main .page_service .info_table table td {
     margin: 0 0 1rem 0;
 }
 
-.news_list .item .anons .intro {}
+.news_list .item .anons .intro {
+}
 
 .news_list .item .anons .intro .button a {
     border: solid 1px var(--grey);
@@ -1850,54 +1868,76 @@ main .page_service .info_table table td {
     margin-right: 0.5rem;
 }
 
-
-/* -----------------  */
-
-.custom_parts {
-    min-width: 15rem;
+/* ---  experiments ---  */
+.parts_custom {
+    margin: 1.5rem 0;
+    width: 15rem;
+    /*! min-width: 15rem; */
     color: var(--black);
     font-size: 0.875rem;
-    border: solid 1px var(--red);
-    border-radius: 5px;
     position: relative;
+    border: 1px solid var(--red);
+    /*! z-index: 3; */
+    /*! cursor: pointer; */
+    user-select: none;
+
+    /*! padding: 0.5rem 0.75rem; */
+    border-radius: 5px;
+
     margin: 1.5rem 0.5rem;
-    width: auto;
-    /*! table-layout: fixed; */
     /*! max-width: 15rem; */
     height: 2.5rem;
-    /*! overflow: hidden; */
-    /*! float: left; */
 }
 
-.custom_parts label {
-    font-weight: 400;
-    left: 0.5rem;
-    padding: 0 0.25rem;
+.parts_custom label {
+    font-size: 0.75rem;
+
     position: absolute;
     top: -1.25rem;
-    font-size: 0.75rem;
+
+    left: 0.5rem;
+    padding: 0 0.25rem;
     color: var(--red);
+    font-weight: 400;
 }
-
-.custom_parts .c_p_input {
+.parts_custom.active{
+	z-index:11;
+}
+.parts_custom .parts_input {
     padding: 0.5rem 0.75rem;
-    height: 2.5rem;
-    /*! background: aqua; */
-    overflow: hidden;
-    line-height: 1.5rem;
-    text-overflow: ellipsis;
     width: 15rem;
-    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block; /*! max-width: 15rem; */
     white-space: nowrap;
+    cursor: pointer;
 }
 
-.custom_parts .c_p_option {
-    background: green;
+.parts_custom .parts_group {
     position: absolute;
-    /*! top: 3.5rem; */
-    /*! width: 100vw; */
-    /*! left: 0; */
-    /*! right: 0; */
+    background: green;
+    top: 2.5rem;
+    /*! z-index: 12; */
+    left: -32rem;
+    display: none;
+    cursor: inherit;
+    /*! flex-wrap: wrap; */
+    /*! align-items: flex-start; */
+    /*! justify-content: flex-start; */
+    /*! flex-direction: column; */
+    column-count: 3;
+}
+.parts_custom .parts_group .item{padding: 1rem;/*! width: 33.3333%; */background: antiquewhite;}
+.parts_custom .parts_group .item .title{}
+.parts_custom .parts_group .item ul{}
+.parts_custom .parts_group .item li{padding: 0.5rem 0;}
+.parts_custom .parts_group .item li a{}
+.parts_custom .parts_group .item li input{}
+#popup_wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     z-index: 2;
-    /*! float: left; */
 }
