@@ -1915,7 +1915,7 @@ main .page_service .info_table table td {
 	/*! height: 32rem; */
 	/*! overflow-y: auto; */
 	/*! column-fill: inherit; */
-	border-top: 1px solid var(--red);
+	border-top: 1px solid var(--grey);
 }
 
 .parts_custom .parts_group .item {
@@ -1983,12 +1983,13 @@ main .page_service .info_table table td {
 
 .parts_custom.active .parts_input:before {
 	content: "";
-	width: calc(100% + 2px);
-	height: 18px;
+	width: calc(1rem + 2px);
+	height: 0.7rem;
 	background: var(--red);
 	position: absolute;
-	bottom: -1rem;
-	margin: 0 calc(-0.75rem - 1px);
+	bottom: -0.7rem;
+	margin-left: calc(6rem - 1px);
+	/*! border-radius: 0 0 0rem 0rem; */
 }
 .parts_custom.disable {border-color: var(--grey);}
 .parts_custom.disable .parts_input{
