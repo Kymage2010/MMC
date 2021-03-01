@@ -13,8 +13,7 @@
     <!-- подключаем jquery -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <link href="css/swiper.css" rel="stylesheet" />
-</head>
+    <link href="css/swiper.css" rel="stylesheet" /> </head>
 
 <body>
     <!-- header -->
@@ -104,8 +103,7 @@
             </div>
         </div>
         <video loop autoplay muted>
-            <source src="video/demo-01.mp4" type="video/mp4">
-        </video>
+            <source src="video/demo-01.mp4" type="video/mp4"> </video>
     </nav>
     <!-- оснвоное поле -->
     <div class="content">
@@ -114,35 +112,32 @@
             <div class="page_title">
                 <div class="wrap">
                     <div class="box">
-                        <h1>Служебный раздел</h1>
-                    </div>
+                        <h1>Служебный раздел</h1> </div>
                 </div>
             </div>
             <!-- тело раздела -->
             <div class="wrap">
-
                 <div class="dynamic">
-
-
                     <div class="table_calculate single">
-
-
-
-
                         <!-- CRM -->
+                        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+                        <!-- <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.dataTables.min.css">-->
+                        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.dataTables.min.css">
+                        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+
+                       <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
+                        <!-- <script src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script> -->
 
 
-                        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.dataTables.min.css">
-                        <script src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
 
                         <script charset="utf-8">
-                            $(document).ready(function() {
-                                $('#orderList').DataTable();
+                            $(document).ready(function () {
+                                $('#orderList').DataTable({
+                                    responsive: true
+                                });
                             });
-
                         </script>
-
-                        <table id="orderList" class="display">
+                        <table id="orderList" class="display responsive" width="100%">
                             <thead>
                                 <tr>
                                     <th style="width:10px" class="sorting_disabled"></th>
@@ -616,19 +611,8 @@ https://www.cdek.ru/offices/view/rmn4-na-karla-marksa-ul-karla-marksa-6|anna_vol
                                 </tr>
                             </tfoot>
                         </table>
-
-
-
-
                         <!-- END CRM -->
-
-
-
-
-
-
                     </div>
-
                 </div>
             </div>
             <!-- тело раздела конец-->
@@ -638,8 +622,7 @@ https://www.cdek.ru/offices/view/rmn4-na-karla-marksa-ul-karla-marksa-6|anna_vol
                     <div class="box">
                         <form>
                             <div class="title">
-                                <h1>Сколько стоит плановое ТО?</h1>
-                            </div>
+                                <h1>Сколько стоит плановое ТО?</h1> </div>
                             <button class="button open_to" onclick="(document.getElementById('show_to').style.display='flex')">Сколько стоит плановое ТО?</button>
                             <div class="select_s" id="show_to">
                                 <div class="custom_select">
@@ -706,8 +689,7 @@ https://www.cdek.ru/offices/view/rmn4-na-karla-marksa-ul-karla-marksa-6|anna_vol
                                     <div class="flipper">
                                         <div class="front_side">
                                             <div class="title">
-                                                <h3>Заголовок первой новости повествующий о всяком разном</h3>
-                                            </div>
+                                                <h3>Заголовок первой новости повествующий о всяком разном</h3> </div>
                                             <div class="pic"><img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
                                         </div>
                                         <div class="back_side">
@@ -726,8 +708,7 @@ https://www.cdek.ru/offices/view/rmn4-na-karla-marksa-ul-karla-marksa-6|anna_vol
                                     <div class="flipper">
                                         <div class="front_side">
                                             <div class="title">
-                                                <h3>Заголовок второй новости о всяком</h3>
-                                            </div>
+                                                <h3>Заголовок второй новости о всяком</h3> </div>
                                             <div class="pic"><img src="images/demo-02.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
                                         </div>
                                         <div class="back_side">
@@ -746,8 +727,7 @@ https://www.cdek.ru/offices/view/rmn4-na-karla-marksa-ul-karla-marksa-6|anna_vol
                                     <div class="flipper">
                                         <div class="front_side">
                                             <div class="title">
-                                                <h3>Заголовок третьей новости</h3>
-                                            </div>
+                                                <h3>Заголовок третьей новости</h3> </div>
                                             <div class="pic"><img src="images/demo-03.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
                                         </div>
                                         <div class="back_side">
@@ -771,8 +751,7 @@ https://www.cdek.ru/offices/view/rmn4-na-karla-marksa-ul-karla-marksa-6|anna_vol
                 <section class="about">
                     <div class="box">
                         <div class="title">
-                            <h2>Техцентр Mitsubishi - мы выполняем ремонт Митсубиси качественно и в кратчайшие сроки.</h2>
-                        </div>
+                            <h2>Техцентр Mitsubishi - мы выполняем ремонт Митсубиси качественно и в кратчайшие сроки.</h2> </div>
                         <div class="text">
                             <p>Nulla ut in quis nulla excepteur eiusmod elit ad cillum amet exercitation. Esse non est amet ut aliqua dolore adipisicing Lorem culpa quis ut Lorem reprehenderit. Do qui ad qui ut nulla. Aliqua commodo aliqua eiusmod enim adipisicing id duis nulla aliquip dolor consectetur amet nulla quis. Sit anim ut amet sit dolor enim ea voluptate tempor voluptate et adipisicing.</p>
                             <p>Consequat ea sit ad veniam aliqua dolor duis officia voluptate. Fugiat pariatur magna consequat nostrud incididunt adipisicing qui esse.</p>
@@ -820,8 +799,7 @@ https://www.cdek.ru/offices/view/rmn4-na-karla-marksa-ul-karla-marksa-6|anna_vol
             </div>
             <div class="item">
                 <div class="box">
-                    <div class="logo"><img src="images/logo-white.svg" alt="ММС-Плюс" /></div> <span>ООО «ММС-Плюс» © 2020</span>
-                </div>
+                    <div class="logo"><img src="images/logo-white.svg" alt="ММС-Плюс" /></div> <span>ООО «ММС-Плюс» © 2020</span> </div>
             </div>
         </div>
     </footer>
@@ -886,41 +864,33 @@ https://www.cdek.ru/offices/view/rmn4-na-karla-marksa-ul-karla-marksa-6|anna_vol
                 <form>
                     <div class="input_custom required">
                         <label for="name">Имя</label>
-                        <input type="text" id="name">
-                    </div>
+                        <input type="text" id="name"> </div>
                     <div class="input_custom required">
                         <label for="surname">Фамилия</label>
-                        <input type="text" id="surname">
-                    </div>
+                        <input type="text" id="surname"> </div>
                     <div class="input_custom required">
                         <label for="phone">Телефон</label>
-                        <input type="tel" id="phone">
-                    </div>
+                        <input type="tel" id="phone"> </div>
                     <div class="input_custom required">
                         <label for="mail">Почта</label>
-                        <input type="email" id="mail">
-                    </div>
+                        <input type="email" id="mail"> </div>
                     <div class="input_custom">
                         <label for="pass">Пароль</label>
-                        <input type="password" id="pass">
-                    </div>
+                        <input type="password" id="pass"> </div>
                     <div class="checkbox">
                         <div class="title">Оформление</div> <span>
                             <input type="radio" id="fl" name="user_type" value="Физическое лицо" checked="">
                             <label for="fl">Физическое лицо</label></span> <span>
-                            <input type="radio" id="yl" name="user_type" value="Юридическое лицо"><label for="fl">Юридическое лицо</label></span>
-                    </div>
+                            <input type="radio" id="yl" name="user_type" value="Юридическое лицо"><label for="fl">Юридическое лицо</label></span> </div>
                     <div class="checkbox">
                         <div class="title">Доставка</div> <span>
                             <input type="radio" id="self" name="delivery_method" value="Самовывоз" checked=""><label for="self">Самовывоз</label></span> <span>
-                            <input type="radio" id="home" name="delivery_method" value="Внутри МКАД (350р.)"><label for="home">Внутри МКАД (350р.)</label></span>
-                    </div>
+                            <input type="radio" id="home" name="delivery_method" value="Внутри МКАД (350р.)"><label for="home">Внутри МКАД (350р.)</label></span> </div>
                     <div class="checkbox">
                         <div class="title">Оплата</div> <span>
                             <input type="radio" id="cash" name="payment_method" value="Наличными" checked=""><label for="cash">Наличными</label></span> <span>
                             <input type="radio" id="Card" name="payment_method" value="Картой"><label for="Card">Картой</label></span> <span>
-                            <input type="radio" id="bank" name="payment_method" value="Банковский перевод"><label for="bank">Банковский перевод</label></span>
-                    </div>
+                            <input type="radio" id="bank" name="payment_method" value="Банковский перевод"><label for="bank">Банковский перевод</label></span> </div>
                     <div class="input_custom textarea">
                         <label for="pass">Комментарий/Пожелания</label>
                         <textarea></textarea>
@@ -945,20 +915,16 @@ https://www.cdek.ru/offices/view/rmn4-na-karla-marksa-ul-karla-marksa-6|anna_vol
                 <form>
                     <div class="input_custom required">
                         <label for="name">Имя</label>
-                        <input type="text" id="name">
-                    </div>
+                        <input type="text" id="name"> </div>
                     <div class="input_custom required">
                         <label for="surname">Фамилия</label>
-                        <input type="text" id="surname">
-                    </div>
+                        <input type="text" id="surname"> </div>
                     <div class="input_custom required">
                         <label for="phone">Телефон</label>
-                        <input type="tel" id="phone">
-                    </div>
+                        <input type="tel" id="phone"> </div>
                     <div class="input_custom">
                         <label for="mail">Почта</label>
-                        <input type="email" id="mail">
-                    </div>
+                        <input type="email" id="mail"> </div>
                     <div class="custom_select on_white">
                         <label for="razdel" class="on_white">Марка</label>
                         <select id="razdel" name="razdel">
