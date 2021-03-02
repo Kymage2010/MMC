@@ -1428,7 +1428,13 @@ footer .item span {
 	font-weight: 600;
 	text-align: right;
 }
+.table_calculate .title{
+font-weight: 500;
+background: var(--grey);
+color: white;
+font-size: 1.2rem;
 
+}
 .table_calculate .button {
 	background: var(--red);
 	display: flex;
