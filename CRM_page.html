@@ -2,467 +2,537 @@
 <html lang="ru">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>ММС-Плюс | Текстовый документ</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-	<link href="css/style00.css" rel="stylesheet">
-	<link href="css/style01.css" rel="stylesheet" media="only screen and (min-width:660px) and (max-width:1023px)">
-	<link href="css/style02.css" rel="stylesheet" media="only screen and (min-width:1024px)">
-	<!-- подключаем jquery -->
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<link href="css/swiper.css" rel="stylesheet" /> </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ММС-Плюс | Текстовый документ</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/style00.css" rel="stylesheet">
+    <link href="css/style01.css" rel="stylesheet" media="only screen and (min-width:660px) and (max-width:1023px)">
+    <link href="css/style02.css" rel="stylesheet" media="only screen and (min-width:1024px)">
+    <!-- подключаем jquery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link href="css/swiper.css" rel="stylesheet" />
+</head>
 
 <body>
-	<!-- header -->
-	<div class="top_black">
-		<div class="wrap">
-			<div class="box" id="location_icon">
-				<a href="yandexnavi://build_route_on_map?lat_to=55.39&lon_to=37.42" title="Поехали"><img src="images/icon-location-white.svg" alt="Контакты" /><span>г. Москва, Шоссейная ул. д.90 стр.5</span></a>
-			</div>
-			<div class="box" id="phone_icon">
-				<a href="tel:+74955007032" title="Позвонить"><img src="images/icon-phone-white.svg" alt="Телефон" /><span>495 500-70-32</span></a>
-			</div>
-			<div class="box" id="lk_icon">
-				<a href="#" title="Личный кабинет"><img src="images/icon-account-white.svg" alt="Личный кабинет" /></a>
-			</div>
-			<div class="box" id="bracket_icon">
-				<a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-white.svg" alt="Корзина" /></a>
-			</div>
-		</div>
-	</div>
-	<header>
-		<div class="wrap">
-			<div class="top_white">
-				<div class="left">
-					<div class="icons">
-						<div class="box">
-							<div class="account">
-								<a href="#" title="Личный кабинет"><img src="images/icon-account-red.svg" alt="Личный кабинет" /></a>
-							</div>
-						</div>
-						<div class="box">
-							<div class="bracket">
-								<a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-red.svg" alt="Корзина" /></a>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<div class="record_red">
-							<div class="button">
-								<button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-record-white.svg" alt="Схема проезда" />Записаться на ТО</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="logo">
-					<div class="box"><img src="images/logo.svg" alt="Автосервис MMC-Плюс" /></div>
-				</div>
-				<div class="right">
-					<div class="shema">
-						<div class="box">
-							<div class="button">
-								<button title="Схема проезда"><img src="images/icon-map-white.svg" alt="Схема проезда" />Схема проезда</button>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<div class="record_white">
-							<div class="button">
-								<button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-map-white.svg" alt="Записаться на ТО" /> Записаться на ТО</button>
-							</div>
-						</div>
-						<div class="time_work">с 9-00 до 21-00</div>
-						<div class="mail"><a href="mailto:info@mmc-plus.ru">info@mmc-plus.ru</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- header end -->
-	<!-- Навигация -->
-	<!-- Навигация -->
-	<nav id="main_menu">
-		<div class="wrap">
-			<div class="box">
-				<div class="burger"><img src="images/icon-burger-white.svg" alt="Меню" /></div>
-				<ul>
-					<li><a href="#">Сервис и ремонт</a></li>
-					<li class="active"><a href="#">Подбор запчастей</a></li>
-					<li><a href="#">Кузовной ремонт</a></li>
-					<li><a href="#">Дополнительное оборудование</a></li>
-					<li><a href="#">Услуги шиномонтажа</a></li>
-				</ul>
-				<div class="to_down">
-					<div class="button">
-						<button>Сколько стоит плановое ТО?</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<video loop autoplay muted>
-			<source src="video/demo-01.mp4" type="video/mp4"> </video>
-	</nav>
-	<!-- оснвоное поле -->
-	<div class="content">
-		<main>
-			<!-- -->
-			<div class="page_title">
-				<div class="wrap">
-					<div class="box">
-						<h1>Служебный раздел</h1> </div>
-				</div>
-			</div>
-			<!-- тело раздела -->
-			<!-- CRM -->
-			<div class="wrap">
-				<div class="crm">
-					<div class="box">
-						<div class="switcher">
-							<button class="button">Запчасти</button>
-							<button class="button">Сервис</button>
-							<button class="button active">Клиенты</button>
-						</div>
-					</div>
-					<div class="order_list">
-						<div class="order_row">
-							<div class="order_button"><img src="images/icon-crm-unexpand.svg"></div>
-							<div class="order_number">#26022021-97</div>
-							<div class="order_date">2021-02-26 15:43:59</div>
-							<div class="order_total">3 500,0 р.</div>
-							<div class="order_name">Мизун Даниил</div>
-						</div>
-						<div class="order_row">
-							<div class="order_button"><img src="images/icon-crm-expand.svg"></div>
-							<div class="order_number">#24022021-96</div>
-							<div class="order_date">2021-02-24 15:12:24</div>
-							<div class="order_total">4 000,0 р.</div>
-							<div class="order_name">Гаврилов Виталий Вячеславович</div>
-							<div class="order_expand">
-								<div class="order_status">
-									<div class="custom_select on_white">
-										<label for="model" class="on_white">Статус</label>
-										<select id="model" name="model">
-											<option value="empty">&nbsp;</option>
-											<option value="01">Выполнен</option>
-											<option value="02">Подтверждён</option>
-											<option value="03">Отменён</option>
-										</select>
-									</div>
-								</div>
-								<div class="order_item">
-									<div class="order_article">14826</div>
-									<div class="order_part_name">Mitsubishi / Брызговики комплект Mitsubishi Lancer 9 [MN126479] CS3A 4G18</div>
-									<div class="order_item_del"><img src="images/icon-del.svg" alt="Удалить" title="Удалить"></div>
-									<div class="order_part_price">1 500р.</div>
-									<div class="order_quantity">
-										<div class="number">
-											<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">–</button>
-											<input type="number" min="0" value="1" readonly>
-											<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
-										</div>
-									</div>
-									<div class="order_summary">1 500р.</div>
-								</div>
-								<div class="order_item">
-									<div class="order_article">14826</div>
-									<div class="order_part_name">Mitsubishi / Стекло двери Mitsubishi L200 2009 [MN117597] KB4T 4D56, переднее левое</div>
-									<div class="order_item_del"><img src="images/icon-del.svg" alt="Удалить" title="Удалить"></div>
-									<div class="order_part_price">780р.</div>
-									<div class="order_quantity">
-										<div class="number">
-											<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">–</button>
-											<input type="number" min="0" value="1" readonly>
-											<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
-										</div>
-									</div>
-									<div class="order_summary">12 500р.</div>
-								</div>
-								<div class="order_finish">
-									<div class="order_finish_quantity">12 ед.</div>
-									<div class="order_finish_summary">128 500р.</div>
-								</div>
-								<form>
-									<div class="order_add_part">
-										<div class="input_custom">
-											<label for="addpart">Добавить в заказ</label>
-											<input name="addpart" type="text" placeholder="Номер детали"> </div>
-										<label for="analog">с аналогами</label>
-										<div class="box">
-											<input type="checkbox" name="analog"> </div>
-										<button type="submit">Искать</button>
-									</div>
-								</form>
-								<form>
-									<div class="order_text">
-										<textarea placeholder="Здравствуйте, Морозов Андрей Игоревич!"></textarea>
-									</div>
-									<div class="order_feedback">
-										<div class="order_mail">
-											<a href="mailto:info@mmc-plus.ru"><img src="images/icon-order-post.svg"></a>
-											<div class="box">
-												<input type="checkbox" name="order_mail_list"> </div>
-											<label for="order_mail_list">Приложить заказ</label>
-										</div>
-										<div class="order_phone">
-											<a href="https://wa.me/79120374755?text=Здравствуйте!%20Вас беспокоит MMC-Плюс"><img src="images/icon-order-whats.svg"></a>
-											&nbsp;
-											<a href="tel:+74955007032"><img src="images/icon-order-phone.svg"></a> <span>+7 (915) 728-84-24</span> </div>
-										<div class="order_address">
-											<a href="yandexnavi://map_search?text=6-я Радиальная С17"><img src="images/icon-order-road.svg"></a> <span>6-я Радиальная С17</span></div>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="order_row">
-							<div class="order_button"><img src="images/icon-crm-unexpand.svg"></div>
-							<div class="order_number">#26022021-97</div>
-							<div class="order_date">2021-02-26 15:43:59</div>
-							<div class="order_total">3 500,0 р.</div>
-							<div class="order_name">Мизун Даниил</div>
-						</div>
-						<div class="order_row">
-							<div class="order_button"><img src="images/icon-crm-unexpand.svg"></div>
-							<div class="order_number">#26022021-97</div>
-							<div class="order_date">2021-02-26 15:43:59</div>
-							<div class="order_total">3 500,0 р.</div>
-							<div class="order_name">Мизун Даниил</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- END CRM -->
-			<!-- тело раздела конец-->
-			<!-- -->
-		</main>
-	</div>
-	<footer>
-		<div class="wrap">
-			<div class="item">
-				<div class="box">
-					<h4>Услуги</h4>
-					<ul>
-						<li> <a href="#">Сервис и ремонт</a> </li>
-						<li> <a href="#">Подбор запчастей</a> </li>
-						<li> <a href="#">Кузовной ремонт</a> </li>
-						<li> <a href="#">Дополнительное оборудование</a> </li>
-						<li> <a href="#">Шиномонтаж</a> </li>
-					</ul>
-				</div>
-			</div>
-			<div class="item">
-				<div class="box">
-					<h4>Контакты</h4>
-					<ul>
-						<li> <a href="#">Схема проезда</a> </li>
-						<li> <a href="#">Банковские реквизиты</a> </li>
-						<li> <a href="#">Обратная связь</a> </li>
-					</ul>
-				</div>
-			</div>
-			<div class="item">
-				<div class="box">
-					<h4>Информация</h4>
-					<ul>
-						<li> <a href="#">Личный кабинет</a> </li>
-						<li> <a href="#">Карта сайта</a> </li>
-						<li> <a href="#">Политика конфиденциальности</a> </li>
-						<li> <a href="#">Пользовательское соглашение</a> </li>
-						<li> <a href="#">Политика использования Cookies</a> </li>
-					</ul>
-				</div>
-			</div>
-			<div class="item">
-				<div class="box">
-					<div class="logo"><img src="images/logo-white.svg" alt="ММС-Плюс" /></div> <span>ООО «ММС-Плюс» © 2020</span> </div>
-			</div>
-		</div>
-	</footer>
-	<!-- popup -->
-	<div class="popup_wrap" id="popup_shop">
-		<div class="popup">
-			<!-- Заказ -->
-			<div class="title">
-				<h3>Ваш заказ</h3>
-				<div class="close"><img src="images/icon-close-white.svg" alt="Закрыть" title="Закрыть" /></div>
-			</div>
-			<div class="pop_table">
-				<table class="resp-tab">
-					<thead>
-						<tr>
-							<th>Артикул</th>
-							<th>Наименование</th>
-							<th>Цена</th>
-							<th>Количество</th>
-							<th>Сумма</th>
-							<th>Доставка</th>
-							<th>Удалить</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><span>Артикул</span>15566</td>
-							<td><span>Наименование</span>Mitsubishi / Корпус воздушного фильтра Mitsubishi Chariot Grandis [MR514790] N84W 4G64</td>
-							<td><span>Цена</span>2 000р.</td>
-							<td class="count"><span>Количество</span>
-								<div class="calc minus">-</div>1
-								<div class="calc plus">+</div>
-							</td>
-							<td><span>Сумма</span>1 000р.</td>
-							<td><span>Доставка</span>0 дней</td>
-							<td><span>Удалить</span><img src="images/icon-del.svg" alt="Удалить" title="Удалить" /></td>
-						</tr>
-						<tr>
-							<td><span>Артикул</span>15567</td>
-							<td><span>Наименование</span>Mitsubishi / Корпус воздушного фильтра Mitsubishi Pajero Sport [MR464248] K94W 4D56</td>
-							<td><span>Цена</span>1 000р.</td>
-							<td class="count"><span>Количество</span>
-								<div class="calc minus">-</div>89
-								<div class="calc plus">+</div>
-							</td>
-							<td><span>Сумма</span>987 000р.</td>
-							<td><span>Доставка</span>0 дней</td>
-							<td><span>Удалить</span><img src="images/icon-del.svg" alt="Удалить" title="Удалить" /></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="pop_text total">Итого: <span>58</span> товаров на <span>784 542р.</span></div>
-			<div class="pop_button">
-				<button class="button">Оформить</button>
-			</div>
-			<div class="confirm">
-				<div class="pop_text">
-					<p>Вы не авторизованы, но можете продолжить оформлять заказ.</p>
-					<p>Мы рекомендуем <a href="#">авторизоваться</a> или <a href="#">зарегистрироваться</a>, чтобы не вводить Ваши данные в следующий раз.</p>
-				</div>
-				<form>
-					<div class="input_custom required">
-						<label for="name">Имя</label>
-						<input type="text" id="name"> </div>
-					<div class="input_custom required">
-						<label for="surname">Фамилия</label>
-						<input type="text" id="surname"> </div>
-					<div class="input_custom required">
-						<label for="phone">Телефон</label>
-						<input type="tel" id="phone"> </div>
-					<div class="input_custom required">
-						<label for="mail">Почта</label>
-						<input type="email" id="mail"> </div>
-					<div class="input_custom">
-						<label for="pass">Пароль</label>
-						<input type="password" id="pass"> </div>
-					<div class="checkbox">
-						<div class="title">Оформление</div> <span>
-							<input type="radio" id="fl" name="user_type" value="Физическое лицо" checked="">
-							<label for="fl">Физическое лицо</label></span> <span>
-							<input type="radio" id="yl" name="user_type" value="Юридическое лицо"><label for="fl">Юридическое лицо</label></span> </div>
-					<div class="checkbox">
-						<div class="title">Доставка</div> <span>
-							<input type="radio" id="self" name="delivery_method" value="Самовывоз" checked=""><label for="self">Самовывоз</label></span> <span>
-							<input type="radio" id="home" name="delivery_method" value="Внутри МКАД (350р.)"><label for="home">Внутри МКАД (350р.)</label></span> </div>
-					<div class="checkbox">
-						<div class="title">Оплата</div> <span>
-							<input type="radio" id="cash" name="payment_method" value="Наличными" checked=""><label for="cash">Наличными</label></span> <span>
-							<input type="radio" id="Card" name="payment_method" value="Картой"><label for="Card">Картой</label></span> <span>
-							<input type="radio" id="bank" name="payment_method" value="Банковский перевод"><label for="bank">Банковский перевод</label></span> </div>
-					<div class="input_custom textarea">
-						<label for="pass">Комментарий/Пожелания</label>
-						<textarea></textarea>
-					</div>
-					<div class="pop_button">
-						<button class="button" type="submit">Отправить</button>
-					</div>
-				</form>
-			</div>
-			<!-- Заказ конец-->
-		</div>
-	</div>
-	<!-- end popup wrap-->
-	<div class="popup_wrap" id="popup_to">
-		<div class="popup">
-			<!-- Запись на ТО -->
-			<div class="title">
-				<h3>Записаться на ТО</h3>
-				<div class="close"><img src="images/icon-close-red.svg" alt="Закрыть" title="Закрыть" /></div>
-			</div>
-			<div class="confirm">
-				<form>
-					<div class="input_custom required">
-						<label for="name">Имя</label>
-						<input type="text" id="name"> </div>
-					<div class="input_custom required">
-						<label for="surname">Фамилия</label>
-						<input type="text" id="surname"> </div>
-					<div class="input_custom required">
-						<label for="phone">Телефон</label>
-						<input type="tel" id="phone"> </div>
-					<div class="input_custom">
-						<label for="mail">Почта</label>
-						<input type="email" id="mail"> </div>
-					<div class="custom_select on_white">
-						<label for="razdel" class="on_white">Марка</label>
-						<select id="razdel" name="razdel">
-							<option value="empty">&nbsp;</option>
-							<option value="01">05</option>
-							<option value="02">06а</option>
-							<option value="03">07</option>
-							<option value="03">08</option>
-						</select>
-					</div>
-					<div class="custom_select on_white">
-						<label for="razdel" class="on_white">Модификация</label>
-						<select id="razdel" name="razdel">
-							<option value="empty">&nbsp;</option>
-							<option value="01">05</option>
-							<option value="02">06а</option>
-							<option value="03">07</option>
-							<option value="03">08</option>
-						</select>
-					</div>
-					<!-- -->
-					<!-- -->
-					<div class="custom_select on_white">
-						<label for="razdel" class="on_white">Пробег</label>
-						<select id="razdel" name="razdel">
-							<option value="empty">&nbsp;</option>
-							<option value="01">05</option>
-							<option value="02">06а</option>
-							<option value="03">07</option>
-							<option value="03">08</option>
-						</select>
-					</div>
-					<!-- -->
-					<!-- -->
-					<div class="custom_select on_white">
-						<label for="razdel" class="on_white">Работы</label>
-						<select id="razdel" name="razdel">
-							<option value="empty">&nbsp;</option>
-							<option value="01">05</option>
-							<option value="02">06а</option>
-							<option value="03">07</option>
-							<option value="03">08</option>
-						</select>
-					</div>
-					<!-- -->
-					<div class="input_custom textarea">
-						<label for="pass">Комментарий/Пожелания</label>
-						<textarea></textarea>
-					</div>
-					<div class="pop_button">
-						<button class="button" type="submit">Отправить</button>
-					</div>
-				</form>
-			</div>
-			<!-- Запись на ТО конец-->
-		</div>
-	</div>
-	<!-- end popup wrap-->
-	<script src="js/swiper_init.js"></script>
-	<script src="js/custom_select.js"></script>
-	<script src="js/pop-up.js"></script>
+    <!-- header -->
+    <div class="top_black">
+        <div class="wrap">
+            <div class="box" id="location_icon">
+                <a href="yandexnavi://build_route_on_map?lat_to=55.39&lon_to=37.42" title="Поехали"><img src="images/icon-location-white.svg" alt="Контакты" /><span>г. Москва, Шоссейная ул. д.90 стр.5</span></a>
+            </div>
+            <div class="box" id="phone_icon">
+                <a href="tel:+74955007032" title="Позвонить"><img src="images/icon-phone-white.svg" alt="Телефон" /><span>495 500-70-32</span></a>
+            </div>
+            <div class="box" id="lk_icon">
+                <a href="#" title="Личный кабинет"><img src="images/icon-account-white.svg" alt="Личный кабинет" /></a>
+            </div>
+            <div class="box" id="bracket_icon">
+                <a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-white.svg" alt="Корзина" /></a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="wrap">
+            <div class="top_white">
+                <div class="left">
+                    <div class="icons">
+                        <div class="box">
+                            <div class="account">
+                                <a href="#" title="Личный кабинет"><img src="images/icon-account-red.svg" alt="Личный кабинет" /></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="bracket">
+                                <a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-red.svg" alt="Корзина" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="record_red">
+                            <div class="button">
+                                <button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-record-white.svg" alt="Схема проезда" />Записаться на ТО</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <div class="box"><img src="images/logo.svg" alt="Автосервис MMC-Плюс" /></div>
+                </div>
+                <div class="right">
+                    <div class="shema">
+                        <div class="box">
+                            <div class="button">
+                                <button title="Схема проезда"><img src="images/icon-map-white.svg" alt="Схема проезда" />Схема проезда</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="record_white">
+                            <div class="button">
+                                <button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-map-white.svg" alt="Записаться на ТО" /> Записаться на ТО</button>
+                            </div>
+                        </div>
+                        <div class="time_work">с 9-00 до 21-00</div>
+                        <div class="mail"><a href="mailto:info@mmc-plus.ru">info@mmc-plus.ru</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- Навигация -->
+    <!-- Навигация -->
+    <nav id="main_menu">
+        <div class="wrap">
+            <div class="box">
+                <div class="burger"><img src="images/icon-burger-white.svg" alt="Меню" /></div>
+                <ul>
+                    <li><a href="#">Сервис и ремонт</a></li>
+                    <li class="active"><a href="#">Подбор запчастей</a></li>
+                    <li><a href="#">Кузовной ремонт</a></li>
+                    <li><a href="#">Дополнительное оборудование</a></li>
+                    <li><a href="#">Услуги шиномонтажа</a></li>
+                </ul>
+                <div class="to_down">
+                    <div class="button">
+                        <button>Сколько стоит плановое ТО?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <video loop autoplay muted>
+            <source src="video/demo-01.mp4" type="video/mp4">
+        </video>
+    </nav>
+    <!-- оснвоное поле -->
+    <div class="content">
+        <main>
+            <!-- -->
+            <div class="page_title">
+                <div class="wrap">
+                    <div class="box">
+                        <h1>Служебный раздел</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- тело раздела -->
+            <!-- CRM -->
+            <div class="wrap">
+                <div class="crm">
+                    <div class="box">
+                        <div class="switcher">
+                            <button class="button">Запчасти</button>
+                            <button class="button">Сервис</button>
+                            <button class="button active">Клиенты</button>
+                        </div>
+                    </div>
+                    <div class="order_list">
+                        <div class="order_row">
+                            <div class="order_button"><img src="images/icon-crm-unexpand.svg"></div>
+                            <div class="order_number">#26022021-97</div>
+                            <div class="order_date">2021-02-26 15:43:59</div>
+                            <div class="order_total">3 500,0 р.</div>
+                            <div class="order_name">Мизун Даниил</div>
+                        </div>
+                        <div class="order_row">
+                            <div class="order_button"><img src="images/icon-crm-expand.svg"></div>
+                            <div class="order_number">#24022021-96</div>
+                            <div class="order_date">2021-02-24 15:12:24</div>
+                            <div class="order_total">4 000,0 р.</div>
+                            <div class="order_name">Гаврилов Виталий Вячеславович</div>
+                            <div class="order_expand">
+                                <div class="order_status">
+                                    <div class="custom_select on_white">
+                                        <label for="model" class="on_white">Статус</label>
+                                        <select id="model" name="model">
+                                            <option value="empty">&nbsp;</option>
+                                            <option value="01">Выполнен</option>
+                                            <option value="02">Подтверждён</option>
+                                            <option value="03">Отменён</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="order_item">
+                                    <div class="order_article">14826</div>
+                                    <div class="order_part_name">Mitsubishi / Брызговики комплект Mitsubishi Lancer 9 [MN126479] CS3A 4G18</div>
+                                    <div class="order_item_del"><img src="images/icon-del.svg" alt="Удалить" title="Удалить"></div>
+                                    <div class="order_part_price">1 500р.</div>
+                                    <div class="order_quantity">
+                                        <div class="number">
+                                            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">–</button>
+                                            <input type="number" min="0" value="1" readonly>
+                                            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="order_summary">1 500р.</div>
+                                </div>
+                                <div class="order_item">
+                                    <div class="order_article">14826</div>
+                                    <div class="order_part_name">Mitsubishi / Стекло двери Mitsubishi L200 2009 [MN117597] KB4T 4D56, переднее левое</div>
+                                    <div class="order_item_del"><img src="images/icon-del.svg" alt="Удалить" title="Удалить"></div>
+                                    <div class="order_part_price">780р.</div>
+                                    <div class="order_quantity">
+                                        <div class="number">
+                                            <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">–</button>
+                                            <input type="number" min="0" value="1" readonly>
+                                            <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="order_summary">12 500р.</div>
+                                </div>
+                                <div class="order_finish">
+                                    <div class="order_finish_quantity">12 ед.</div>
+                                    <div class="order_finish_summary">128 500р.</div>
+                                </div>
+                                <form>
+                                    <div class="order_add_part">
+                                        <div class="input_custom">
+                                            <label for="addpart">Добавить в заказ</label>
+                                            <input name="addpart" type="text" placeholder="Номер детали">
+                                        </div>
+                                        <label for="analog">с аналогами</label>
+                                        <div class="box">
+                                            <input type="checkbox" name="analog">
+                                        </div>
+                                        <button type="submit">Искать</button>
+
+
+
+                                    </div>
+                                    <!-- -->
+                                    Найдено 3 позиции:
+                                    <div class="order_search_result">
+                                        <div class="order_article">14826</div>
+                                        <div class="order_part_name"><span>Mitsubishi</span> Стекло двери Mitsubishi L200 2009 <span>MN117597</span> KB4T 4D56, переднее левое</div>
+                                        <div class="order_search_result_add"><a class="button"><img src="images/icon-barcket-add.svg" alt="Добавить"></a></div>
+
+                                        <div class="order_part_stock"><span>93 шт.</span></div>
+                                        <div class="order_part_delivery"><span>5 дн.</span></div>
+                                        <div class="order_part_photo"><a class="button"><img src="images/icon-order-photo.svg" alt="Фото"></a></div>
+                                        <div class="order_part_price">780р.</div>
+
+                                        <div class="order_quantity">
+                                            <div class="number">
+                                                <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">–</button>
+                                                <input type="number" min="0" value="1" readonly>
+                                                <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="order_search_result">
+                                        <div class="order_article">506</div>
+                                        <div class="order_part_name"><span>Mitsubishi</span> MITSUBISHI / Бампер Mitsubishi Galant EA, передний <span>MR325299</span></div>
+                                        <div class="order_search_result_add"><a class="button"><img src="images/icon-barcket-add.svg" alt="Добавить"></a></div>
+
+                                        <div class="order_part_stock"><span>1 шт.</span></div>
+                                        <div class="order_part_delivery"><span>0 дн.</span></div>
+                                        <div class="order_part_photo"><a class="button"><img src="images/icon-order-photo.svg" alt="Фото"></a></div>
+                                        <div class="order_part_price">6 000 р.</div>
+
+                                        <div class="order_quantity">
+                                            <div class="number">
+                                                <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">–</button>
+                                                <input type="number" min="0" value="1" readonly>
+                                                <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- -->
+                                </form>
+                                <div class="comment">Добрый день! Бампер Mitsubishi Galant [MR325299] EA, передний - бампер какого цвета? Подойдёт на EA7A ?</div>
+                                <form>
+                                    <div class="order_text">
+                                        <textarea placeholder="Здравствуйте, Морозов Андрей Игоревич!"></textarea>
+                                    </div>
+                                    <div class="order_feedback">
+                                        <div class="order_mail">
+                                            <a href="mailto:info@mmc-plus.ru"><img src="images/icon-order-post.svg"></a>
+                                            <div class="box">
+                                                <input type="checkbox" name="order_mail_list">
+                                            </div>
+                                            <label for="order_mail_list">Приложить заказ</label>
+                                        </div>
+                                        <div class="order_phone">
+                                            <a href="https://wa.me/79120374755?text=Здравствуйте!%20Вас беспокоит MMC-Плюс"><img src="images/icon-order-whats.svg"></a>
+                                            &nbsp;
+                                            <a href="tel:+74955007032"><img src="images/icon-order-phone.svg"></a> <span>+7 (915) 728-84-24</span>
+                                        </div>
+                                        <div class="order_address">
+                                            <a href="yandexnavi://map_search?text=6-я Радиальная С17"><img src="images/icon-order-road.svg"></a> <span>6-я Радиальная С17</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="order_row">
+                            <div class="order_button"><img src="images/icon-crm-unexpand.svg"></div>
+                            <div class="order_number">#26022021-97</div>
+                            <div class="order_date">2021-02-26 15:43:59</div>
+                            <div class="order_total">3 500,0 р.</div>
+                            <div class="order_name">Мизун Даниил</div>
+                        </div>
+                        <div class="order_row">
+                            <div class="order_button"><img src="images/icon-crm-unexpand.svg"></div>
+                            <div class="order_number">#26022021-97</div>
+                            <div class="order_date">2021-02-26 15:43:59</div>
+                            <div class="order_total">3 500,0 р.</div>
+                            <div class="order_name">Мизун Даниил</div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- END CRM -->
+            <!-- тело раздела конец-->
+            <!-- -->
+        </main>
+    </div>
+    <footer>
+        <div class="wrap">
+            <div class="item">
+                <div class="box">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li> <a href="#">Сервис и ремонт</a> </li>
+                        <li> <a href="#">Подбор запчастей</a> </li>
+                        <li> <a href="#">Кузовной ремонт</a> </li>
+                        <li> <a href="#">Дополнительное оборудование</a> </li>
+                        <li> <a href="#">Шиномонтаж</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li> <a href="#">Схема проезда</a> </li>
+                        <li> <a href="#">Банковские реквизиты</a> </li>
+                        <li> <a href="#">Обратная связь</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li> <a href="#">Личный кабинет</a> </li>
+                        <li> <a href="#">Карта сайта</a> </li>
+                        <li> <a href="#">Политика конфиденциальности</a> </li>
+                        <li> <a href="#">Пользовательское соглашение</a> </li>
+                        <li> <a href="#">Политика использования Cookies</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="logo"><img src="images/logo-white.svg" alt="ММС-Плюс" /></div> <span>ООО «ММС-Плюс» © 2020</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- popup -->
+    <div class="popup_wrap" id="popup_shop">
+        <div class="popup">
+            <!-- Заказ -->
+            <div class="title">
+                <h3>Ваш заказ</h3>
+                <div class="close"><img src="images/icon-close-white.svg" alt="Закрыть" title="Закрыть" /></div>
+            </div>
+            <div class="pop_table">
+                <table class="resp-tab">
+                    <thead>
+                        <tr>
+                            <th>Артикул</th>
+                            <th>Наименование</th>
+                            <th>Цена</th>
+                            <th>Количество</th>
+                            <th>Сумма</th>
+                            <th>Доставка</th>
+                            <th>Удалить</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>Артикул</span>15566</td>
+                            <td><span>Наименование</span>Mitsubishi / Корпус воздушного фильтра Mitsubishi Chariot Grandis [MR514790] N84W 4G64</td>
+                            <td><span>Цена</span>2 000р.</td>
+                            <td class="count"><span>Количество</span>
+                                <div class="calc minus">-</div>1
+                                <div class="calc plus">+</div>
+                            </td>
+                            <td><span>Сумма</span>1 000р.</td>
+                            <td><span>Доставка</span>0 дней</td>
+                            <td><span>Удалить</span><img src="images/icon-del.svg" alt="Удалить" title="Удалить" /></td>
+                        </tr>
+                        <tr>
+                            <td><span>Артикул</span>15567</td>
+                            <td><span>Наименование</span>Mitsubishi / Корпус воздушного фильтра Mitsubishi Pajero Sport [MR464248] K94W 4D56</td>
+                            <td><span>Цена</span>1 000р.</td>
+                            <td class="count"><span>Количество</span>
+                                <div class="calc minus">-</div>89
+                                <div class="calc plus">+</div>
+                            </td>
+                            <td><span>Сумма</span>987 000р.</td>
+                            <td><span>Доставка</span>0 дней</td>
+                            <td><span>Удалить</span><img src="images/icon-del.svg" alt="Удалить" title="Удалить" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pop_text total">Итого: <span>58</span> товаров на <span>784 542р.</span></div>
+            <div class="pop_button">
+                <button class="button">Оформить</button>
+            </div>
+            <div class="confirm">
+                <div class="pop_text">
+                    <p>Вы не авторизованы, но можете продолжить оформлять заказ.</p>
+                    <p>Мы рекомендуем <a href="#">авторизоваться</a> или <a href="#">зарегистрироваться</a>, чтобы не вводить Ваши данные в следующий раз.</p>
+                </div>
+                <form>
+                    <div class="input_custom required">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="input_custom required">
+                        <label for="surname">Фамилия</label>
+                        <input type="text" id="surname">
+                    </div>
+                    <div class="input_custom required">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="input_custom required">
+                        <label for="mail">Почта</label>
+                        <input type="email" id="mail">
+                    </div>
+                    <div class="input_custom">
+                        <label for="pass">Пароль</label>
+                        <input type="password" id="pass">
+                    </div>
+                    <div class="checkbox">
+                        <div class="title">Оформление</div> <span>
+                            <input type="radio" id="fl" name="user_type" value="Физическое лицо" checked="">
+                            <label for="fl">Физическое лицо</label></span> <span>
+                            <input type="radio" id="yl" name="user_type" value="Юридическое лицо"><label for="fl">Юридическое лицо</label></span>
+                    </div>
+                    <div class="checkbox">
+                        <div class="title">Доставка</div> <span>
+                            <input type="radio" id="self" name="delivery_method" value="Самовывоз" checked=""><label for="self">Самовывоз</label></span> <span>
+                            <input type="radio" id="home" name="delivery_method" value="Внутри МКАД (350р.)"><label for="home">Внутри МКАД (350р.)</label></span>
+                    </div>
+                    <div class="checkbox">
+                        <div class="title">Оплата</div> <span>
+                            <input type="radio" id="cash" name="payment_method" value="Наличными" checked=""><label for="cash">Наличными</label></span> <span>
+                            <input type="radio" id="Card" name="payment_method" value="Картой"><label for="Card">Картой</label></span> <span>
+                            <input type="radio" id="bank" name="payment_method" value="Банковский перевод"><label for="bank">Банковский перевод</label></span>
+                    </div>
+                    <div class="input_custom textarea">
+                        <label for="pass">Комментарий/Пожелания</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="pop_button">
+                        <button class="button" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Заказ конец-->
+        </div>
+    </div>
+    <!-- end popup wrap-->
+    <div class="popup_wrap" id="popup_to">
+        <div class="popup">
+            <!-- Запись на ТО -->
+            <div class="title">
+                <h3>Записаться на ТО</h3>
+                <div class="close"><img src="images/icon-close-red.svg" alt="Закрыть" title="Закрыть" /></div>
+            </div>
+            <div class="confirm">
+                <form>
+                    <div class="input_custom required">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="input_custom required">
+                        <label for="surname">Фамилия</label>
+                        <input type="text" id="surname">
+                    </div>
+                    <div class="input_custom required">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="input_custom">
+                        <label for="mail">Почта</label>
+                        <input type="email" id="mail">
+                    </div>
+                    <div class="custom_select on_white">
+                        <label for="razdel" class="on_white">Марка</label>
+                        <select id="razdel" name="razdel">
+                            <option value="empty">&nbsp;</option>
+                            <option value="01">05</option>
+                            <option value="02">06а</option>
+                            <option value="03">07</option>
+                            <option value="03">08</option>
+                        </select>
+                    </div>
+                    <div class="custom_select on_white">
+                        <label for="razdel" class="on_white">Модификация</label>
+                        <select id="razdel" name="razdel">
+                            <option value="empty">&nbsp;</option>
+                            <option value="01">05</option>
+                            <option value="02">06а</option>
+                            <option value="03">07</option>
+                            <option value="03">08</option>
+                        </select>
+                    </div>
+                    <!-- -->
+                    <!-- -->
+                    <div class="custom_select on_white">
+                        <label for="razdel" class="on_white">Пробег</label>
+                        <select id="razdel" name="razdel">
+                            <option value="empty">&nbsp;</option>
+                            <option value="01">05</option>
+                            <option value="02">06а</option>
+                            <option value="03">07</option>
+                            <option value="03">08</option>
+                        </select>
+                    </div>
+                    <!-- -->
+                    <!-- -->
+                    <div class="custom_select on_white">
+                        <label for="razdel" class="on_white">Работы</label>
+                        <select id="razdel" name="razdel">
+                            <option value="empty">&nbsp;</option>
+                            <option value="01">05</option>
+                            <option value="02">06а</option>
+                            <option value="03">07</option>
+                            <option value="03">08</option>
+                        </select>
+                    </div>
+                    <!-- -->
+                    <div class="input_custom textarea">
+                        <label for="pass">Комментарий/Пожелания</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="pop_button">
+                        <button class="button" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Запись на ТО конец-->
+        </div>
+    </div>
+    <!-- end popup wrap-->
+    <script src="js/swiper_init.js"></script>
+    <script src="js/custom_select.js"></script>
+    <script src="js/pop-up.js"></script>
 </body>
 
 </html>
