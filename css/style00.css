@@ -262,10 +262,6 @@ h4 {
 
 /* end select custom*/
 
-header {
-    /*! background: #CCC; */
-}
-
 button,
 .button {
     border-radius: 4px;
@@ -286,13 +282,11 @@ button:hover,
 }
 
 .content main {
-    /*! background: antiquewhite; */
+
     width: 100%;
 }
 
-.content {
-    /*! background: #FCF; */
-}
+
 
 .top_black {
     display: flex;
@@ -330,9 +324,6 @@ header .top_white .logo {
     width: 50%;
 }
 
-header .top_white .right {}
-
-header .top_white .right .record_white .button {}
 
 header .top_white .right .record_white .button button {
     color: var(--red);
@@ -345,7 +336,7 @@ header .top_white .right .record_white img {
     display: none;
 }
 
-header .top_white .right .record_red {}
+
 
 header .top_white .right .time_work {
     text-align: center;
@@ -371,10 +362,7 @@ header .top_white .right .mail {
     font-weight: 500;
 }
 
-header .top_white .button {
-    /*! border: 1px solid var(--red); */
-    /*! background: aquamarine; */
-}
+
 
 header .top_white .button button {
     background: var(--red);
@@ -431,20 +419,13 @@ video {
     border-radius: 0 0 6px 6px;
 }
 
-#main_menu .wrap .box ul li {
-    /*! margin-bottom: 1rem; */
-}
+
 
 #main_menu .wrap .box ul li a {
     padding: 0.5rem 0;
 }
 
-#main_menu .wrap .box ul .active a {
-    /*! color: var(--red); */
-    /*! padding: 0.5rem 1rem; */
-    /*! background: var(--lihgt_grey); */
-    /*! margin: 0 -1rem; */
-}
+
 
 #main_menu .wrap .box .to_down .button button {
     background: none;
@@ -452,7 +433,6 @@ video {
     color: var(--white);
 }
 
-main .page_title .wrap {}
 
 main .page_title .wrap .box {
     width: 100%;
@@ -498,7 +478,7 @@ main .select_car .cars .item {
     /*! transition: ease-in-out 0.3s; */
 }
 
-main .select_car .cars .item .pic img {}
+
 
 main .select_car .cars .item .model {
     text-align: center;
@@ -506,13 +486,6 @@ main .select_car .cars .item .model {
     margin-top: 0.5rem;
 }
 
-main .select_car .cars .item .list {}
-
-main .select_car .cars .item .list ul {}
-
-main .select_car .cars .item .list ul li {}
-
-main .select_car .cars .item .list ul li a {}
 
 main .select_car .cars .item .list_service {
     /*! display: none; */
@@ -607,13 +580,13 @@ main .about .title {
     margin-bottom: 1.5rem;
 }
 
-main .about .text {}
+
 
 main .about .text p {
     margin-bottom: 1rem;
 }
 
-main .about .text p a {}
+
 
 
 /* select*/
@@ -846,7 +819,7 @@ main .page_service .dynamic .select_custom .list_select ul li .icon {
     background: var(--lihgt_grey);
 }
 
-main .page_service {}
+
 
 main .page_service .dynamic {
     display: flex;
@@ -906,7 +879,7 @@ main .page_service .info_table {
     display: none;
 }
 
-main .page_service .info_table .box {}
+
 
 footer {
     background: var(--red);
@@ -942,7 +915,7 @@ footer .item ul li a {
     display: inline;
 }
 
-footer .item .logo {}
+
 
 footer .item span {
     font-size: 0.75rem;
@@ -970,17 +943,7 @@ footer .item span {
     /*! padding: 1rem 1rem 0 1rem; */
 }
 
-.slide .pic {
-    /*! height: 100%; */
-    /*! width: 100%; */
-    /*! object-fit: cover; */
-}
 
-.slide .pic img {
-    /*! object-fit: cover; */
-    /*! width: 100%; */
-    /*! height: auto; */
-}
 
 .slide:hover .flipper {
     transform: rotateY(180deg);
@@ -1039,10 +1002,7 @@ footer .item span {
     justify-content: space-between;
 }
 
-.slide .front_side {
-    /*! z-index:100; */
-    /*! display: none; */
-}
+
 
 .slide .back_side {
     transform: rotateY(180deg);
@@ -1116,7 +1076,7 @@ footer .item span {
     cursor: pointer;
 }
 
-.popup_wrap .popup .title .close img {}
+
 
 .popup_wrap .popup .pop_table {
     margin-top: 1rem;
@@ -1139,7 +1099,7 @@ footer .item span {
     margin: 1rem 0;
 }
 
-.popup_wrap .popup .pop_text p {}
+
 
 .popup_wrap .popup .pop_text p a {
     display: inline;
@@ -1429,13 +1389,15 @@ footer .item span {
     font-weight: 600;
     text-align: right;
 }
-.table_calculate .title{
-font-weight: 500;
-background: var(--grey);
-color: white;
-font-size: 1.2rem;
+
+.table_calculate .title {
+    font-weight: 500;
+    background: var(--grey);
+    color: white;
+    font-size: 1.2rem;
 
 }
+
 .table_calculate .button {
     background: var(--red);
     display: flex;
@@ -1483,9 +1445,6 @@ main .page_service .resume .total_record .money {
     line-height: 4rem;
 }
 
-main .page_service .resume .total_record button {
-    /*! width: 100%; */
-}
 
 main .page_service .resume .total_record .button {
     width: 100%;
@@ -1515,11 +1474,7 @@ main .page_service .info_table table {
     background-position: center;
 }
 
-main .page_service .info_table table tr:nth-child(2n) {
-    /*! background: var(--white); */
-    /*! border-top: solid 1px black; */
-    /*! padding: 5px; */
-}
+
 
 main .page_service .info_table table th {
     font-size: 0.75rem;
@@ -1823,9 +1778,6 @@ main .page_service .info_table table td {
     cursor: pointer;
 }
 
-.news_list {}
-
-.news_list .item {}
 
 .news_list .item .title,
 .news_single .title {
@@ -1858,7 +1810,7 @@ main .page_service .info_table table td {
     margin: 0 0 1rem 0;
 }
 
-.news_list .item .anons .intro {}
+
 
 .news_list .item .anons .intro .button a {
     border: solid 1px var(--grey);
@@ -2012,11 +1964,6 @@ main .page_service .info_table table td {
     border-top: 1px solid var(--grey);
 }
 
-.parts_custom .parts_group .item {
-    /*! padding: 1rem; */
-    /*! width: 33.3333%; */
-    /*! background: antiquewhite; */
-}
 
 .parts_custom .parts_group .item .title {
     text-transform: uppercase;
@@ -2167,14 +2114,14 @@ main .page_service .info_table table td {
 
 /* On mouse-over, add a grey background color */
 
-.container:hover input ~ .checkmark {
+.container:hover input~.checkmark {
     background-color: var(--lihgt_grey);
 }
 
 
 /* When the checkbox is checked, add a blue background */
 
-.container input:checked ~ .checkmark {
+.container input:checked~.checkmark {
     background-color: var(--red);
     border: solid 1px var(--red);
 }
@@ -2191,7 +2138,7 @@ main .page_service .info_table table td {
 
 /* Show the checkmark when checked */
 
-.container input:checked ~ .checkmark:after {
+.container input:checked~.checkmark:after {
     display: block;
 }
 
@@ -2249,7 +2196,7 @@ main .page_service .info_table table td {
     padding: 0.5rem 0;
 }
 
-.crm .order_list .order_row .order_button {}
+
 
 .crm .order_list .order_row .order_number {
     padding: 0.5rem;
@@ -2315,9 +2262,11 @@ main .page_service .info_table table td {
     /*! font-weight: 500; */
     max-width: 65%;
 }
-.order_search_result span{
+
+.order_search_result span {
     font-weight: 600;
 }
+
 .order_part_price {
     white-space: nowrap;
     /*! display: flex; */
@@ -2327,20 +2276,18 @@ main .page_service .info_table table td {
     text-align: end;
     font-weight: 600;
 }
-.order_item_del{
-/*! width: 15%; */
-margin-left: auto;
+
+.order_item_del {
+    /*! width: 15%; */
+    margin-left: auto;
 }
+
 .order_part_price:before {
     content: "Цена:";
     margin-right: 0.5rem;
     font-weight: 400;
 }
 
-.order_quantity {
-    /*! width: 50%; */
-    /*! background: aqua; */
-}
 
 .order_summary {
     /*! width: 50%; */
@@ -2354,6 +2301,7 @@ margin-left: auto;
     margin-left: 1rem;
     min-width: 5rem;
 }
+
 .order_search_result {
     display: flex;
     flex-wrap: wrap;
@@ -2365,29 +2313,41 @@ margin-left: auto;
     /*! border-top: solid 1px var(--grey); */
     align-items: center;
 }
-.order_row .comment{margin-bottom: 0.5rem;color: var(--red);}
-.order_part_stock{
+
+.order_row .comment {
+    margin-bottom: 0.5rem;
+    color: var(--red);
+}
+
+.order_part_stock {
     /*! display: flex; */
     /*! align-items: center; */
     padding: 0.5rem;
 }
-.order_part_delivery{
+
+.order_part_delivery {
     padding: 0.5rem;
 }
-.order_part_delivery:before{
+
+.order_part_delivery:before {
     content: "Доставка:";
     margin-right: 0.5rem;
 }
-.order_part_stock:before{
+
+.order_part_stock:before {
     content: "Остаток:";
     margin-right: 0.5rem;
 }
-.order_search_result_add .button, .order_search_result_add button{
+
+.order_search_result_add .button,
+.order_search_result_add button {
     background: var(--red);
 }
+
 .order_search_result_add {
     margin-left: auto;
 }
+
 .crm .order_list .order_row .order_expand .order_finish {
     display: flex;
     align-items: center;
@@ -2433,7 +2393,6 @@ margin-left: auto;
     margin: 1rem 0;
 }
 
-.crm .order_list .order_row .order_expand .order_text {}
 
 .crm .order_list .order_row .order_expand .order_text textarea {
     width: 100%;
@@ -2446,11 +2405,37 @@ margin-left: auto;
     resize: vertical;
 }
 
-.crm .order_list .order_row .order_expand .order_feedback {display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;}
-.crm .order_list .order_row .order_expand .order_feedback span{
-padding: 0 1rem;}
-.crm .order_list .order_row .order_expand .order_feedback .order_mail {display: flex;align-items: center;margin: 0.5rem 0;/*! justify-content: space-between; *//*! width: 100%; */}
+.crm .order_list .order_row .order_expand .order_feedback {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
-.crm .order_list .order_row .order_expand .order_feedback .order_phone {display: flex;align-items: center;justify-content: space-between;/*! width: 100%; *//*! margin: 0.5rem 0; */}
+.crm .order_list .order_row .order_expand .order_feedback span {
+    padding: 0 1rem;
+}
 
-.crm .order_list .order_row .order_expand .order_feedback .order_address {display: flex;align-items: center;margin: 0.5rem 0;/*! justify-content: space-between; *//*! width: 100%; */}
+.crm .order_list .order_row .order_expand .order_feedback .order_mail {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    /*! justify-content: space-between; */
+    /*! width: 100%; */
+}
+
+.crm .order_list .order_row .order_expand .order_feedback .order_phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*! width: 100%; */
+    /*! margin: 0.5rem 0; */
+}
+
+.crm .order_list .order_row .order_expand .order_feedback .order_address {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    /*! justify-content: space-between; */
+    /*! width: 100%; */
+}
