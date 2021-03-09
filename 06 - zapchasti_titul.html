@@ -1,0 +1,879 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ММС-Плюс | Подбор запчастей</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/style00.css" rel="stylesheet">
+    <link href="css/style01.css" rel="stylesheet" media="only screen and (min-width:660px) and (max-width:1023px)">
+    <link href="css/style02.css" rel="stylesheet" media="only screen and (min-width:1024px)">
+    <!-- подключаем jquery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link href="css/swiper.css" rel="stylesheet" /> </head>
+
+<body>
+    <!-- header -->
+    <div class="top_black">
+        <div class="wrap">
+            <div class="box" id="location_icon">
+                <a href="yandexnavi://build_route_on_map?lat_to=55.39&lon_to=37.42" title="Поехали"><img src="images/icon-location-white.svg" alt="Контакты" /><span>г. Москва, Шоссейная ул. д.90 стр.5</span></a>
+            </div>
+            <div class="box" id="phone_icon">
+                <a href="tel:+74955007032" title="Позвонить"><img src="images/icon-phone-white.svg" alt="Телефон" /><span>495 500-70-32</span></a>
+            </div>
+            <div class="box" id="lk_icon">
+                <a href="#" title="Личный кабинет"><img src="images/icon-account-white.svg" alt="Личный кабинет" /></a>
+            </div>
+            <div class="box" id="bracket_icon">
+                <a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-white.svg" alt="Корзина" /></a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="wrap">
+            <div class="top_white">
+                <div class="left">
+                    <div class="icons">
+                        <div class="box">
+                            <div class="account">
+                                <a href="#" title="Личный кабинет"><img src="images/icon-account-red.svg" alt="Личный кабинет" /></a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="bracket">
+                                <a href="#" onclick="open_popup_shop(); return false" title="Корзина"><img src="images/icon-barcket-red.svg" alt="Корзина" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="record_red">
+                            <div class="button">
+                                <button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-record-white.svg" alt="Схема проезда" />Записаться на ТО</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <div class="box"><img src="images/logo.svg" alt="Автосервис MMC-Плюс" /></div>
+                </div>
+                <div class="right">
+                    <div class="shema">
+                        <div class="box">
+                            <div class="button">
+                                <button title="Схема проезда"><img src="images/icon-map-white.svg" alt="Схема проезда" />Схема проезда</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="record_white">
+                            <div class="button">
+                                <button onclick="open_popup_to()" title="Записаться на ТО"><img src="images/icon-map-white.svg" alt="Записаться на ТО" /> Записаться на ТО</button>
+                            </div>
+                        </div>
+                        <div class="time_work">с 9-00 до 21-00</div>
+                        <div class="mail"><a href="mailto:info@mmc-plus.ru">info@mmc-plus.ru</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- Навигация -->
+    <!-- Навигация -->
+    <nav id="main_menu">
+        <div class="wrap">
+            <div class="box">
+                <div class="burger"><img src="images/icon-burger-white.svg" alt="Меню" /></div>
+                <ul>
+                    <li><a href="#">Сервис и ремонт</a></li>
+                    <li class="active"><a href="#">Подбор запчастей</a></li>
+                    <li><a href="#">Кузовной ремонт</a></li>
+                    <li><a href="#">Дополнительное оборудование</a></li>
+                    <li><a href="#">Услуги шиномонтажа</a></li>
+                </ul>
+                <div class="to_down">
+                    <div class="button">
+                        <button>Сколько стоит плановое ТО?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <video loop autoplay muted>
+            <source src="video/demo-01.mp4" type="video/mp4"> </video>
+    </nav>
+    <!-- оснвоное поле -->
+    <div class="content">
+        <main>
+            <!-- -->
+            <div class="page_title">
+                <div class="wrap">
+                    <div class="box">
+                        <h1>Подбор запчастей</h1> </div>
+                </div>
+            </div>
+            <!-- тело раздела -->
+            <div class="select_parts">
+                <div class="wrap">
+                    <div class="box">
+                        <!-- группа с формой -->
+                        <div class="select_s">
+                            <div class="parts_custom">
+                                <label class="on_white">Марка</label>
+                                <div class="parts_input">Без заголовков и чеков</div>
+                                <div class="parts_group">
+                                    <form>
+                                        <div class="item">
+                                            <ul>
+                                                <li><a href="#">MITSUBISHI</a></li>
+                                                <li><a href="#">MAZDA</a></li>
+                                                <li><a href="#">SKODA</a></li>
+                                                <li><a href="#">HONDA</a></li>
+                                                <li><a href="#">HYUNDAI</a></li>
+                                                <li><a href="#">FORD</a></li>
+                                                <li><a href="#">BYD</a></li>
+                                                <li><a href="#">KIA</a></li>
+                                                <li><a href="#">LAND ROVER</a></li>
+                                                <li><a href="#">DAEWOO</a></li>
+                                                <li><a href="#">PEUGEOT</a></li>
+                                                <li><a href="#">NISSAN</a></li>
+                                                <li><a href="#">SUZUKI</a></li>
+                                                <li><a href="#">GMC</a></li>
+                                                <li><a href="#">BMW</a></li>
+                                                <li><a href="#">SUBARU</a></li>
+                                                <li><a href="#">TOYOTA</a></li>
+                                                <li><a href="#">CITROEN</a></li>
+                                                <li><a href="#">VOLKSWAGEN</a></li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- -->
+                            <!-- -->
+                            <div class="parts_custom disable">
+                                <label class="on_white">Модель</label>
+                                <div class="parts_input">С чекбоксами</div>
+                                <div class="parts_group">
+                                    <form>
+                                        <div class="item">
+                                            <div class="title">
+                                                <label class="container">
+                                                    <input type="checkbox"><span class="checkmark"></span>Выбрать всё</label>
+                                                <button class="button">Применить</button>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>AIRTREK</label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>ASX</label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>CARISMA</label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>CHARIOT</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- -->
+                            <!-- -->
+                            <div class="parts_custom">
+                                <label class="on_white">Запчасть</label>
+                                <div class="parts_input">С заголовками</div>
+                                <div class="parts_group">
+                                    <div class="item">
+                                        <div class="title">А</div>
+                                        <ul>
+                                            <li><a href="#">АКПП</a></li>
+                                            <li><a href="#">Актуатор выбора передач</a></li>
+                                            <li><a href="#">Амортизатор</a></li>
+                                            <li><a href="#">Амортизатор крышки багажника</a></li>
+                                            <li><a href="#">Амортизатор подвески</a></li>
+                                            <li><a href="#">Антенна</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Б</div>
+                                        <ul>
+                                            <li><a href="#">Бак топливный</a></li>
+                                            <li><a href="#">Балка продольная (лыжа)</a></li>
+                                            <li><a href="#">Бампер</a></li>
+                                            <li><a href="#">Бампер задний</a></li>
+                                            <li><a href="#">Бардачок</a></li>
+                                            <li><a href="#">Бачок гидроусилителя</a></li>
+                                            <li><a href="#">Бачок омывателя</a></li>
+                                            <li><a href="#">Бачок расширительный</a></li>
+                                            <li><a href="#">Бензонасос</a></li>
+                                            <li><a href="#">Блок</a></li>
+                                            <li><a href="#">Блок двигателя</a></li>
+                                            <li><a href="#">Блок комфорта</a></li>
+                                            <li><a href="#">Блок предохранителей</a></li>
+                                            <li><a href="#">Блок реле</a></li>
+                                            <li><a href="#">Блок управления</a></li>
+                                            <li><a href="#">Блок управления АКПП</a></li>
+                                            <li><a href="#">Блок управления вентилятором</a></li>
+                                            <li><a href="#">Блок управления двигателем</a></li>
+                                            <li><a href="#">Блок управления дроссельной заслонкой</a></li>
+                                            <li><a href="#">Блок управления климат-контролем</a></li>
+                                            <li><a href="#">Блок управления кондиционером</a></li>
+                                            <li><a href="#">Блок управления рулевой рейкой</a></li>
+                                            <li><a href="#">Блок управления стеклами</a></li>
+                                            <li><a href="#">Блок цилиндров</a></li>
+                                            <li><a href="#">Блок электронный</a></li>
+                                            <li><a href="#">Брызговики комплект </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">В</div>
+                                        <ul>
+                                            <li><a href="#">Вакуумный усилитель</a></li>
+                                            <li><a href="#">Вал привода</a></li>
+                                            <li><a href="#">Воздухозаборник </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Г</div>
+                                        <ul>
+                                            <li><a href="#">Генератор</a></li>
+                                            <li><a href="#">Гидроусилитель</a></li>
+                                            <li><a href="#">Главный тормозной цилиндр</a></li>
+                                            <li><a href="#">Главный цилиндр сцепления</a></li>
+                                            <li><a href="#">Глушитель банка</a></li>
+                                            <li><a href="#">Головка блока цилиндров</a></li>
+                                            <li><a href="#">Горловина </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Д</div>
+                                        <ul>
+                                            <li><a href="#">Датчик давления топлива</a></li>
+                                            <li><a href="#">Датчик кислорода</a></li>
+                                            <li><a href="#">Датчик массового расхода воздуха</a></li>
+                                            <li><a href="#">Датчик положения дроссельной заслонки</a></li>
+                                            <li><a href="#">Датчик уровня топлива</a></li>
+                                            <li><a href="#">Датчик ускорения курсовой устойчивости</a></li>
+                                            <li><a href="#">Дверь</a></li>
+                                            <li><a href="#">Двигатель</a></li>
+                                            <li><a href="#">Динамик</a></li>
+                                            <li><a href="#">Диск сцепления</a></li>
+                                            <li><a href="#">Дисплей многофункциональный</a></li>
+                                            <li><a href="#">Диффузор</a></li>
+                                            <li><a href="#">Диффузор вентилятора кондиционера в сборе</a></li>
+                                            <li><a href="#">Диффузор вентилятора охлаждения в сборе</a></li>
+                                            <li><a href="#">Драйвер форсунок</a></li>
+                                            <li><a href="#">Дроссельная заслонка </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Ж</div>
+                                        <ul>
+                                            <li><a href="#">Жабо</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">З</div>
+                                        <ul>
+                                            <li><a href="#">Замок зажигания</a></li>
+                                            <li><a href="#">Замок капота</a></li>
+                                            <li><a href="#">Защита бампера пыльник</a></li>
+                                            <li><a href="#">Защита двигателя</a></li>
+                                            <li><a href="#">Зеркало</a></li>
+                                            <li><a href="#">Зеркальный элемент </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">И</div>
+                                        <ul>
+                                            <li><a href="#">Испаритель кондиционера</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">К</div>
+                                        <ul>
+                                            <li><a href="#">Капот</a></li>
+                                            <li><a href="#">Карданный вал </a></li>
+                                            <li><a href="#">Катушка зажигания</a></li>
+                                            <li><a href="#">Кнопка ПТФ</a></li>
+                                            <li><a href="#">Кнопка аварийной сигнализации</a></li>
+                                            <li><a href="#">Кнопка многофункциональная</a></li>
+                                            <li><a href="#">Кнопка управление стеклоподъемником</a></li>
+                                            <li><a href="#">Кнопки прочие</a></li>
+                                            <li><a href="#">Кожух суппорта</a></li>
+                                            <li><a href="#">Коллектор выпускной</a></li>
+                                            <li><a href="#">Компрессор кондиционера</a></li>
+                                            <li><a href="#">Контактная группа замка зажигания</a></li>
+                                            <li><a href="#">Корпус воздушного фильтра</a></li>
+                                            <li><a href="#">Крепление крыла</a></li>
+                                            <li><a href="#">Кронштейн бампера</a></li>
+                                            <li><a href="#">Кронштейн крепления фары</a></li>
+                                            <li><a href="#">Крыло</a></li>
+                                            <li><a href="#">Крыша передняя часть</a></li>
+                                            <li><a href="#">Крыша со стойками</a></li>
+                                            <li><a href="#">Крышка багажника</a></li>
+                                            <li><a href="#">Крышка грм</a></li>
+                                            <li><a href="#">Крышка двигателя</a></li>
+                                            <li><a href="#">Кулак </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- -->
+                            <!-- -->
+                            <div class="parts_custom">
+                                <label class="on_white">Кузов</label>
+                                <div class="parts_input">сюда вводим сюда а вводим</div>
+                                <div class="parts_group">
+                                    <form>
+                                        <div class="item">
+                                            <div class="title">
+                                                <label class="container">
+                                                    <input type="checkbox"><span class="checkmark"></span>Выбрать всё</label>
+                                                <button class="button">Применить</button>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>AIRTREK</label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>ASX</label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>CARISMA</label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>CHARIOT</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- -->
+                            <!-- -->
+                            <div class="parts_custom">
+                                <label class="on_white">Двигатель</label>
+                                <div class="parts_input">сюда вводим сюда а вводим</div>
+                               <div class="parts_group">
+                                    <form>
+                                        <div class="item">
+                                            <div class="title">
+                                                <label class="container">
+                                                    <input type="checkbox"><span class="checkmark"></span>Выбрать всё</label>
+                                                <button class="button">Применить</button>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>AIRTREK</label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>ASX</label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>CARISMA</label>
+                                                </li>
+                                                <li>
+                                                    <label class="container">
+                                                        <input type="checkbox"><span class="checkmark"></span>CHARIOT</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- -->
+                            <div class="search">
+                                <button class="button" type="submit">Показать</button>
+                            </div>
+                            <div class="search_advanced">
+                                <div class="search_input">
+                                    <form id="search_number">
+                                        <input type="text" placeholder="Название или номер детали" value="">
+                                        <button class="button" type="submit">Поиск</button>
+                                    </form>
+                                </div>
+                                <div class="search_vin">
+                                    <button class="button" type="submit">Запрос по VIN</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- группа с формой конец -->
+                    </div>
+                </div>
+            </div>
+            <!-- тело раздела конец-->
+            <!-- proba -->
+            <!-- слайдер начало -->
+            <div class="wrap">
+                <div class="swiper-button-prev-promo">
+                    <div class="box"><img src="images/icon-slider-left.svg" alt="Назад" /></div>
+                </div>
+                <div class="swiper-container-promo">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="box_slide">
+                                <div class="slide">
+                                    <div class="front_side">
+                                        <div class="title">
+                                            <h3>Заголовок первой новости повествующий о всяком разном</h3> </div>
+                                        <div class="pic"><img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box_slide">
+                                <div class="slide">
+                                    <div class="front_side">
+                                        <div class="title">
+                                            <h3>Заголовок второй новости о всяком</h3> </div>
+                                        <div class="pic"><img src="images/demo-02.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box_slide">
+                                <div class="slide">
+                                    <div class="front_side">
+                                        <div class="title">
+                                            <h3>Заголовок третьей новости</h3> </div>
+                                        <div class="pic"><img src="images/demo-03.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next-promo">
+                    <div class="box"><img src="images/icon-slider-right.svg" alt="Вперёд" /></div>
+                </div>
+            </div>
+            <!-- слайдер конец -->
+            <!-- end proba -->
+            <!-- -->
+            <div class="red_select_to">
+                <div class="wrap">
+                    <div class="box">
+                        <form>
+                            <div class="title">
+                                <h1>Сколько стоит плановое ТО?</h1> </div>
+                            <button class="button open_to" onclick="(document.getElementById('show_to').style.display='flex')">Сколько стоит плановое ТО?</button>
+                            <div class="select_s" id="show_to">
+                                <div class="custom_select">
+                                    <label for="model">Модель</label>
+                                    <select id="model" name="model">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="Mitsubishi">Mitsubishi</option>
+                                        <option value="Mazda">Mazda</option>
+                                        <option value="Honda">Honda</option>
+                                        <option value="Hyundai">Hyundai</option>
+                                        <option value="Land Rover">Land Rover</option>
+                                        <option value="Ford">Ford</option>
+                                        <option value="Kia">Kia</option>
+                                        <option value="Peugeot">Peugeot</option>
+                                        <option value="Nissan">Nissan</option>
+                                        <option value="Subaru">Subaru</option>
+                                        <option value="Toyota">Toyota</option>
+                                        <option value="Citroen">Citroen</option>
+                                    </select>
+                                </div>
+                                <!-- -->
+                                <!-- -->
+                                <div class="custom_select">
+                                    <label for="modif">Модификация</label>
+                                    <select id="modif" name="modif">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                    </select>
+                                </div>
+                                <!-- -->
+                                <!-- -->
+                                <div class="custom_select">
+                                    <label for="probeg">Пробег</label>
+                                    <select id="probeg" name="probeg">
+                                        <option value="empty">&nbsp;</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                    </select>
+                                </div>
+                                <!-- -->
+                                <div class="search">
+                                    <button class="button" type="submit">Узнать</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <!-- -->
+            <!-- слайдер начало -->
+            <div class="wrap">
+                <div class="swiper-button-prev">
+                    <div class="box"><img src="images/icon-slider-left.svg" alt="Назад" /></div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="box_slide">
+                                <div class="slide">
+                                    <div class="flipper">
+                                        <div class="front_side">
+                                            <div class="title">
+                                                <h3>Заголовок первой новости повествующий о всяком разном</h3> </div>
+                                            <div class="pic"><img src="images/demo-01.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
+                                        </div>
+                                        <div class="back_side">
+                                            <div class="intro_text">
+                                                <p>Do qui ad qui ut nulla. Aliqua commodo aliqua eiusmod enim adipisicing id duis nulla aliquip dolor consectetur amet nulla quis.</p>
+                                            </div>
+                                            <div class="button"><a href="#">Перейти</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box_slide">
+                                <div class="slide">
+                                    <div class="flipper">
+                                        <div class="front_side">
+                                            <div class="title">
+                                                <h3>Заголовок второй новости о всяком</h3> </div>
+                                            <div class="pic"><img src="images/demo-02.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
+                                        </div>
+                                        <div class="back_side">
+                                            <div class="intro_text">
+                                                <p>Do qui ad qui ut nulla. Aliqua commodo aliqua eiusmod enim adipisicing id duis nulla aliquip dolor consectetur amet nulla quis.</p>
+                                            </div>
+                                            <div class="button"><a href="#">Перейти</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box_slide">
+                                <div class="slide">
+                                    <div class="flipper">
+                                        <div class="front_side">
+                                            <div class="title">
+                                                <h3>Заголовок третьей новости</h3> </div>
+                                            <div class="pic"><img src="images/demo-03.jpg" alt="Заголовок новости повествующий о всяком разном" /></div>
+                                        </div>
+                                        <div class="back_side">
+                                            <div class="intro_text">
+                                                <p>Do qui ad qui ut nulla. Aliqua commodo aliqua eiusmod enim adipisicing id duis nulla aliquip dolor consectetur amet nulla quis.</p>
+                                            </div>
+                                            <div class="button"><a href="#">Перейти</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <div class="box"><img src="images/icon-slider-right.svg" alt="Вперёд" /></div>
+                </div>
+            </div>
+            <!-- слайдер конец -->
+            <div class="wrap">
+                <section class="about">
+                    <div class="box">
+                        <div class="title">
+                            <h2>Техцентр Mitsubishi - мы выполняем ремонт Митсубиси качественно и в кратчайшие сроки.</h2> </div>
+                        <div class="text">
+                            <p>Nulla ut in quis nulla excepteur eiusmod elit ad cillum amet exercitation. Esse non est amet ut aliqua dolore adipisicing Lorem culpa quis ut Lorem reprehenderit. Do qui ad qui ut nulla. Aliqua commodo aliqua eiusmod enim adipisicing id duis nulla aliquip dolor consectetur amet nulla quis. Sit anim ut amet sit dolor enim ea voluptate tempor voluptate et adipisicing.</p>
+                            <p>Consequat ea sit ad veniam aliqua dolor duis officia voluptate. Fugiat pariatur magna consequat nostrud incididunt adipisicing qui esse.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="wrap">
+            <div class="item">
+                <div class="box">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li> <a href="#">Сервис и ремонт</a> </li>
+                        <li> <a href="#">Подбор запчастей</a> </li>
+                        <li> <a href="#">Кузовной ремонт</a> </li>
+                        <li> <a href="#">Дополнительное оборудование</a> </li>
+                        <li> <a href="#">Шиномонтаж</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li> <a href="#">Схема проезда</a> </li>
+                        <li> <a href="#">Банковские реквизиты</a> </li>
+                        <li> <a href="#">Обратная связь</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li> <a href="#">Личный кабинет</a> </li>
+                        <li> <a href="#">Карта сайта</a> </li>
+                        <li> <a href="#">Политика конфиденциальности</a> </li>
+                        <li> <a href="#">Пользовательское соглашение</a> </li>
+                        <li> <a href="#">Политика использования Cookies</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="logo"><img src="images/logo-white.svg" alt="ММС-Плюс" /></div> <span>ООО «ММС-Плюс» © 2020</span> </div>
+            </div>
+        </div>
+    </footer>
+    <!-- popup -->
+    <div class="popup_wrap" id="popup_shop">
+        <div class="popup">
+            <!-- Заказ -->
+            <div class="title">
+                <h3>Ваш заказ</h3>
+                <div class="close"><img src="images/icon-close-white.svg" alt="Закрыть" title="Закрыть" /></div>
+            </div>
+            <div class="pop_table">
+                <table class="resp-tab">
+                    <thead>
+                        <tr>
+                            <th>Артикул</th>
+                            <th>Наименование</th>
+                            <th>Цена</th>
+                            <th>Количество</th>
+                            <th>Сумма</th>
+                            <th>Доставка</th>
+                            <th>Удалить</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>Артикул</span>15566</td>
+                            <td><span>Наименование</span>Mitsubishi / Корпус воздушного фильтра Mitsubishi Chariot Grandis [MR514790] N84W 4G64</td>
+                            <td><span>Цена</span>2 000р.</td>
+                            <td class="count"><span>Количество</span>
+                                <div class="calc minus">-</div>1
+                                <div class="calc plus">+</div>
+                            </td>
+                            <td><span>Сумма</span>1 000р.</td>
+                            <td><span>Доставка</span>0 дней</td>
+                            <td><span>Удалить</span><img src="images/icon-del.svg" alt="Удалить" title="Удалить" /></td>
+                        </tr>
+                        <tr>
+                            <td><span>Артикул</span>15567</td>
+                            <td><span>Наименование</span>Mitsubishi / Корпус воздушного фильтра Mitsubishi Pajero Sport [MR464248] K94W 4D56</td>
+                            <td><span>Цена</span>1 000р.</td>
+                            <td class="count"><span>Количество</span>
+                                <div class="calc minus">-</div>89
+                                <div class="calc plus">+</div>
+                            </td>
+                            <td><span>Сумма</span>987 000р.</td>
+                            <td><span>Доставка</span>0 дней</td>
+                            <td><span>Удалить</span><img src="images/icon-del.svg" alt="Удалить" title="Удалить" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pop_text total">Итого: <span>58</span> товаров на <span>784 542р.</span></div>
+            <div class="pop_button">
+                <button class="button">Оформить</button>
+            </div>
+            <div class="confirm">
+                <div class="pop_text">
+                    <p>Вы не авторизованы, но можете продолжить оформлять заказ.</p>
+                    <p>Мы рекомендуем <a href="#">авторизоваться</a> или <a href="#">зарегистрироваться</a>, чтобы не вводить Ваши данные в следующий раз.</p>
+                </div>
+                <form>
+                    <div class="input_custom required">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name"> </div>
+                    <div class="input_custom required">
+                        <label for="surname">Фамилия</label>
+                        <input type="text" id="surname"> </div>
+                    <div class="input_custom required">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone"> </div>
+                    <div class="input_custom required">
+                        <label for="mail">Почта</label>
+                        <input type="email" id="mail"> </div>
+                    <div class="input_custom">
+                        <label for="pass">Пароль</label>
+                        <input type="password" id="pass"> </div>
+                    <div class="checkbox">
+                        <div class="title">Оформление</div> <span>
+                            <input type="radio" id="fl" name="user_type" value="Физическое лицо" checked="">
+                            <label for="fl">Физическое лицо</label></span> <span>
+                            <input type="radio" id="yl" name="user_type" value="Юридическое лицо"><label for="fl">Юридическое лицо</label></span> </div>
+                    <div class="checkbox">
+                        <div class="title">Доставка</div> <span>
+                            <input type="radio" id="self" name="delivery_method" value="Самовывоз" checked=""><label for="self">Самовывоз</label></span> <span>
+                            <input type="radio" id="home" name="delivery_method" value="Внутри МКАД (350р.)"><label for="home">Внутри МКАД (350р.)</label></span> </div>
+                    <div class="checkbox">
+                        <div class="title">Оплата</div> <span>
+                            <input type="radio" id="cash" name="payment_method" value="Наличными" checked=""><label for="cash">Наличными</label></span> <span>
+                            <input type="radio" id="Card" name="payment_method" value="Картой"><label for="Card">Картой</label></span> <span>
+                            <input type="radio" id="bank" name="payment_method" value="Банковский перевод"><label for="bank">Банковский перевод</label></span> </div>
+                    <div class="input_custom textarea">
+                        <label for="pass">Комментарий/Пожелания</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="pop_button">
+                        <button class="button" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Заказ конец-->
+        </div>
+    </div>
+    <!-- end popup wrap-->
+    <div class="popup_wrap" id="popup_to">
+        <div class="popup">
+            <!-- Запись на ТО -->
+            <div class="title">
+                <h3>Записаться на ТО</h3>
+                <div class="close"><img src="images/icon-close-red.svg" alt="Закрыть" title="Закрыть" /></div>
+            </div>
+            <div class="confirm">
+                <form>
+                    <div class="input_custom required">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name"> </div>
+                    <div class="input_custom required">
+                        <label for="surname">Фамилия</label>
+                        <input type="text" id="surname"> </div>
+                    <div class="input_custom required">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone"> </div>
+                    <div class="input_custom">
+                        <label for="mail">Почта</label>
+                        <input type="email" id="mail"> </div>
+                    <div class="custom_select on_white">
+                        <label for="razdel" class="on_white">Марка</label>
+                        <select id="razdel" name="razdel">
+                            <option value="empty">&nbsp;</option>
+                            <option value="01">05</option>
+                            <option value="02">06а</option>
+                            <option value="03">07</option>
+                            <option value="03">08</option>
+                        </select>
+                    </div>
+                    <div class="custom_select on_white">
+                        <label for="razdel" class="on_white">Модификация</label>
+                        <select id="razdel" name="razdel">
+                            <option value="empty">&nbsp;</option>
+                            <option value="01">05</option>
+                            <option value="02">06а</option>
+                            <option value="03">07</option>
+                            <option value="03">08</option>
+                        </select>
+                    </div>
+                    <!-- -->
+                    <!-- -->
+                    <div class="custom_select on_white">
+                        <label for="razdel" class="on_white">Пробег</label>
+                        <select id="razdel" name="razdel">
+                            <option value="empty">&nbsp;</option>
+                            <option value="01">05</option>
+                            <option value="02">06а</option>
+                            <option value="03">07</option>
+                            <option value="03">08</option>
+                        </select>
+                    </div>
+                    <!-- -->
+                    <!-- -->
+                    <div class="custom_select on_white">
+                        <label for="razdel" class="on_white">Работы</label>
+                        <select id="razdel" name="razdel">
+                            <option value="empty">&nbsp;</option>
+                            <option value="01">05</option>
+                            <option value="02">06а</option>
+                            <option value="03">07</option>
+                            <option value="03">08</option>
+                        </select>
+                    </div>
+                    <!-- -->
+                    <div class="input_custom textarea">
+                        <label for="pass">Комментарий/Пожелания</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="pop_button">
+                        <button class="button" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Запись на ТО конец-->
+        </div>
+    </div>
+    <!-- end popup wrap-->
+    <script src="js/swiper_init.js"></script>
+    <script src="js/custom_select.js"></script>
+    <script src="js/pop-up.js"></script>
+    <script>
+        $(".parts_input").on("click", function () {
+            let $parts_custom = $(this).parents(".parts_custom");
+            let parentOffset = $parts_custom.offset().left;
+            let $wrap = $(".select_s");
+            let wrapOffset = $wrap.offset().left;
+            let left = wrapOffset - parentOffset
+                , width = $wrap.width();
+            $(".parts_group").hide();
+            $parts_custom.find(".parts_group").css("display", "block").css({
+                "left": left
+                , "width": width
+            });
+            $("#popup_wrap").remove();
+            $(".parts_custom").removeClass("active");
+            $parts_custom.addClass("active");
+            $("<div id='popup_wrap'></div>").appendTo("body");
+            $("#popup_wrap").on("click", function () {
+                $(".parts_group").hide();
+                $(".parts_custom").removeClass("active");
+                $("#popup_wrap").remove();
+            })
+        });
+        $(window).on("resize", function () {
+            $(".parts_group").hide();
+            $(".parts_custom").removeClass("active");
+            /*let $parts_custom = $(".parts_custom");
+            let parentOffset = $parts_custom.offset().left;
+            let $wrap = $(".select_s");
+            let wrapOffset = $wrap.offset().left;
+            let left = wrapOffset - parentOffset,
+                width = $wrap.width();
+            $parts_custom.find(".parts_group").css({"left": left, "width": width});*/
+        });
+    </script>
+</body>
+
+</html>
