@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* РЎРѓРЎвЂљР В°Р Р…Р В°Р Т‘РЎР‚РЎвЂљР Р…РЎвЂ№Р Вµ РЎв‚¬Р С‘РЎР‚Р С‘Р Р…РЎвЂ№ РЎРЊР В»Р ВµР СР ВµР Р…РЎвЂљР С•Р Р† Р Т‘Р В»РЎРЏ 12 Р С”Р С•Р В»Р С•Р Р…Р С•Р С”
 8,3333%
 16,6666%
@@ -1357,7 +1358,6 @@ footer .item span {
 
 .table_calculate table .price {
     text-align: right;
-    /*! min-width: 5rem; */
     white-space: nowrap;
 }
 
@@ -1443,6 +1443,10 @@ main .page_service .resume .total_record .money {
     font-weight: 700;
     font-size: 1.1rem;
     line-height: 4rem;
+}
+main .page_service .resume .total_record .money:after{
+    content: "₽";
+    margin-left: 0.25rem;
 }
 
 
@@ -2438,4 +2442,91 @@ main .page_service .info_table table td {
     margin: 0.5rem 0;
     /*! justify-content: space-between; */
     /*! width: 100%; */
+}
+
+.custom-select-container.is-open .custom-select-panel {
+    max-height: 10.7em;
+    overflow-y: auto;
+}
+
+.custom-select-panel {
+    max-height: 0;
+    transition: max-height .5s ease-out, overflow-y 0.1s 0.5s;
+    overflow: hidden;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    width: 100%;
+}
+
+.calc{
+    margin: 0 auto 30px auto;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.calc table {
+    width: 100%;
+    text-align: center;
+}
+
+.calc thead th {
+    padding: 10px;
+    border-bottom: 1px solid #b21212;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+}
+
+.calc tbody td:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.calc td {
+    padding: 5px 10px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.calc .price-results{
+    text-align: right;
+    padding: 10px;
+    border-bottom: 1px solid #b21212;
+    display: none;
+}
+
+.c-checkbox {
+    margin: 1px 0 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #c0c0c0;
+    background: #fff;
+}
+
+.c-checkbox input {
+    position: absolute;
+    opacity: 0;
+}
+
+.c-checkbox input:checked + .fake {
+    display: block;
+}
+
+.c-checkbox .fake {
+    display: none;
+    position: absolute;
+    width: 17px;
+    height: 12px;
+    top: 0;
+    right: -4px;
+    background: url(/images/sprite.png) no-repeat -147px -195px;
+}
+
+.hidden{
+    display: none;
 }
