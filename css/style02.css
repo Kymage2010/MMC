@@ -520,3 +520,6 @@ margin-bottom: 2rem;
 .parts_custom .parts_group .item ul{
     columns: auto 6;
 }
+.segment.box {
+    margin: auto;
+}

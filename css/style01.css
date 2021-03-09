@@ -396,3 +396,6 @@ main .page_service .info_table {
 .parts_custom .parts_group .item ul{
     columns: auto 4;
 }
+.segment.box {
+    margin: auto;
+}
