@@ -493,6 +493,7 @@ main .select_car .cars .item .list_service {
     /*! opacity: 0; */
     position: absolute;
     transform: scaleX(0);
+    min-width: 100%;
 }
 
 main .red_select_to {
@@ -1031,7 +1032,7 @@ footer .item span {
 
 .popup_wrap {
     display: flex;
-    position: fixed;
+    /*! position: fixed; */
     top: 0;
     justify-content: center;
     align-items: center;
@@ -1039,7 +1040,7 @@ footer .item span {
     z-index: 100;
     flex-direction: column;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
+    /*! background-color: rgba(0, 0, 0, 0.75); */
     transition: ease-in-out 0.3s;
 }
 
@@ -1445,7 +1446,7 @@ main .page_service .resume .total_record .money {
     line-height: 4rem;
 }
 main .page_service .resume .total_record .money:after{
-    content: "₽";
+    content: "в‚Ѕ";
     margin-left: 0.25rem;
 }
 
@@ -1455,7 +1456,7 @@ main .page_service .resume .total_record .button {
     border-radius: 0 0 6px 6px;
     background: var(--red);
     color: var(--white);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     /*! line-height: 3rem; */
     height: 4rem;
@@ -1918,6 +1919,7 @@ main .page_service .info_table table td {
     margin: 1.5rem 0.5rem;
     /*! max-width: 15rem; */
     height: 2.5rem;
+    background-color: #fff;
 }
 
 .parts_custom label {
@@ -1928,6 +1930,10 @@ main .page_service .info_table table td {
     padding: 0 0.25rem;
     color: var(--red);
     /*! font-weight: 400; */
+}
+
+main .red_select_parts .parts_custom label.on_white{
+    color: #fff;
 }
 
 .parts_custom.active {
@@ -2536,4 +2542,109 @@ main .page_service .resume .total_record {
     border-radius: 6px;
     max-width: 24rem;
     margin: 0 auto;
+}
+
+#loginFrame .ajaxMessages.red{
+    padding: 5px;
+    background-color: #FF7600;
+    color:#fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#loginFrame .ajaxMessages.green {
+    color: #009846;
+    /*! background-color: #fff; */
+    /*! font-size: 20px; */
+    /*! line-height: 22px; */
+    /*! margin: 15px; */
+}
+
+.shake{
+    -webkit-animation: loginErrorWindow .6s;
+    animation: loginErrorWindow .6s;
+}
+
+@-webkit-keyframes loginErrorWindow {
+    0%, to {
+        transform: translateX(0)
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px)
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px)
+    }
+}
+
+@keyframes loginErrorWindow {
+    0%, to {
+        transform: translateX(0)
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px)
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px)
+    }
+}
+
+#loginFrame {
+    max-width: 21rem;
+}
+
+#loginFrm p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#loginFrm label {
+    margin-right: 0.5rem;
+    position: absolute;
+    top: -0.75rem;
+    font-size: 0.875rem;
+    left: 0.5rem;
+    background: white;
+    padding: 0 0.25rem;
+}
+
+#loginFrm input {
+    border: solid 1px var(--grey);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-family: 'Jost', sans-serif;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#loginFrm #member_me {
+    display: flex;
+    white-space: nowrap;
+    justify-content: end;
+    margin-bottom: 1rem;
+}
+
+#loginFrm #member_me label {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+}
+
+#loginFrm a {
+    width: 100%;
+    text-decoration: underline;
+    color: var(--red);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#loginFrm #member_me #memeber_me {
+    margin-right: 0.5rem;
+    float: left;
 }
