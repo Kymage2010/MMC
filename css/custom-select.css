@@ -16,7 +16,10 @@
   display: block;
   cursor: pointer;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 4px;
+  /*! min-height: 36px; */
+  height: 2.5rem;
+  line-height: 1.5rem;
 }
 .custom-select-container select {
   visibility: hidden;
@@ -63,11 +66,11 @@
   background-color: var(--lihgt_grey);
 }
 .custom-select-option.is-selected {
-    background: var(--lihgt_grey);
-    color: var(--red);
+  background: var(--lihgt_grey);
+  color: var(--red);
 }
 .custom-select-option.is-selected::before {
-  /*! content: "РІСљвЂќ"; */
+  /*! content: "Р Р†РЎС™РІР‚Сњ"; */
   /*! padding-right: 0.5em; */
 }
 .custom-select-optgroup > .custom-select-option {
