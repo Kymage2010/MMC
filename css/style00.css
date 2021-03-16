@@ -2317,7 +2317,7 @@ main .red_select_parts .parts_custom label.on_white {
     /*! font-size: 0.875rem; */
     font-weight: 600;
     /*! margin-left: 1rem; */
-    /*! min-width: 5rem; */
+    min-width: 5rem;
     white-space: nowrap;
 }
 
