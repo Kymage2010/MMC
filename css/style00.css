@@ -1,6 +1,9 @@
 @charset "utf-8";
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 2d7949d (style crm update)
 =======
 >>>>>>> parent of 2d7949d (style crm update)
 /* Р РЋР С“Р РЋРІР‚С™Р В Р’В°Р В Р вЂ¦Р В Р’В°Р В РўвЂР РЋР вЂљР РЋРІР‚С™Р В Р вЂ¦Р РЋРІР‚в„–Р В Р’Вµ Р РЋРІвЂљВ¬Р В РЎвЂР РЋР вЂљР В РЎвЂР В Р вЂ¦Р РЋРІР‚в„– Р РЋР РЉР В Р’В»Р В Р’ВµР В РЎВР В Р’ВµР В Р вЂ¦Р РЋРІР‚С™Р В РЎвЂўР В Р вЂ  Р В РўвЂР В Р’В»Р РЋР РЏ 12 Р В РЎвЂќР В РЎвЂўР В Р’В»Р В РЎвЂўР В Р вЂ¦Р В РЎвЂўР В РЎвЂќ
@@ -1910,8 +1913,11 @@ main .page_service .info_table table td {
 
 .parts_custom {
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: auto;
 =======
+=======
+>>>>>>> parent of 2d7949d (style crm update)
     margin: 1.5rem 0;
     width: 15rem;
 >>>>>>> parent of 2d7949d (style crm update)
@@ -2413,7 +2419,10 @@ main .red_select_parts .parts_custom label.on_white{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 2d7949d (style crm update)
 
 >>>>>>> parent of 2d7949d (style crm update)
 .crm .order_list .order_row .order_expand .order_text textarea {
@@ -2545,7 +2554,10 @@ main .red_select_parts .parts_custom label.on_white{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 2d7949d (style crm update)
 .hidden{
     display: none;
 }
@@ -2560,6 +2572,7 @@ main .page_service .resume .total_record {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #loginFrame .ajaxMessages.red {
     background-color: var(--red);
     color: #fff;
@@ -2567,6 +2580,8 @@ main .page_service .resume .total_record {
     padding: 0.5rem;
     margin-bottom: 2rem;
 =======
+=======
+>>>>>>> parent of 2d7949d (style crm update)
 #loginFrame .ajaxMessages.red{
     padding: 5px;
     background-color: #FF7600;
