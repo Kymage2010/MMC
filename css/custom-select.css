@@ -16,10 +16,8 @@
   display: block;
   cursor: pointer;
   width: 100%;
-  border-radius: 4px;
-  /*! min-height: 36px; */
-  height: 2.5rem;
-  line-height: 1.5rem;
+  border-radius: 5px;
+  min-height: 36px;
 }
 .custom-select-container select {
   visibility: hidden;
@@ -81,4 +79,7 @@
   display: block;
   padding: 0.5em;
   color: #888;
+}
+.custom-select-option:hover {
+    cursor: pointer;
 }
