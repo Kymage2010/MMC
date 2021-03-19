@@ -1,5 +1,6 @@
 @charset "utf-8";
-/* Р РЋР С“Р РЋРІР‚С™Р В Р’В°Р В Р вЂ¦Р В Р’В°Р В РўвЂР РЋР вЂљР РЋРІР‚С™Р В Р вЂ¦Р РЋРІР‚в„–Р В Р’Вµ Р РЋРІвЂљВ¬Р В РЎвЂР РЋР вЂљР В РЎвЂР В Р вЂ¦Р РЋРІР‚в„– Р РЋР РЉР В Р’В»Р В Р’ВµР В РЎВР В Р’ВµР В Р вЂ¦Р РЋРІР‚С™Р В РЎвЂўР В Р вЂ  Р В РўвЂР В Р’В»Р РЋР РЏ 12 Р В РЎвЂќР В РЎвЂўР В Р’В»Р В РЎвЂўР В Р вЂ¦Р В РЎвЂўР В РЎвЂќ
+
+/*
 8,3333%
 16,6666%
 25%
@@ -34,7 +35,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Jost', sans-serif;
-    /*Р В Р’В·Р В Р’В°Р В РЎВР В Р’ВµР В Р вЂ¦Р РЋР РЏР В Р’ВµР В РЎВ Р В Р вЂ¦Р В Р’В° Р В Р вЂ¦Р РЋРЎвЂњР В Р’В¶Р В Р вЂ¦Р РЋРІР‚в„–Р В РІвЂћвЂ“*/
     font-size: 1rem;
 }
 
@@ -47,9 +47,6 @@ body {
     font-style: normal;
     font-display: swap;
 }*/
-
-
-/*Р В РЎвЂўР В Р’В±Р В Р вЂ¦Р РЋРЎвЂњР В Р’В»Р РЋР РЏР В Р’ВµР В РЎВ Р РЋР С“Р РЋРІР‚С™Р В РЎвЂР В Р’В»Р В РЎвЂ Р В РЎвЂ”Р В РЎвЂў Р РЋРЎвЂњР В РЎВР В РЎвЂўР В Р’В»Р РЋРІР‚РЋР В Р’В°Р В Р вЂ¦Р В РЎвЂР РЋР вЂ№*/
 
 ul,
 li,
@@ -76,27 +73,15 @@ input:invalid {
 }
 
 input[type="number"] {
-
     -moz-appearance: textfield;
-
     -webkit-appearance: textfield;
-
     appearance: textfield;
-
 }
-
-
 
 input[type="number"]::-webkit-outer-spin-button,
-
 input[type="number"]::-webkit-inner-spin-button {
-
     display: none;
-
 }
-
-
-
 
 a::-moz-focus-inner {
     border: none;
@@ -119,9 +104,12 @@ a:focus {
     /*! display: inline-block; */
     position: relative;
     /*! width: 100px; */
-    max-width: 8.5rem;
-    margin-left: auto;
-    padding: 0.5rem 0;
+    max-width: 8rem;
+    /*! margin-left: auto; */
+    padding: 0;
+    border: solid 1px var(--grey);
+    border-radius: 4px;
+    margin-right: auto;
 }
 
 .number input[type="number"] {
@@ -156,14 +144,15 @@ a:focus {
     /*! font-weight: 600; */
     /*! height: 2.5rem; */
     /*! line-height: 2.5rem; */
-    /*! background: var(--grey); */
-    /*! color: white; */
-    border: solid 1px var(--grey);
+    background: var(--grey);
+    color: white;
+    /*! border: solid 1px var(--grey); */
+    border-radius: 0;
 }
 
 .number-plus {
     position: absolute;
-    top: 0.5rem;
+    top: 0;
     right: 0;
     /*! bottom: 1px; */
     width: 2.5rem;
@@ -176,12 +165,14 @@ a:focus {
     /*! font-weight: 600; */
     /*! height: 2.5rem; */
     /*! line-height: 2.5rem; */
-    /*! background: var(--grey); */
-    /*! color: white; */
-    border: solid 1px var(--grey);
+    background: var(--grey);
+    color: white;
+    /*! border: solid 1px var(--grey); */
+    border-radius: 0;
 }
 
-/*Р В РўвЂР В Р’В»Р РЋР РЏ Р В Р’В°Р В РўвЂР В Р’В°Р В РЎвЂ”Р РЋРІР‚С™Р В РЎвЂР В Р вЂ Р В Р вЂ¦Р В РЎвЂўР РЋР С“Р РЋРІР‚С™Р В РЎвЂ Р В РЎвЂР В Р’В·Р В РЎвЂўР В Р’В±Р РЋР вЂљР В Р’В°Р В Р’В¶Р В Р’ВµР В Р вЂ¦Р В РЎвЂР В РІвЂћвЂ“*/
+
+/*Р В Р’В Р СћРІР‚ВР В Р’В Р вЂ™Р’В»Р В Р Р‹Р В Р РЏ Р В Р’В Р вЂ™Р’В°Р В Р’В Р СћРІР‚ВР В Р’В Р вЂ™Р’В°Р В Р’В Р РЋРІР‚вЂќР В Р Р‹Р Р†Р вЂљРЎв„ўР В Р’В Р РЋРІР‚ВР В Р’В Р В РІР‚В Р В Р’В Р В РІР‚В¦Р В Р’В Р РЋРІР‚СћР В Р Р‹Р В РЎвЂњР В Р Р‹Р Р†Р вЂљРЎв„ўР В Р’В Р РЋРІР‚В Р В Р’В Р РЋРІР‚ВР В Р’В Р вЂ™Р’В·Р В Р’В Р РЋРІР‚СћР В Р’В Р вЂ™Р’В±Р В Р Р‹Р В РІР‚С™Р В Р’В Р вЂ™Р’В°Р В Р’В Р вЂ™Р’В¶Р В Р’В Р вЂ™Р’ВµР В Р’В Р В РІР‚В¦Р В Р’В Р РЋРІР‚ВР В Р’В Р Р†РІР‚С›РІР‚вЂњ*/
 
 img {
     max-width: 100%;
@@ -197,7 +188,7 @@ img {
 }
 
 
-/*Р В РЎСљР В Р’В°Р РЋР С“Р РЋРІР‚С™Р РЋР вЂљР В Р’В°Р В РЎвЂР В Р вЂ Р В Р’В°Р В Р’ВµР В РЎВ Р В Р’В·Р В Р’В°Р В РЎвЂ“Р В РЎвЂўР В Р’В»Р В РЎвЂўР В Р вЂ Р В РЎвЂќР В РЎвЂ*/
+/*Р В Р’В Р РЋРЎС™Р В Р’В Р вЂ™Р’В°Р В Р Р‹Р В РЎвЂњР В Р Р‹Р Р†Р вЂљРЎв„ўР В Р Р‹Р В РІР‚С™Р В Р’В Р вЂ™Р’В°Р В Р’В Р РЋРІР‚ВР В Р’В Р В РІР‚В Р В Р’В Р вЂ™Р’В°Р В Р’В Р вЂ™Р’ВµР В Р’В Р РЋР’В Р В Р’В Р вЂ™Р’В·Р В Р’В Р вЂ™Р’В°Р В Р’В Р РЋРІР‚вЂњР В Р’В Р РЋРІР‚СћР В Р’В Р вЂ™Р’В»Р В Р’В Р РЋРІР‚СћР В Р’В Р В РІР‚В Р В Р’В Р РЋРІР‚СњР В Р’В Р РЋРІР‚В*/
 
 h1 {
     margin: 0;
@@ -226,11 +217,11 @@ h4 {
 }
 
 
-/*Р В Р вЂ¦Р В Р’В°Р РЋР С“Р РЋРІР‚С™Р РЋР вЂљР В РЎвЂўР В РІвЂћвЂ“Р В РЎвЂќР В РЎвЂ Р В РўвЂР В Р’В»Р РЋР РЏ Р В РЎвЂР В РЎвЂќР В РЎвЂўР В Р вЂ¦Р В РЎвЂўР В РЎвЂќ*/
+/*Р В Р’В Р В РІР‚В¦Р В Р’В Р вЂ™Р’В°Р В Р Р‹Р В РЎвЂњР В Р Р‹Р Р†Р вЂљРЎв„ўР В Р Р‹Р В РІР‚С™Р В Р’В Р РЋРІР‚СћР В Р’В Р Р†РІР‚С›РІР‚вЂњР В Р’В Р РЋРІР‚СњР В Р’В Р РЋРІР‚В Р В Р’В Р СћРІР‚ВР В Р’В Р вЂ™Р’В»Р В Р Р‹Р В Р РЏ Р В Р’В Р РЋРІР‚ВР В Р’В Р РЋРІР‚СњР В Р’В Р РЋРІР‚СћР В Р’В Р В РІР‚В¦Р В Р’В Р РЋРІР‚СћР В Р’В Р РЋРІР‚Сњ*/
 
 
-/*Р РЋРЎвЂњР В Р вЂ¦Р В РЎвЂР В Р вЂ Р В Р’ВµР РЋР вЂљР РЋР С“Р В Р’В°Р В Р’В»Р РЋР Р‰Р В Р вЂ¦Р В Р’В°Р РЋР РЏ Р В РЎвЂўР В Р’В±Р РЋРІР‚ВР РЋР вЂљР РЋРІР‚С™Р В РЎвЂќР В Р’В° Р РЋР С“ Р В РЎвЂ”Р В РЎвЂўР В Р’В»Р РЋР РЏР В РЎВР В РЎвЂ Р В РўвЂР В Р’В»Р РЋР РЏ Р В Р вЂ Р РЋР С“Р В Р’ВµР РЋРІР‚В¦ Р РЋР вЂљР В РЎвЂўР В РўвЂР В РЎвЂР РЋРІР‚С™Р В Р’ВµР В Р’В»Р РЋР Р‰Р РЋР С“Р В РЎвЂќР В РЎвЂР РЋРІР‚В¦ Р В РЎвЂќР В РЎвЂўР В Р вЂ¦Р РЋРІР‚С™Р В Р’ВµР В РІвЂћвЂ“Р В Р вЂ¦Р В Р’ВµР РЋР вЂљР В РЎвЂўР В Р вЂ .
-Р В РІР‚в„ўР РЋР С“Р В Р’ВµР В РЎвЂ“Р В РўвЂР В Р’В° Р В Р вЂ¦Р В Р’В°Р РЋРІР‚В¦Р В РЎвЂўР В РўвЂР В РЎвЂР РЋРІР‚С™Р РЋР С“Р РЋР РЏ Р В Р вЂ Р В Р вЂ¦Р РЋРЎвЂњР РЋРІР‚С™Р РЋР вЂљР В РЎвЂ Р РЋР вЂљР В РЎвЂўР В РўвЂР В РЎвЂР РЋРІР‚С™Р В Р’ВµР В Р’В»Р РЋР РЏ Р В РЎвЂ Р В Р вЂ¦Р В Р’Вµ Р РЋРЎвЂњР РЋРІР‚РЋР В Р’В°Р РЋР С“Р РЋРІР‚С™Р В Р вЂ Р РЋРЎвЂњР В Р’ВµР РЋРІР‚С™ Р В Р вЂ  Р В Р’В·Р В Р’В°Р В РўвЂР В Р’В°Р В Р вЂ¦Р В РЎвЂР В РЎвЂ Р РЋРІвЂљВ¬Р В РЎвЂР РЋР вЂљР В РЎвЂР В Р вЂ¦Р РЋРІР‚в„–.
+/*Р В Р Р‹Р РЋРІР‚СљР В Р’В Р В РІР‚В¦Р В Р’В Р РЋРІР‚ВР В Р’В Р В РІР‚В Р В Р’В Р вЂ™Р’ВµР В Р Р‹Р В РІР‚С™Р В Р Р‹Р В РЎвЂњР В Р’В Р вЂ™Р’В°Р В Р’В Р вЂ™Р’В»Р В Р Р‹Р В Р вЂ°Р В Р’В Р В РІР‚В¦Р В Р’В Р вЂ™Р’В°Р В Р Р‹Р В Р РЏ Р В Р’В Р РЋРІР‚СћР В Р’В Р вЂ™Р’В±Р В Р Р‹Р Р†Р вЂљР’ВР В Р Р‹Р В РІР‚С™Р В Р Р‹Р Р†Р вЂљРЎв„ўР В Р’В Р РЋРІР‚СњР В Р’В Р вЂ™Р’В° Р В Р Р‹Р В РЎвЂњ Р В Р’В Р РЋРІР‚вЂќР В Р’В Р РЋРІР‚СћР В Р’В Р вЂ™Р’В»Р В Р Р‹Р В Р РЏР В Р’В Р РЋР’ВР В Р’В Р РЋРІР‚В Р В Р’В Р СћРІР‚ВР В Р’В Р вЂ™Р’В»Р В Р Р‹Р В Р РЏ Р В Р’В Р В РІР‚В Р В Р Р‹Р В РЎвЂњР В Р’В Р вЂ™Р’ВµР В Р Р‹Р Р†Р вЂљР’В¦ Р В Р Р‹Р В РІР‚С™Р В Р’В Р РЋРІР‚СћР В Р’В Р СћРІР‚ВР В Р’В Р РЋРІР‚ВР В Р Р‹Р Р†Р вЂљРЎв„ўР В Р’В Р вЂ™Р’ВµР В Р’В Р вЂ™Р’В»Р В Р Р‹Р В Р вЂ°Р В Р Р‹Р В РЎвЂњР В Р’В Р РЋРІР‚СњР В Р’В Р РЋРІР‚ВР В Р Р‹Р Р†Р вЂљР’В¦ Р В Р’В Р РЋРІР‚СњР В Р’В Р РЋРІР‚СћР В Р’В Р В РІР‚В¦Р В Р Р‹Р Р†Р вЂљРЎв„ўР В Р’В Р вЂ™Р’ВµР В Р’В Р Р†РІР‚С›РІР‚вЂњР В Р’В Р В РІР‚В¦Р В Р’В Р вЂ™Р’ВµР В Р Р‹Р В РІР‚С™Р В Р’В Р РЋРІР‚СћР В Р’В Р В РІР‚В .
+Р В Р’В Р Р†Р вЂљРІвЂћСћР В Р Р‹Р В РЎвЂњР В Р’В Р вЂ™Р’ВµР В Р’В Р РЋРІР‚вЂњР В Р’В Р СћРІР‚ВР В Р’В Р вЂ™Р’В° Р В Р’В Р В РІР‚В¦Р В Р’В Р вЂ™Р’В°Р В Р Р‹Р Р†Р вЂљР’В¦Р В Р’В Р РЋРІР‚СћР В Р’В Р СћРІР‚ВР В Р’В Р РЋРІР‚ВР В Р Р‹Р Р†Р вЂљРЎв„ўР В Р Р‹Р В РЎвЂњР В Р Р‹Р В Р РЏ Р В Р’В Р В РІР‚В Р В Р’В Р В РІР‚В¦Р В Р Р‹Р РЋРІР‚СљР В Р Р‹Р Р†Р вЂљРЎв„ўР В Р Р‹Р В РІР‚С™Р В Р’В Р РЋРІР‚В Р В Р Р‹Р В РІР‚С™Р В Р’В Р РЋРІР‚СћР В Р’В Р СћРІР‚ВР В Р’В Р РЋРІР‚ВР В Р Р‹Р Р†Р вЂљРЎв„ўР В Р’В Р вЂ™Р’ВµР В Р’В Р вЂ™Р’В»Р В Р Р‹Р В Р РЏ Р В Р’В Р РЋРІР‚В Р В Р’В Р В РІР‚В¦Р В Р’В Р вЂ™Р’Вµ Р В Р Р‹Р РЋРІР‚СљР В Р Р‹Р Р†Р вЂљР Р‹Р В Р’В Р вЂ™Р’В°Р В Р Р‹Р В РЎвЂњР В Р Р‹Р Р†Р вЂљРЎв„ўР В Р’В Р В РІР‚В Р В Р Р‹Р РЋРІР‚СљР В Р’В Р вЂ™Р’ВµР В Р Р‹Р Р†Р вЂљРЎв„ў Р В Р’В Р В РІР‚В  Р В Р’В Р вЂ™Р’В·Р В Р’В Р вЂ™Р’В°Р В Р’В Р СћРІР‚ВР В Р’В Р вЂ™Р’В°Р В Р’В Р В РІР‚В¦Р В Р’В Р РЋРІР‚ВР В Р’В Р РЋРІР‚В Р В Р Р‹Р Р†РІР‚С™Р’В¬Р В Р’В Р РЋРІР‚ВР В Р Р‹Р В РІР‚С™Р В Р’В Р РЋРІР‚ВР В Р’В Р В РІР‚В¦Р В Р Р‹Р Р†Р вЂљРІвЂћвЂ“.
 */
 
 .box {
@@ -243,7 +234,7 @@ h4 {
 }
 
 
-/*Р РЋРЎвЂњР В Р вЂ¦Р В РЎвЂР В Р вЂ Р В Р’ВµР РЋР вЂљР РЋР С“Р В Р’В°Р В Р’В»Р РЋР Р‰Р В Р вЂ¦Р В Р’В°Р РЋР РЏ Р В РЎвЂўР В Р’В±Р РЋРІР‚ВР РЋР вЂљР РЋРІР‚С™Р В РЎвЂќР В Р’В° Р РЋР С“ Р В РЎвЂ”Р В РЎвЂўР В Р’В»Р РЋР РЏР В РЎВР В РЎвЂ Р В РўвЂР В Р’В»Р РЋР РЏ Р В РЎвЂўР В РЎвЂ“Р РЋР вЂљР В Р’В°Р В Р вЂ¦Р В РЎвЂР РЋРІР‚РЋР В Р’ВµР В Р вЂ¦Р В РЎвЂР РЋР РЏ Р РЋРІвЂљВ¬Р В РЎвЂР РЋР вЂљР В РЎвЂР В Р вЂ¦Р РЋРІР‚в„– Р В РЎвЂќР В РЎвЂўР В Р вЂ¦Р РЋРІР‚С™Р В Р’ВµР В Р вЂ¦Р РЋРІР‚С™Р В Р’В°.*/
+/*Р В Р Р‹Р РЋРІР‚СљР В Р’В Р В РІР‚В¦Р В Р’В Р РЋРІР‚ВР В Р’В Р В РІР‚В Р В Р’В Р вЂ™Р’ВµР В Р Р‹Р В РІР‚С™Р В Р Р‹Р В РЎвЂњР В Р’В Р вЂ™Р’В°Р В Р’В Р вЂ™Р’В»Р В Р Р‹Р В Р вЂ°Р В Р’В Р В РІР‚В¦Р В Р’В Р вЂ™Р’В°Р В Р Р‹Р В Р РЏ Р В Р’В Р РЋРІР‚СћР В Р’В Р вЂ™Р’В±Р В Р Р‹Р Р†Р вЂљР’ВР В Р Р‹Р В РІР‚С™Р В Р Р‹Р Р†Р вЂљРЎв„ўР В Р’В Р РЋРІР‚СњР В Р’В Р вЂ™Р’В° Р В Р Р‹Р В РЎвЂњ Р В Р’В Р РЋРІР‚вЂќР В Р’В Р РЋРІР‚СћР В Р’В Р вЂ™Р’В»Р В Р Р‹Р В Р РЏР В Р’В Р РЋР’ВР В Р’В Р РЋРІР‚В Р В Р’В Р СћРІР‚ВР В Р’В Р вЂ™Р’В»Р В Р Р‹Р В Р РЏ Р В Р’В Р РЋРІР‚СћР В Р’В Р РЋРІР‚вЂњР В Р Р‹Р В РІР‚С™Р В Р’В Р вЂ™Р’В°Р В Р’В Р В РІР‚В¦Р В Р’В Р РЋРІР‚ВР В Р Р‹Р Р†Р вЂљР Р‹Р В Р’В Р вЂ™Р’ВµР В Р’В Р В РІР‚В¦Р В Р’В Р РЋРІР‚ВР В Р Р‹Р В Р РЏ Р В Р Р‹Р Р†РІР‚С™Р’В¬Р В Р’В Р РЋРІР‚ВР В Р Р‹Р В РІР‚С™Р В Р’В Р РЋРІР‚ВР В Р’В Р В РІР‚В¦Р В Р Р‹Р Р†Р вЂљРІвЂћвЂ“ Р В Р’В Р РЋРІР‚СњР В Р’В Р РЋРІР‚СћР В Р’В Р В РІР‚В¦Р В Р Р‹Р Р†Р вЂљРЎв„ўР В Р’В Р вЂ™Р’ВµР В Р’В Р В РІР‚В¦Р В Р Р‹Р Р†Р вЂљРЎв„ўР В Р’В Р вЂ™Р’В°.*/
 
 .wrap {
     max-width: 1440px;
@@ -255,7 +246,7 @@ h4 {
 }
 
 
-/*Р В Р’В±Р В Р’В°Р В Р’В·Р В РЎвЂўР В Р вЂ Р РЋРІР‚в„–Р В Р’Вµ Р РЋРІвЂљВ¬Р В РЎвЂР РЋР вЂљР В РЎвЂР В Р вЂ¦Р РЋРІР‚в„– Р В РЎвЂќР В РЎвЂўР В Р’В»Р В РЎвЂўР В Р вЂ¦Р В РЎвЂўР В РЎвЂќ*/
+/*Р В Р’В Р вЂ™Р’В±Р В Р’В Р вЂ™Р’В°Р В Р’В Р вЂ™Р’В·Р В Р’В Р РЋРІР‚СћР В Р’В Р В РІР‚В Р В Р Р‹Р Р†Р вЂљРІвЂћвЂ“Р В Р’В Р вЂ™Р’Вµ Р В Р Р‹Р Р†РІР‚С™Р’В¬Р В Р’В Р РЋРІР‚ВР В Р Р‹Р В РІР‚С™Р В Р’В Р РЋРІР‚ВР В Р’В Р В РІР‚В¦Р В Р Р‹Р Р†Р вЂљРІвЂћвЂ“ Р В Р’В Р РЋРІР‚СњР В Р’В Р РЋРІР‚СћР В Р’В Р вЂ™Р’В»Р В Р’В Р РЋРІР‚СћР В Р’В Р В РІР‚В¦Р В Р’В Р РЋРІР‚СћР В Р’В Р РЋРІР‚Сњ*/
 
 
 /*custom select*/
@@ -283,11 +274,8 @@ button:hover,
 }
 
 .content main {
-
     width: 100%;
 }
-
-
 
 .top_black {
     display: flex;
@@ -325,7 +313,6 @@ header .top_white .logo {
     width: 50%;
 }
 
-
 header .top_white .right .record_white .button button {
     color: var(--red);
     background: var(--white);
@@ -336,8 +323,6 @@ header .top_white .right .record_white .button button {
 header .top_white .right .record_white img {
     display: none;
 }
-
-
 
 header .top_white .right .time_work {
     text-align: center;
@@ -362,8 +347,6 @@ header .top_white .right .mail {
     color: var(--red);
     font-weight: 500;
 }
-
-
 
 header .top_white .button button {
     background: var(--red);
@@ -420,20 +403,15 @@ video {
     border-radius: 0 0 6px 6px;
 }
 
-
-
 #main_menu .wrap .box ul li a {
     padding: 0.5rem 0;
 }
-
-
 
 #main_menu .wrap .box .to_down .button button {
     background: none;
     border: solid 1px var(--white);
     color: var(--white);
 }
-
 
 main .page_title .wrap .box {
     width: 100%;
@@ -479,14 +457,11 @@ main .select_car .cars .item {
     /*! transition: ease-in-out 0.3s; */
 }
 
-
-
 main .select_car .cars .item .model {
     text-align: center;
     font-size: 0.875rem;
     margin-top: 0.5rem;
 }
-
 
 main .select_car .cars .item .list_service {
     /*! display: none; */
@@ -582,13 +557,9 @@ main .about .title {
     margin-bottom: 1.5rem;
 }
 
-
-
 main .about .text p {
     margin-bottom: 1rem;
 }
-
-
 
 
 /* select*/
@@ -791,7 +762,6 @@ main .about .text p {
 
 .custom_select.on_white,
 .custom_input.on_white {
-    margin: 0;
     border: solid 1px var(--red);
     border-radius: 5px;
     margin: 2.5rem 0;
@@ -820,8 +790,6 @@ main .page_service .dynamic .select_custom .list_select ul li .icon {
     cursor: pointer;
     background: var(--lihgt_grey);
 }
-
-
 
 main .page_service .dynamic {
     display: flex;
@@ -881,8 +849,6 @@ main .page_service .info_table {
     display: none;
 }
 
-
-
 footer {
     background: var(--red);
     color: var(--white);
@@ -917,8 +883,6 @@ footer .item ul li a {
     display: inline;
 }
 
-
-
 footer .item span {
     font-size: 0.75rem;
     margin-top: 1rem;
@@ -944,8 +908,6 @@ footer .item span {
     /*! font-weight: 400; */
     /*! padding: 1rem 1rem 0 1rem; */
 }
-
-
 
 .slide:hover .flipper {
     transform: rotateY(180deg);
@@ -1006,8 +968,6 @@ footer .item span {
     justify-content: space-between;
 }
 
-
-
 .slide .back_side {
     transform: rotateY(180deg);
     background: var(--lihgt_grey);
@@ -1027,7 +987,7 @@ footer .item span {
 }
 
 #show_to,
-#show_parts{
+#show_parts {
     /*! display: none; */
     flex-flow: column wrap;
 }
@@ -1080,8 +1040,6 @@ footer .item span {
     cursor: pointer;
 }
 
-
-
 .popup_wrap .popup .pop_table {
     margin-top: 1rem;
 }
@@ -1102,8 +1060,6 @@ footer .item span {
 .popup_wrap .popup .pop_text {
     margin: 1rem 0;
 }
-
-
 
 .popup_wrap .popup .pop_text p a {
     display: inline;
@@ -1398,7 +1354,6 @@ footer .item span {
     background: var(--grey);
     color: white;
     font-size: 1.2rem;
-
 }
 
 .table_calculate .button {
@@ -1481,8 +1436,6 @@ main .page_service .info_table table {
     background-position: center;
 }
 
-
-
 main .page_service .info_table table th {
     font-size: 0.75rem;
     font-weight: 500;
@@ -1526,7 +1479,7 @@ main .page_service .info_table table td {
 
 .select_parts .button {
     margin: 1rem auto 1.5rem auto;
-    min-width: 7rem;
+    min-width: 10rem;
     background: var(--red);
     color: var(--white);
 }
@@ -1662,7 +1615,6 @@ main .page_service .info_table table td {
 
 .pagination .page.current {
     border: solid 1px var(--red);
-    color: var(--orange);
 }
 
 .pagination .paginate {
@@ -1672,13 +1624,13 @@ main .page_service .info_table table td {
 }
 
 .pagination .paginate .icon.prev {
-    background: url(../images/icon_page_left.svg) var(--icon) no-repeat center center;
+    background: url(../images/icon_page_left.svg) no-repeat center center;
     display: block;
     background-size: 1.5rem;
 }
 
 .pagination .paginate .icon.next {
-    background: url(../images/icon_page_right.svg) var(--icon) no-repeat center center;
+    background: url(../images/icon_page_right.svg) no-repeat center center;
     display: block;
     background-size: 1.5rem;
 }
@@ -1785,7 +1737,6 @@ main .page_service .info_table table td {
     cursor: pointer;
 }
 
-
 .news_list .item .title,
 .news_single .title {
     display: flex;
@@ -1816,8 +1767,6 @@ main .page_service .info_table table td {
     /*! max-width: 15rem; */
     margin: 0 0 1rem 0;
 }
-
-
 
 .news_list .item .anons .intro .button a {
     border: solid 1px var(--grey);
@@ -1934,7 +1883,7 @@ main .page_service .info_table table td {
     /*! font-weight: 400; */
 }
 
-main .red_select_parts .parts_custom label.on_white{
+main .red_select_parts .parts_custom label.on_white {
     color: #fff;
 }
 
@@ -1976,7 +1925,6 @@ main .red_select_parts .parts_custom label.on_white{
     border-top: 1px solid var(--grey);
 }
 
-
 .parts_custom .parts_group .item .title {
     text-transform: uppercase;
     /*! font-weight: 500; */
@@ -1987,6 +1935,17 @@ main .red_select_parts .parts_custom label.on_white{
     align-items: center;
     color: var(--red);
     font-weight: 700;
+}
+
+.form_add_order {
+    /*! background: #FF7600; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 14rem;
+    margin-left: auto;
+    padding: 0.5rem;
+    align-items: center;
 }
 
 .parts_custom .parts_group .item ul {
@@ -2194,7 +2153,7 @@ main .red_select_parts .parts_custom label.on_white{
 .crm .order_list {
     margin: 1rem auto;
     padding: 0 1rem;
-    max-width: 48rem;
+    max-width: 54rem;
     /*! background: bisque; */
 }
 
@@ -2202,23 +2161,29 @@ main .red_select_parts .parts_custom label.on_white{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-size: 0.75rem;
+    /*! font-size: 0.875rem; */
     border-bottom: solid 1px var(--grey);
     justify-content: space-between;
     padding: 0.5rem 0;
 }
 
-
-
 .crm .order_list .order_row .order_number {
     padding: 0.5rem;
     font-weight: 500;
     margin-left: 0.5rem;
+    margin-right: auto;
 }
 
 .crm .order_list .order_row .order_date {
     padding: 0.5rem;
     margin-left: auto;
+}
+
+.order_status .custom_select {
+    margin: 0.5rem 0 1rem auto;
+    /*! padding-bottom: 1rem; */
+    max-width: 15rem;
+    /*! margin-left: auto; */
 }
 
 .crm .order_list .order_row .order_total {
@@ -2238,41 +2203,69 @@ main .red_select_parts .parts_custom label.on_white{
     /*! display: none; */
     margin-left: auto;
     /*! width: 100%; */
-    /*! background: aquamarine; */
-    max-width: 41rem;
+    background: var(--lihgt_grey);
+    max-width: 49rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
 }
 
 .crm .order_list .order_row .order_expand .order_status {
     /*! margin: -1rem 3rem -1rem auto; */
-    max-width: 15rem;
+    /*! max-width: 15rem; */
     /*! width: 1rem; */
-    margin: -1rem 0 -1rem auto;
+    /*! margin: -1rem 0 -1rem auto; */
     /*! right: 0; */
     /*! margin-right: 3rem; */
     /*! width: 10rem; */
     /*! padding: 0; */
+    /*! padding-bottom: 1rem; */
+    border-bottom: 1px solid var(--grey);
 }
 
 .crm .order_list .order_row .order_expand .order_item {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: solid 1px var(--lihgt_grey);
+    border-bottom: solid 1px var(--grey);
     width: 100%;
     /*! background: aliceblue; */
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.crm .order_list .order_row .order_expand .order_item .order_quantity .order_article {
+    padding: 0.5rem;
+    width: 20%;
 }
 
 .order_article {
+    width: 5rem;
     padding: 0.5rem;
-    width: 20%;
+}
+
+.order_quantity {
+    display: flex;
+    /*! width: 50%; */
+    margin-top: 0.5rem;
+    /*! border: solid 1px var(--grey); */
+    /*! border-radius: 4px; */
+    /*! padding: 0.5rem; */
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    max-width: 17rem;
 }
 
 .order_part_name {
     padding: 0.5rem;
     /*! font-weight: 500; */
-    max-width: 65%;
+    max-width: calc(100% - 5rem);
+    /*! font-size: 0.875rem; */
+}
+
+.order_part_name .order_part_photo {
+    display: flex;
+    /*! justify-content: flex-end; */
 }
 
 .order_search_result span {
@@ -2287,19 +2280,31 @@ main .red_select_parts .parts_custom label.on_white{
     /*! width: 20%; */
     text-align: end;
     font-weight: 600;
+    /*! font-size: 0.875rem; */
+    line-height: 2.5rem;
 }
 
 .order_item_del {
     /*! width: 15%; */
     margin-left: auto;
+    border: solid 1px var(--red);
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    padding: 0 inherit;
+    /*! margin: 0.5rem auto 0.5rem 0; */
+    /*! margin-right: auto; */
+    width: 2.5rem;
 }
 
 .order_part_price:before {
     content: "Р¦РµРЅР°:";
     margin-right: 0.5rem;
     font-weight: 400;
+    font-size: 0.875rem;
+    /*! margin: 0.5rem; */
+    /*! line-height: 2.5rem; */
 }
-
 
 .order_summary {
     /*! width: 50%; */
@@ -2307,23 +2312,26 @@ main .red_select_parts .parts_custom label.on_white{
     text-align: right;
     /*! max-width: 10rem; */
     /*! line-height: 2.5rem; */
-    padding: 0.5rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin-left: 1rem;
-    min-width: 5rem;
+    /*! padding: 0.5rem; */
+    /*! font-size: 0.875rem; */
+    font-weight: 600;
+    /*! margin-left: 1rem; */
+    /*! min-width: 5rem; */
+    white-space: nowrap;
 }
 
 .order_search_result {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    background: var(--lihgt_grey);
+    justify-content: flex-start;
+    background: white;
     padding: 0.5rem;
     /*! width: 100%; */
     margin-bottom: 1rem;
-    /*! border-top: solid 1px var(--grey); */
-    align-items: center;
+    border: solid 1px var(--grey);
+    align-items: flex-start;
+    /*! display: none; */
+    border-radius: 4px;
 }
 
 .order_row .comment {
@@ -2332,40 +2340,51 @@ main .red_select_parts .parts_custom label.on_white{
 }
 
 .order_part_stock {
-    /*! display: flex; */
-    /*! align-items: center; */
+    display: flex;
+    align-items: center;
     padding: 0.5rem;
+    /*! font-size: 0.875rem; */
 }
 
 .order_part_delivery {
     padding: 0.5rem;
+    /*! font-size: 0.875rem; */
+    display: flex;
+    align-items: center;
 }
 
 .order_part_delivery:before {
     content: "Р”РѕСЃС‚Р°РІРєР°:";
     margin-right: 0.5rem;
+    font-size: 0.875rem;
 }
 
 .order_part_stock:before {
-    content: "РћСЃС‚Р°С‚РѕРє:";
+    content: "РЎРєР»Р°Рґ:";
     margin-right: 0.5rem;
+    font-size: 0.875rem;
 }
 
 .order_search_result_add .button,
 .order_search_result_add button {
     background: var(--red);
+    width: 2.5rem;
 }
 
 .order_search_result_add {
-    margin-left: auto;
+    /*! margin-left: auto; */
+    /*! width: 50%; */
+    margin: 0.5rem 0 0 0;
 }
 
 .crm .order_list .order_row .order_expand .order_finish {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 0.8758rem;
+    /*! font-size: 0.8758rem; */
     font-weight: 500;
+    background: white;
+    padding: 0.5rem;
 }
 
 .crm .order_list .order_row .order_expand .order_finish:before {
@@ -2378,6 +2397,7 @@ main .red_select_parts .parts_custom label.on_white{
 
 .crm .order_list .order_row .order_expand .order_finish .order_finish_summary {
     padding: 0.5rem;
+    white-space: nowrap;
 }
 
 .crm .order_list .order_row .order_expand .order_finish .order_finish_summary:before {
@@ -2392,6 +2412,7 @@ main .red_select_parts .parts_custom label.on_white{
     justify-content: flex-end;
     margin: 0 0 1rem auto;
     max-width: 15rem;
+    padding-top: 1rem;
 }
 
 .crm .order_list .order_row .order_expand .order_add_part button {
@@ -2405,6 +2426,11 @@ main .red_select_parts .parts_custom label.on_white{
     margin: 1rem 0;
 }
 
+.crm .order_list .order_row .order_expand .order_add_part .input_custom label {
+    background: none;
+    top: -1.2rem;
+    left: -0.5rem;
+}
 
 .crm .order_list .order_row .order_expand .order_text textarea {
     width: 100%;
@@ -2425,7 +2451,7 @@ main .red_select_parts .parts_custom label.on_white{
 }
 
 .crm .order_list .order_row .order_expand .order_feedback span {
-    padding: 0 1rem;
+    /*! padding: 0 1rem; */
 }
 
 .crm .order_list .order_row .order_expand .order_feedback .order_mail {
@@ -2436,12 +2462,16 @@ main .red_select_parts .parts_custom label.on_white{
     /*! width: 100%; */
 }
 
+.crm .order_list .order_row .order_expand .order_feedback a {
+    margin-right: 1rem;
+}
+
 .crm .order_list .order_row .order_expand .order_feedback .order_phone {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /*! width: 100%; */
-    /*! margin: 0.5rem 0; */
+    margin: 0.5rem 0;
 }
 
 .crm .order_list .order_row .order_expand .order_feedback .order_address {
@@ -2450,6 +2480,15 @@ main .red_select_parts .parts_custom label.on_white{
     margin: 0.5rem 0;
     /*! justify-content: space-between; */
     /*! width: 100%; */
+}
+
+.crm .order_part_desc {
+    /*! background: #FF7600; */
+    display: flex;
+    margin-left: auto;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: end;
 }
 
 .custom-select-container.is-open .custom-select-panel {
@@ -2468,7 +2507,7 @@ main .red_select_parts .parts_custom label.on_white{
     width: 100%;
 }
 
-.calc{
+.calc {
     margin: 0 auto 30px auto;
     max-width: 100%;
     overflow: auto;
@@ -2498,12 +2537,12 @@ main .red_select_parts .parts_custom label.on_white{
     vertical-align: middle;
 }
 
-.calc .price-results{
+.calc .price-results {
     text-align: right;
     padding: 10px;
     display: none;
 }
-
+/*
 .c-checkbox {
     margin: 1px 0 0;
     position: relative;
@@ -2520,7 +2559,7 @@ main .red_select_parts .parts_custom label.on_white{
     opacity: 0;
 }
 
-.c-checkbox input:checked + .fake {
+.c-checkbox input:checked+.fake {
     display: block;
 }
 
@@ -2533,8 +2572,10 @@ main .red_select_parts .parts_custom label.on_white{
     right: -4px;
     background: url(/images/sprite.png) no-repeat -147px -195px;
 }
-
-
+*/
+.hidden {
+    display: none;
+}
 
 main .page_service .resume .total_record {
     text-align: center;
@@ -2545,7 +2586,7 @@ main .page_service .resume .total_record {
 }
 
 #loginFrame .ajaxMessages.red {
-    background-color: var(--red);
+    background-color: #FF7600;
     color: #fff;
     text-align: center;
     padding: 0.5rem;
@@ -2563,31 +2604,47 @@ main .page_service .resume .total_record {
     margin-bottom: 2rem;
 }
 
-.shake{
+.shake {
     -webkit-animation: loginErrorWindow .6s;
     animation: loginErrorWindow .6s;
 }
 
 @-webkit-keyframes loginErrorWindow {
-    0%, to {
+    0%,
+    to {
         transform: translateX(0)
     }
-    10%, 30%, 50%, 70%, 90% {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
         transform: translateX(-10px)
     }
-    20%, 40%, 60%, 80% {
+    20%,
+    40%,
+    60%,
+    80% {
         transform: translateX(10px)
     }
 }
 
 @keyframes loginErrorWindow {
-    0%, to {
+    0%,
+    to {
         transform: translateX(0)
     }
-    10%, 30%, 50%, 70%, 90% {
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
         transform: translateX(-10px)
     }
-    20%, 40%, 60%, 80% {
+    20%,
+    40%,
+    60%,
+    80% {
         transform: translateX(10px)
     }
 }
@@ -2596,17 +2653,16 @@ main .page_service .resume .total_record {
     max-width: 21rem;
 }
 
-#loginFrame p {
+#loginFrm p {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.5rem;
     position: relative;
     margin-bottom: 2rem;
 }
 
-#loginFrame label {
+#loginFrm label {
     margin-right: 0.5rem;
     position: absolute;
     top: -0.75rem;
